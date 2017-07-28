@@ -11,10 +11,10 @@
 			</a>
 		</div>
 		<div class="element-inline">
-			<a href="#" class="menu-toggle"><i class="fa fa-bars"></i></a>
+			<a href="#" class="menu-toggle" data-toggle="responsive-menu"><i class="fa fa-bars"></i></a>
 		</div>
 	</div>
-	<div class="small-12 medium-8 columns main-navs inline-menus">
+	<div id="responsive-menu" class="small-12 medium-8 columns main-navs responsive-menu inline-menus" data-toggler data-animate="hinge-in-from-top fade-out">
 		<div class="programacio-menu menu-inline">
 			<ul class="vertical medium-horizontal menu">
 				<li><a href="#">Programació</a></li>
@@ -29,7 +29,7 @@
 			</ul>
 		</div>
 		<div class="site-account-menu menu-inline">
-			<ul class="dropdown menu" data-dropdown-menu>
+			<ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
 				<li class="is-dropdown-submenu-parent">
 					<a href="#"><i class="fa fa-circle-o hide-for-small-only"></i> El menu compte</a>
 					<ul class="menu vertical">

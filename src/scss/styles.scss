@@ -3,6 +3,10 @@
 @import "foundation";
 @import "motion-ui";
 
+@include motion-ui-transitions;
+
+@include motion-ui-animations;
+
 @import "settings/settings";
 
 @include foundation-global-styles;

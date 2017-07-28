@@ -29,7 +29,7 @@ gulp.task('styles', function () {
             }
         }))
         .pipe(sass({
-            includePaths: ['bower_components/foundation-sites/scss', 'bower_components/motion-ui/src/'],
+            includePaths: ['bower_components/foundation-sites/scss', 'bower_components/motion-ui/src'],
         }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(gulp.dest('dist/css/'))
