@@ -19,6 +19,10 @@
             background: transparent;
             border: none;
         }
+
+        li.opens-left {
+            text-align: right;
+        }
     }
 
     &.white {
@@ -123,6 +127,17 @@
                 a {
                     padding-top: rem-calc(5);
                     padding-bottom: rem-calc(5);
+                }
+            }
+
+            .opens-left {
+                .menu {
+                    border-left: none;
+                    border-right: 1px solid $primary-color;
+                }
+
+                a {
+                    padding-right: rem-calc(20);
                 }
             }
 

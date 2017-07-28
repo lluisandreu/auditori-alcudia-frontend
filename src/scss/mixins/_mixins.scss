@@ -1,0 +1,16 @@
+@mixin left-line($color, $width) {
+    display: none;
+    content: '';
+    height: 2px;
+    width: $width;
+    position: absolute;
+    background: $color;
+    left: 0;
+    top: 90%;
+    margin-left: -50%;
+    margin-top: 1px;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+}

@@ -88,8 +88,10 @@
 
 @include foundation-float-classes;
 
+@import "mixins/mixins";
 @import "common/elements";
 @import "common/common";
 @import "components/navbar";
 @import "components/carousels";
+@import "components/blocks";
 @import "components/pages";
