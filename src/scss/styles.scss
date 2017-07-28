@@ -62,7 +62,7 @@
 
 //@include foundation-slider;
 
-@include foundation-sticky;
+//@include foundation-sticky;
 
 @include foundation-reveal;
 
@@ -87,3 +87,5 @@
 @import "common/elements";
 @import "common/common";
 @import "components/navbar";
+@import "components/carousels";
+@import "components/pages";

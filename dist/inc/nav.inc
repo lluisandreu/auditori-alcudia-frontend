@@ -30,11 +30,13 @@
 		</div>
 		<div class="site-account-menu menu-inline">
 			<ul class="dropdown menu" data-dropdown-menu>
-				<li><a href=""><i class="fa fa-circle-o hide-for-small-only"></i> El menu compte</a></li>
-				<ul class="menu">
-					<li><a href="#">Crear compte</a></li>
-					<li><a href="#">Accedir</a></li>
-				</ul>
+				<li class="is-dropdown-submenu-parent">
+					<a href="#"><i class="fa fa-circle-o hide-for-small-only"></i> El menu compte</a>
+					<ul class="menu vertical">
+						<li><a href="#">Crear compte</a></li>
+						<li><a href="#">Accedir</a></li>
+					</ul>
+				</li>
 			</ul>
 		</div>
 	</div>

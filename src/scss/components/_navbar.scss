@@ -6,6 +6,13 @@
         font-weight: 600;
     }
 
+    .dropdown.menu {
+        .menu {
+            background: transparent;
+            border: none;
+        }
+    }
+
     &.white {
         .menu > li > a {
             color: $white;
@@ -18,7 +25,7 @@
 
     .menu-toggle {
         color: $white;
-        font-size: rem-calc(30)
+        font-size: rem-calc(30);
         line-height: 30px;
         margin-left: rem-calc(5);
     }
@@ -31,8 +38,26 @@
                 margin-bottom: rem-calc(5);
             }
 
-            .dropdown.menu {
+            .is-dropdown-submenu-parent {
                 background: $light-gray;
+                width: 100%;
+
+                .menu {
+                    width: 100%;
+                    background: transparent;
+                    border: none;
+                    border-left: 2px solid $primary-color;
+                    margin-top: rem-calc(5);
+
+                    li {
+                        font-size: rem-calc(14);
+                    }
+
+                    a {
+                        padding-top: rem-calc(5);
+                        padding-bottom: rem-calc(5);
+                    }
+                }
             }
         }
 
@@ -64,9 +89,35 @@
 
 
     @include breakpoint(medium) {
+        &.fixed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+            width: 100%;
+        }
+
         .menu {
             li {
                 font-size: rem-calc(13);
+            }
+        }
+
+        .dropdown.menu {
+            .menu {
+                background: transparent;
+                border: none;
+                margin-left: 20px;
+                border-left: 1px solid $primary-color;
+
+                a {
+                    padding-top: rem-calc(5);
+                    padding-bottom: rem-calc(5);
+                }
+            }
+
+            & > li.is-dropdown-submenu-parent > a::after {
+                display: none;
             }
         }
 

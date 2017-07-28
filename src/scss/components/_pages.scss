@@ -1,0 +1,57 @@
+// Homepage
+
+.page-home {
+    .main-header {
+        background-color: #888888;
+
+        @include breakpoint(medium) {
+            min-height: 640px;
+        }
+
+
+        .main-header-event {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            color: $white;
+            padding-top: rem-calc(40);
+            padding-bottom: rem-calc(40);
+
+            h1 {
+                color: $white;
+                font-weight: 100;
+                line-height: 1.1;
+
+                @include breakpoint(medium) {
+                    font-size: rem-calc(57);
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .button {
+                margin: rem-calc(15) 0;
+            }
+
+            .field-category {
+                font-weight: 600;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            @include breakpoint(medium) {
+                min-height: 650px;
+                padding-top: rem-calc(270);
+                padding-bottom: 0;
+            }
+        }
+    }
+}
