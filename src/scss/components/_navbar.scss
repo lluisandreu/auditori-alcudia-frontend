@@ -1,0 +1,104 @@
+.nav-bar {
+    padding: rem-calc(30) 0;
+
+    .menu li {
+        font-size: rem-calc(15);
+        font-weight: 600;
+    }
+
+    &.white {
+        .menu > li > a {
+            color: $white;
+
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+
+    .menu-toggle {
+        color: $white;
+        font-size: rem-calc(30)
+        line-height: 30px;
+        margin-left: rem-calc(5);
+    }
+
+    @include breakpoint(small only) {
+        .menu-inline {
+            margin-top: rem-calc(20);
+
+            .menu li {
+                margin-bottom: rem-calc(5);
+            }
+
+            .dropdown.menu {
+                background: $light-gray;
+            }
+        }
+
+        .programacio-menu {
+            .menu {
+                li {
+                    position: relative;
+
+                    &:after {
+                        content: "\f105";
+                        position: absolute;
+                        font-family: FontAwesome;
+                        font-style: normal;
+                        font-weight: 400;
+                        right: 10px;
+                        top: 3px;
+                        color: $black;
+                        font-size: 20px;
+                    }
+                }
+
+                a {
+                    background: $primary-color;
+                    color: $black !important;
+                }
+            }
+        }
+    }
+
+
+    @include breakpoint(medium) {
+        .menu {
+            li {
+                font-size: rem-calc(13);
+            }
+        }
+
+        .programacio-menu {
+            border: 2px solid $primary-color;
+
+            .menu-separator {
+                color: $primary-color;
+                font-size: 27px;
+                line-height: 34px;
+                height: 0;
+                width: 0px;
+                vertical-align: bottom;
+                text-align: center;
+                display: inline-table;
+                font-weight: 100;
+            }
+        }
+
+        .site-account-menu {
+            .menu li {
+                font-size: rem-calc(10);
+            }
+
+            .fa {
+                font-size: rem-calc(13);
+            }
+        }
+
+        .inline-menus {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

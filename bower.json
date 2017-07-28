@@ -1,0 +1,21 @@
+{
+  "name": "auditoriAlcudia",
+  "description": "Auditori d'alcudia frontend",
+  "main": "index.js",
+  "authors": [
+    "Lluis A Oliver. lluisandreu.com"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "foundation-sites": "^6.4.1",
+    "motion-ui": "^1.2.3"
+  }
+}
