@@ -54,4 +54,41 @@
             }
         }
     }
+
+    .home-about-section {
+        .home-about-inner {
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 590px;
+        }
+
+        .home-about-content {
+            padding-top: rem-calc(60);
+
+            h2 {
+                background-color: $primary-color;
+                color: $white;
+                display: initial;
+                padding: rem-calc(8);
+                font-size: rem-calc(25);
+                margin-bottom: rem-calc(20);
+            }
+
+            a {
+                color: $body-font-color;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+
+            .home-about-heading {
+                margin-bottom: rem-calc(20);
+            }
+
+            @include breakpoint(medium) {
+                padding-top: rem-calc(160);
+            }
+        }
+    }
 }

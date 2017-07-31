@@ -39,6 +39,7 @@
 
 .relative {
     position: relative;
+    z-index: 5;
 }
 
 .white-separator {
@@ -46,6 +47,16 @@
     height: 1px;
     background: $white;
     margin: rem-calc(15) 0 rem-calc(15) 0;
+}
+
+.primary-triangle-background {
+    width: 100%;
+    height: 200px;
+    background-color: $primary-color;
+    position: absolute;
+    z-index: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+    bottom: 0;
 }
 
 /// Sections
@@ -60,6 +71,10 @@
 
 .section-light {
     background: $white;
+}
+
+.section-primary {
+    background: $primary-color;
 }
 
 /// Typography
@@ -101,7 +116,7 @@
 
     /* flip speed goes here */
     .flipper {
-        transition: 0.6s;
+        transition: 0.6s ease-in-out .6s;
         transform-style: preserve-3d;
         position: relative;
     }

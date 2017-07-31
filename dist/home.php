@@ -150,5 +150,20 @@
 			</div>
 		</div>
 	</section>
+	<section class="home-about-section section-padding section-light relative">
+		<div class="home-about-inner about-image row relative" style="background-image: url('images/about/about_image.jpg'); ?>">
+			<div class="medium-offset-2 columns home-about-content">
+				<div class="home-about-heading">
+					<h2>Descobreix l'Auditori d'Alcúdia <i class="fa fa-chevron-right"></i></h2>
+				</div>
+				<div><a href="#">Lloguer d'espais <i class="fa fa-chevron-right"></i></a></div>
+				<div><a href="#">Contacte <i class="fa fa-chevron-right"></i></a></div>
+			</div>
+		</div>
+		<div class="primary-triangle-background"></div>
+	</section>
+	<section class="home-featured section-padding section-primary">
+		
+	</section>
 </div>
 <?php include "inc/footer.inc"; ?>
