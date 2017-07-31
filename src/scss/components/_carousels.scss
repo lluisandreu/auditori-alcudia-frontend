@@ -22,3 +22,21 @@
         }
     }
 }
+
+.featured-carousel {
+    .owl-stage-outer {
+        padding-top: rem-calc(90);
+    }
+
+    .owl-dot span {
+        background: $white;
+    }
+
+    .owl-dot:hover span {
+        background: $primary-color;
+    }
+
+    .owl-dot.active span {
+        background: $primary-color;
+    }
+}

@@ -9,6 +9,33 @@ jQuery(document).ready(function ($) {
         dots: true
     });
 
+    var featuredCarousel = $('.featured-carousel');
+    featuredCarousel.owlCarousel({
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1,
+                dots: true,
+                stagePadding: 50,
+                loop: true,
+                margin: 20,
+            },
+            640: {
+                items: 2,
+                dots: true,
+                stagePadding: 50,
+                loop: true,
+                margin: 20,
+            },
+            1024: {
+                items: 4,
+                stagePadding: 0,
+                margin: 0,
+            }
+        }
+    });
+
+
     $('.toggle-full').on('click', function (event) {
         event.preventDefault();
         $(this).parents('.teaser').siblings('.full').toggleClass('open');

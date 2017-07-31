@@ -1,5 +1,9 @@
 // Buttons
 
+.button {
+    font-weight: 800;
+}
+
 .button-white {
     background: transparent;
     border: 1px solid $white;
@@ -22,6 +26,13 @@
         color: $black;
         border-color: $primary-color;
     }
+}
+
+.button-yellow {
+    border: 1px solid $primary-color;
+    color: $body-font-color;
+    font-weight: 800;
+    background: $white;
 }
 
 /// Forms
@@ -49,6 +60,10 @@ form {
     display: flex !important;
 }
 
+.no-margin {
+    margin: 0;
+}
+
 .relative {
     position: relative;
     z-index: 5;
@@ -68,7 +83,7 @@ form {
     position: absolute;
     z-index: 1;
     clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
-    bottom: 0;
+    bottom: -1px;
 }
 
 .primary-triangle-background-bottom {
@@ -85,6 +100,14 @@ form {
 
     @include breakpoint(medium) {
         padding: rem-calc(60) 0;
+    }
+}
+
+.section-padding-2x {
+    padding: rem-calc(80) 0 rem-calc(40) 0;
+
+    @include breakpoint(medium) {
+        padding: rem-calc(120) 0 rem-calc(60) 0;
     }
 }
 
@@ -129,6 +152,10 @@ form {
 
 .white-left-line {
     @include left-line($white, 90%);
+}
+
+.yellow-fullwidth-line {
+    @include fullwidth-line($primary-color);
 }
 
 /// Fliper

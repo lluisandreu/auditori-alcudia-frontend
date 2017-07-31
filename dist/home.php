@@ -150,6 +150,29 @@
 			</div>
 		</div>
 	</section>
+	<section class="home-vouchers-section section-padding section-light">
+		<div class="home-vouchers-section-innner row expanded">
+			<div class="home-voucher-heading relative">
+				<span class="yellow-fullwidth-line"></span>
+				<div class="home-voucher-button text-center relative">
+					<a href="#" class="button button-yellow no-margin">Abonaments</a>
+				</div>
+			</div>
+			<div class="home-vouchers-block row expanded section-padding">
+				<div class="home-vouchers-block-item small-12 column text-center">
+					<h2>Títol de l'abonament</h2>
+					<p>del 20 de maig de 2017 al 30 de juliol del 2017</p>
+				</div>
+				<div class="home-vouchers-block-item small-12 column text-center">
+					<h2>Títol de l'abonament</h2>
+					<p>del 20 de maig de 2017 al 30 de juliol del 2017</p>
+				</div>
+				<div class="home-voucher-block-link small-12 column text-center">
+					<a href="#" class="button button-primary">Comprar abonament</a>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="home-about-section section-padding section-light relative">
 		<div class="home-about-inner about-image row relative" style="background-image: url('images/about/about_image.jpg'); ?>">
 			<div class="medium-offset-2 columns home-about-content">
@@ -168,20 +191,27 @@
 				<h2 class="relative"><span class="white-left-line"></span>Destacats</h2>
 			</div>
 		</div>
-		<div class="home-featured-section-block">
-			<div class="row collapse small-up-1 large-up-4">
-				<div class="home-featured-block-item column">
-					<div class="teaser-date">
-						<div class="teaser-date-day">DIM</div>
-						<div class="teaser-date-day-month">28 Jul</div>
-					</div>
-					<div class="teaser-featured-image">
-						<img src="#" alt="#">
-					</div>
-					<div class="teaser-body">
-						<h2>Vida i miracles de n'Aineta dels matalassos</h2>
-						<div class="black-bold field-category">Teatre</div>
-						<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+		<div class="home-featured-block align-center row">
+			<div class="medium-10 columns">
+				<div class="section-padding featured-carousel owl-theme owl-carousel">
+					<div class="home-featured-block-item">
+						<div class="teaser-date">
+							<div class="teaser-date-day">DIM</div>
+							<div class="teaser-date-day-month">28 Jul</div>
+						</div>
+						<div class="teaser-featured-image">
+							<a href="#">
+								<img src="images/placeholder/featured_placeholder.jpg" alt="">
+							</a>
+						</div>
+						<div class="teaser-heading">
+							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
+							<div class="black-bold field-category">Teatre</div>
+						</div>
+						<div class="teaser-body show-for-large">
+							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+						</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -199,43 +229,11 @@
 				<div class="row collapse">
 					<div class="home-news-block-item small-12 medium-4 column row collapse flex">
 						<div class="teaser-image small-4 medium-12 columns">
-							<img src="images/placeholder/news_placeholder.jpg" alt="">
+							<a href="#"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
 						</div>
 						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
 							<div class="cell">
-								<h2>Vivamus suscipit tortor eget</h2>
-								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div class="teaser-link small-1 show-for-small-only columns grid-x grid-padding-x align-middle">
-							<div class="cell">
-								<a href="#"><i class="fa fa-chevron-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="home-news-block-item small-12 medium-4 column row collapse flex">
-						<div class="teaser-image small-4 medium-12 columns">
-							<img src="images/placeholder/news_placeholder.jpg" alt="">
-						</div>
-						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
-							<div class="cell">
-								<h2>Vivamus suscipit tortor eget</h2>
-								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div class="teaser-link small-1 show-for-small-only columns grid-x grid-padding-x align-middle">
-							<div class="cell">
-								<a href="#"><i class="fa fa-chevron-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="home-news-block-item small-12 medium-4 column row collapse flex">
-						<div class="teaser-image small-4 medium-12 columns">
-							<img src="images/placeholder/news_placeholder.jpg" alt="">
-						</div>
-						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
-							<div class="cell">
-								<h2>Vivamus suscipit tortor eget</h2>
+								<h2><a href="#">Vivamus suscipit tortor eget</a></h2>
 								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
