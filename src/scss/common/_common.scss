@@ -24,6 +24,14 @@
     }
 }
 
+/// Forms
+
+form {
+    .description {
+        font-size: rem-calc(10);
+    }
+}
+
 /// common elements
 
 .clearfix:after {
@@ -35,6 +43,10 @@
 .element-inline {
     display: inline-block;
     vertical-align: top;
+}
+
+.flex {
+    display: flex !important;
 }
 
 .relative {
@@ -49,7 +61,7 @@
     margin: rem-calc(15) 0 rem-calc(15) 0;
 }
 
-.primary-triangle-background {
+.primary-triangle-background-top {
     width: 100%;
     height: 200px;
     background-color: $primary-color;
@@ -57,6 +69,13 @@
     z-index: 1;
     clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
     bottom: 0;
+}
+
+.primary-triangle-background-bottom {
+    @extend .primary-triangle-background-top;
+
+    clip-path: polygon(0 0, 0 50%, 100% 0);
+    top: 0;
 }
 
 /// Sections
@@ -71,6 +90,14 @@
 
 .section-light {
     background: $white;
+}
+
+.section-dark {
+    background: $dark-gray;
+
+    hr {
+        border-color: $light-gray;
+    }
 }
 
 .section-primary {
@@ -100,6 +127,10 @@
     @include left-line($primary-color, 90%);
 }
 
+.white-left-line {
+    @include left-line($white, 90%);
+}
+
 /// Fliper
 @include breakpoint(large) {
     /* entire container, keeps perspective */
@@ -116,7 +147,7 @@
 
     /* flip speed goes here */
     .flipper {
-        transition: 0.6s ease-in-out .6s;
+        transition: 0.6s ease-in-out .2s;
         transform-style: preserve-3d;
         position: relative;
     }

@@ -5468,6 +5468,9 @@ a {
     color: #0a0a0a;
     border-color: #f7e326; }
 
+form .description {
+  font-size: 0.71429rem; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -5476,6 +5479,11 @@ a {
 .element-inline {
   display: inline-block;
   vertical-align: top; }
+
+.flex {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important; }
 
 .relative {
   position: relative;
@@ -5487,7 +5495,7 @@ a {
   background: #fefefe;
   margin: 1.07143rem 0 1.07143rem 0; }
 
-.primary-triangle-background {
+.primary-triangle-background-top, .primary-triangle-background-bottom {
   width: 100%;
   height: 200px;
   background-color: #f7e326;
@@ -5497,6 +5505,11 @@ a {
           clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
   bottom: 0; }
 
+.primary-triangle-background-bottom {
+  -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
+          clip-path: polygon(0 0, 0 50%, 100% 0);
+  top: 0; }
+
 .section-padding {
   padding: 2.85714rem 0; }
   @media print, screen and (min-width: 40em) {
@@ -5505,6 +5518,11 @@ a {
 
 .section-light {
   background: #fefefe; }
+
+.section-dark {
+  background: #414042; }
+  .section-dark hr {
+    border-color: #828385; }
 
 .section-primary {
   background: #f7e326; }
@@ -5527,11 +5545,26 @@ a {
   position: absolute;
   background: #f7e326;
   left: 0;
-  top: 90%;
+  top: 50%;
   margin-left: -50%;
   margin-top: 1px; }
   @media print, screen and (min-width: 40em) {
     .yellow-left-line {
+      display: block; } }
+
+.white-left-line {
+  display: none;
+  content: '';
+  height: 2px;
+  width: 90%;
+  position: absolute;
+  background: #fefefe;
+  left: 0;
+  top: 50%;
+  margin-left: -50%;
+  margin-top: 1px; }
+  @media print, screen and (min-width: 40em) {
+    .white-left-line {
       display: block; } }
 
 @media print, screen and (min-width: 64em) {
@@ -5545,7 +5578,7 @@ a {
             transform: rotateY(180deg); }
   /* flip speed goes here */
   .flipper {
-    transition: 0.6s ease-in-out .6s;
+    transition: 0.6s ease-in-out .2s;
     -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
     position: relative; }
@@ -5777,6 +5810,57 @@ a {
     .home-next-events-block .item:hover .full {
       z-index: 3; }
 
+.home-news-block .home-news-block-item {
+  margin-bottom: 2px;
+  font-size: 0.85714rem;
+  background: #414042;
+  color: #fefefe; }
+  .home-news-block .home-news-block-item h2 {
+    font-size: 1.42857rem;
+    font-weight: 200;
+    color: #fefefe; }
+  .home-news-block .home-news-block-item p {
+    margin-bottom: 0; }
+  .home-news-block .home-news-block-item img {
+    display: block;
+    width: 100%; }
+  .home-news-block .home-news-block-item .teaser-body {
+    padding-left: 0.71429rem; }
+  .home-news-block .home-news-block-item .teaser-link {
+    text-align: center;
+    font-size: 1.42857rem; }
+    .home-news-block .home-news-block-item .teaser-link a {
+      color: #fefefe; }
+  @media print, screen and (min-width: 40em) {
+    .home-news-block .home-news-block-item {
+      color: #545456;
+      background: none;
+      padding-right: 2px !important; }
+      .home-news-block .home-news-block-item h2 {
+        font-size: 0.85714rem;
+        color: #545456;
+        font-weight: 800; }
+      .home-news-block .home-news-block-item .cell {
+        padding: 0; }
+      .home-news-block .home-news-block-item .teaser-image {
+        margin-bottom: 1.07143rem; }
+      .home-news-block .home-news-block-item .teaser-body {
+        padding: 0; } }
+
+.home-email-block input[type=email] {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  font-size: 1.78571rem;
+  padding: 0; }
+
+.home-email-block button[type=submit] {
+  color: #414042; }
+
+.home-email-block .input-group {
+  border-bottom: 2px solid #414042;
+  margin-bottom: 0.71429rem; }
+
 .page-home .main-header {
   background-color: #888888; }
   @media print, screen and (min-width: 40em) {
@@ -5830,6 +5914,15 @@ a {
     color: #545456; }
     .page-home .home-about-section .home-about-content a:hover {
       color: #f7e326; }
+    @media screen and (max-width: 63.9375em) {
+      .page-home .home-about-section .home-about-content a {
+        display: initial;
+        background-color: #414042;
+        color: #fefefe;
+        padding: 0.57143rem;
+        font-size: 1.42857rem;
+        margin-bottom: 0.35714rem;
+        line-height: 2.5; } }
   .page-home .home-about-section .home-about-content .home-about-heading {
     margin-bottom: 1.42857rem; }
   @media print, screen and (min-width: 40em) {

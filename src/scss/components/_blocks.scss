@@ -127,3 +127,85 @@
         }
     }
 }
+
+.home-news-block {
+    .home-news-block-item {
+        margin-bottom: 2px;
+        font-size: rem-calc(12);
+        background: $dark-gray;
+        color: $white;
+
+        h2 {
+            font-size: rem-calc(20);
+            font-weight: 200;
+            color: $white;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+
+        .teaser-image {}
+
+        .teaser-body {
+            padding-left: rem-calc(10);
+        }
+
+        .teaser-link {
+            text-align: center;
+            font-size: rem-calc(20);
+
+            a {
+                color: $white;
+            }
+        }
+
+        @include breakpoint(medium) {
+            color: $body-font-color;
+            background: none;
+            padding-right: 2px !important;
+
+            h2 {
+                font-size: rem-calc(12);
+                color: $body-font-color;
+                font-weight: 800;
+            }
+
+            .cell {
+                padding: 0;
+            }
+
+            .teaser-image {
+                margin-bottom: rem-calc(15);
+            }
+
+            .teaser-body {
+                padding: 0;
+            }
+        }
+    }
+}
+
+.home-email-block {
+    input[type=email] {
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        font-size: rem-calc(25);
+        padding: 0;
+    }
+
+    button[type=submit] {
+        color: $dark-gray;
+    }
+
+    .input-group {
+        border-bottom: 2px solid $dark-gray;
+        margin-bottom: rem-calc(10);
+    }
+}

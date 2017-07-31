@@ -80,6 +80,16 @@
                 &:hover {
                     color: $primary-color;
                 }
+
+                @include breakpoint(medium down) {
+                    display: initial;
+                    background-color: $dark-gray;
+                    color: $white;
+                    padding: rem-calc(8);
+                    font-size: rem-calc(20);
+                    margin-bottom: rem-calc(5);
+                    line-height: 2.5;
+                }
             }
 
             .home-about-heading {
