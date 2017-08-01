@@ -3,6 +3,10 @@
 @import "foundation";
 @import "motion-ui";
 
+@include motion-ui-transitions;
+
+@include motion-ui-animations;
+
 @import "settings/settings";
 
 @include foundation-global-styles;
@@ -62,7 +66,7 @@
 
 //@include foundation-slider;
 
-@include foundation-sticky;
+//@include foundation-sticky;
 
 @include foundation-reveal;
 
@@ -84,6 +88,11 @@
 
 @include foundation-float-classes;
 
+@import "mixins/mixins";
 @import "common/elements";
 @import "common/common";
 @import "components/navbar";
+@import "components/footer";
+@import "components/carousels";
+@import "components/blocks";
+@import "components/pages";

@@ -1,0 +1,42 @@
+.hero-slideshow {
+    .owl-dots {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+
+        @include breakpoint(medium) {
+            bottom: 40px;
+        }
+
+
+        .owl-dot span {
+            background: $white;
+        }
+
+        .owl-dot:hover span {
+            background: $primary-color;
+        }
+
+        .owl-dot.active span {
+            background: $primary-color;
+        }
+    }
+}
+
+.featured-carousel {
+    .owl-stage-outer {
+        padding-top: rem-calc(90);
+    }
+
+    .owl-dot span {
+        background: $white;
+    }
+
+    .owl-dot:hover span {
+        background: $primary-color;
+    }
+
+    .owl-dot.active span {
+        background: $primary-color;
+    }
+}

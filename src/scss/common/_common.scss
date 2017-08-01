@@ -1,4 +1,202 @@
+// Buttons
+
+.button {
+    font-weight: 800;
+}
+
+.button-white {
+    background: transparent;
+    border: 1px solid $white;
+    color: $white;
+    font-weight: 600;
+
+    &:hover {
+        color: $black;
+        border-color: $primary-color;
+    }
+}
+
+.button-dark {
+    background: transparent;
+    border: 1px solid $dark-gray;
+    color: $dark-gray;
+    font-weight: 600;
+
+    &:hover {
+        color: $black;
+        border-color: $primary-color;
+    }
+}
+
+.button-yellow {
+    border: 1px solid $primary-color;
+    color: $body-font-color;
+    font-weight: 800;
+    background: $white;
+}
+
+/// Forms
+
+form {
+    .description {
+        font-size: rem-calc(10);
+    }
+}
+
+/// common elements
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .element-inline {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
+}
+
+.flex {
+    display: flex !important;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.relative {
+    position: relative;
+    z-index: 5;
+}
+
+.white-separator {
+    width: 100%;
+    height: 1px;
+    background: $white;
+    margin: rem-calc(15) 0 rem-calc(15) 0;
+}
+
+.primary-triangle-background-top {
+    width: 100%;
+    height: 200px;
+    background-color: $primary-color;
+    position: absolute;
+    z-index: 1;
+    clip-path: polygon(0% 100%, 100% 100%, 0% 0%);
+    bottom: -1px;
+}
+
+.primary-triangle-background-bottom {
+    @extend .primary-triangle-background-top;
+
+    clip-path: polygon(0 0, 0 50%, 100% 0);
+    top: 0;
+}
+
+/// Sections
+
+.section-padding {
+    padding: rem-calc(40) 0;
+
+    @include breakpoint(medium) {
+        padding: rem-calc(60) 0;
+    }
+}
+
+.section-padding-2x {
+    padding: rem-calc(80) 0 rem-calc(40) 0;
+
+    @include breakpoint(medium) {
+        padding: rem-calc(120) 0 rem-calc(60) 0;
+    }
+}
+
+.section-light {
+    background: $white;
+}
+
+.section-dark {
+    background: $dark-gray;
+
+    hr {
+        border-color: $light-gray;
+    }
+}
+
+.section-primary {
+    background: $primary-color;
+}
+
+/// Typography
+
+.black-bold {
+    color: $black;
+    font-weight: 600;
+}
+
+.gray-bold {
+    @extend .black-bold;
+
+    color: $medium-gray;
+}
+
+.white-bold {
+    @extend .black-bold;
+
+    color: $white;
+}
+
+.yellow-left-line {
+    @include left-line($primary-color, 90%);
+}
+
+.white-left-line {
+    @include left-line($white, 90%);
+}
+
+.yellow-fullwidth-line {
+    @include fullwidth-line($primary-color);
+}
+
+/// Fliper
+@include breakpoint(large) {
+    /* entire container, keeps perspective */
+    .flip-container {
+        perspective: 1000px;
+    }
+
+    /* flip the pane when hovered */
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
+
+    .flip-container, .front, .back {}
+
+    /* flip speed goes here */
+    .flipper {
+        transition: 0.6s ease-in-out .2s;
+        transform-style: preserve-3d;
+        position: relative;
+    }
+
+    /* hide back of pane during swap */
+    .front, .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* front pane, placed above back */
+    .front {
+        z-index: 2;
+
+        /* for firefox 31 */
+        transform: rotateY(0deg);
+    }
+
+    /* back, initially hidden pane */
+    .back {
+        transform: rotateY(180deg);
+    }
 }

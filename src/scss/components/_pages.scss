@@ -1,0 +1,111 @@
+// Homepage
+
+.page-home {
+    .main-header {
+        background-color: #888888;
+
+        @include breakpoint(medium) {
+            min-height: 640px;
+        }
+
+
+        .main-header-event {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: bottom center;
+            color: $white;
+            padding-top: rem-calc(100);
+            padding-bottom: rem-calc(40);
+
+            h1 {
+                color: $white;
+                font-weight: 400;
+                line-height: 1.1;
+
+                @include breakpoint(medium) {
+                    font-size: rem-calc(57);
+                    font-weight: 200;
+                }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .button {
+                margin: rem-calc(15) 0;
+            }
+
+            .field-category {
+                font-weight: 600;
+
+                a {
+                    color: $white;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+
+            @include breakpoint(medium) {
+                min-height: 650px;
+                padding-top: rem-calc(270);
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    .home-vouchers-section {
+        .home-voucher-heading {
+            width: 100%;
+        }
+    }
+
+    .home-about-section {
+        .home-about-inner {
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height: 590px;
+        }
+
+        .home-about-content {
+            padding-top: rem-calc(60);
+
+            h2 {
+                background-color: $primary-color;
+                color: $white;
+                display: initial;
+                padding: rem-calc(8);
+                font-size: rem-calc(25);
+                margin-bottom: rem-calc(20);
+            }
+
+            a {
+                color: $body-font-color;
+
+                &:hover {
+                    color: $primary-color;
+                }
+
+                @include breakpoint(medium down) {
+                    display: initial;
+                    background-color: $dark-gray;
+                    color: $white;
+                    padding: rem-calc(8);
+                    font-size: rem-calc(20);
+                    margin-bottom: rem-calc(5);
+                    line-height: 2.5;
+                }
+            }
+
+            .home-about-heading {
+                margin-bottom: rem-calc(20);
+            }
+
+            @include breakpoint(medium) {
+                padding-top: rem-calc(160);
+            }
+        }
+    }
+}
