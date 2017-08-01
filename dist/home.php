@@ -44,7 +44,7 @@
 			<div class="row collapse small-up-1 large-up-4">
 				<div class="column item flip-container">
 					<div class="flipper">
-						<div class="teaser clearfix front">
+						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
 							<div class="teaser-date">
 								<div class="teaser-date-day">DIM</div>
 								<div class="teaser-date-day-month">28 Jul</div>
@@ -79,7 +79,7 @@
 				</div>
 				<div class="column item flip-container">
 					<div class="flipper">
-						<div class="teaser clearfix front">
+						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
 							<div class="teaser-date">
 								<div class="teaser-date-day">DIM</div>
 								<div class="teaser-date-day-month">28 Jul</div>
@@ -114,7 +114,7 @@
 				</div>
 				<div class="column item flip-container">
 					<div class="flipper">
-						<div class="teaser clearfix front">
+						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
 							<div class="teaser-date">
 								<div class="teaser-date-day">DIM</div>
 								<div class="teaser-date-day-month">28 Jul</div>
@@ -206,7 +206,7 @@
 						</div>
 						<div class="teaser-heading">
 							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
-							<div class="black-bold field-category">Teatre</div>
+							<div class="field-category"><a href="#" class="black-bold">Teatre</a></div>
 						</div>
 						<div class="teaser-body show-for-large">
 							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
@@ -219,6 +219,7 @@
 	</section>
 	<section class="home-news-section section-padding relative">
 		<div class="primary-triangle-background-bottom"></div>
+		<br>
 		<div class="home-news-section-titles section-title row relative">
 			<div class="column text-center">
 				<h2>Notícies</h2>
@@ -250,7 +251,7 @@
 	<section class="home-email-section section-padding section-primary">
 		<div class="home-email-section-inner">
 			<div class="home-email-block row align-middle align-center">
-				<div class="home-email-block-content medium-4 columns">
+				<div class="home-email-block-content medium-6 large-4 columns">
 					<form id="home-email-form" method="post" action="">
 						<div class="input-group">
 							<input type="email" class="input-group-field" placeholder="Correu electrònic" name="">
@@ -269,11 +270,26 @@
 			<div class="main-footer-top row"></div>
 			<hr>
 			<div class="main-footer-bottom row">
-				<div class="medium-6 columns text-left"></div>
+				<div class="medium-6 columns text-left">
+					<div class="main-footer-logo text-left">
+						<a href="#" title="Pàgina principal">
+							<img src="images/logos/logo-white.png" alt="Logo de l'Auditori d'Alcúdia">
+						</a>
+					</div>
+				</div>
 				<div class="medium-6 columns text-right">
-					<p><a href="#">Contacte</a></p>
-					<p><address>Adreça del teatre</address><br>
+					<p><a href="#">Contacte</a><br>
+					Adreça del teatre<br>
 					<a href="tel:">+92 485 99 00</a></p>
+				</div>
+			</div>
+			<div class="main-footer-legal row">
+				<div class="column">
+					<ul class="menu vertical medium-horizontal align-center">
+						<li><a href="#">Avís Legal</a></li>
+						<li><a href="#">Cookies</a></li>
+						<li><a href="#">&copy; Tots els drets reservats</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>

@@ -10,6 +10,9 @@
             padding: rem-calc(20);
             position: relative;
             z-index: 2;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
             min-height: 200px;
             max-height: 200px;
 
@@ -150,6 +153,25 @@
 
                 a {
                     color: $body-font-color;
+                }
+            }
+
+            @include breakpoint(medium down) {
+                padding: rem-calc(20);
+                position: absolute;
+                bottom: 10px;
+                left: 0;
+
+                h2 {
+                    font-size: rem-calc(20);
+
+                    a {
+                        color: $white;
+                    }
+                }
+
+                a {
+                    color: $white;
                 }
             }
         }

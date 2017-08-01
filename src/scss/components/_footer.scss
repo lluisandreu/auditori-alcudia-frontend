@@ -1,0 +1,19 @@
+.main-footer {
+    color: #c7c8ca;
+
+    a {
+        color: $light-gray;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .menu {
+        li {
+            @include breakpoint(medium) {
+                font-size: rem-calc(12);
+            }
+        }
+    }
+}

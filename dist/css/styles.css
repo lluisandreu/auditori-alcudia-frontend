@@ -5490,7 +5490,7 @@ form .description {
 
 .element-inline {
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: middle; }
 
 .flex {
   display: -webkit-box !important;
@@ -5736,6 +5736,16 @@ form .description {
           -ms-flex-pack: end;
               justify-content: flex-end; } }
 
+.main-footer {
+  color: #c7c8ca; }
+  .main-footer a {
+    color: #828385; }
+    .main-footer a:hover {
+      color: #fefefe; }
+  @media print, screen and (min-width: 40em) {
+    .main-footer .menu li {
+      font-size: 0.85714rem; } }
+
 .hero-slideshow .owl-dots {
   position: absolute;
   bottom: 10px;
@@ -5772,6 +5782,9 @@ form .description {
       padding: 1.42857rem;
       position: relative;
       z-index: 2;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
       min-height: 200px;
       max-height: 200px; }
       @media print, screen and (min-width: 64em) {
@@ -5906,6 +5919,19 @@ form .description {
   .home-featured-block .home-featured-block-item .teaser-heading h2 a {
     color: #545456; }
 
+@media screen and (max-width: 63.9375em) {
+  .home-featured-block .home-featured-block-item .teaser-heading {
+    padding: 1.42857rem;
+    position: absolute;
+    bottom: 10px;
+    left: 0; }
+    .home-featured-block .home-featured-block-item .teaser-heading h2 {
+      font-size: 1.42857rem; }
+      .home-featured-block .home-featured-block-item .teaser-heading h2 a {
+        color: #fefefe; }
+    .home-featured-block .home-featured-block-item .teaser-heading a {
+      color: #fefefe; } }
+
 .home-featured-block .home-featured-block-item .teaser-body {
   font-size: 0.85714rem; }
 
@@ -5994,11 +6020,12 @@ form .description {
     padding-bottom: 2.85714rem; }
     .page-home .main-header .main-header-event h1 {
       color: #fefefe;
-      font-weight: 100;
+      font-weight: 400;
       line-height: 1.1; }
       @media print, screen and (min-width: 40em) {
         .page-home .main-header .main-header-event h1 {
-          font-size: 4.07143rem; } }
+          font-size: 4.07143rem;
+          font-weight: 200; } }
     .page-home .main-header .main-header-event p {
       margin-bottom: 0; }
     .page-home .main-header .main-header-event .button {
