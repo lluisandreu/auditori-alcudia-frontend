@@ -2,12 +2,17 @@ jQuery(document).ready(function ($) {
     $(document).foundation();
 
     // Owl carousels
-    var homeCarousel = $('.hero-slideshow');
-    homeCarousel.owlCarousel({
-        loop: true,
-        items: 1,
-        dots: true
-    });
+    if ($('.hero-slideshow').length) {
+        var homeCarousel = $('.hero-slideshow');
+        homeCarousel.owlCarousel({
+            loop: true,
+            items: 1,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true
+        });
+    }
 
     var featuredCarousel = $('.featured-carousel');
     featuredCarousel.owlCarousel({

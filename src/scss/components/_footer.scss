@@ -1,4 +1,5 @@
 .main-footer {
+    position: relative;
     color: #c7c8ca;
 
     a {
@@ -9,11 +10,43 @@
         }
     }
 
+    .social-icons-menu {
+        a {
+            font-size: rem-calc(20);
+            border: 1px solid $light-gray;
+            height: 35px;
+            width: 35px;
+            display: table;
+            text-align: center;
+            line-height: 1;
+            transition: border .2s ease-in-out;
+            margin-right: rem-calc(10);
+
+            .fa {
+                vertical-align: middle;
+                text-align: center;
+                width: 15px;
+            }
+
+            &:hover {
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+
     .menu {
         li {
             @include breakpoint(medium) {
                 font-size: rem-calc(12);
             }
         }
+    }
+
+    .footer-scrollup {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        height: 40px;
     }
 }
