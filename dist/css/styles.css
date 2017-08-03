@@ -5474,11 +5474,22 @@ img {
     color: #0a0a0a;
     border-color: #f7e326; }
 
-.button-yellow {
-  border: 1px solid #f7e326;
-  color: #545456;
+.button-primary {
+  color: #414042;
   font-weight: 800;
-  background: #fefefe; }
+  background: #f7e326; }
+  .button-primary:hover {
+    background: #414042;
+    color: #fefefe; }
+
+.button-primary-transparent {
+  color: #f7e326 !important;
+  font-weight: 800;
+  background: transparent;
+  border: 1px solid #f7e326; }
+  .button-primary-transparent:hover {
+    background: #f7e326;
+    color: #414042; }
 
 form .description {
   font-size: 0.71429rem; }
@@ -5591,7 +5602,7 @@ form .description {
 .yellow-fullwidth-line {
   width: 100%;
   position: absolute;
-  height: 1px;
+  height: 2px;
   background: #f7e326;
   left: 0;
   top: 50%; }
@@ -5737,14 +5748,37 @@ form .description {
               justify-content: flex-end; } }
 
 .main-footer {
+  position: relative;
   color: #c7c8ca; }
   .main-footer a {
     color: #828385; }
     .main-footer a:hover {
       color: #fefefe; }
+  .main-footer .social-icons-menu a {
+    font-size: 1.42857rem;
+    border: 1px solid #828385;
+    height: 35px;
+    width: 35px;
+    display: table;
+    text-align: center;
+    line-height: 1;
+    transition: border .2s ease-in-out;
+    margin-right: 0.71429rem; }
+    .main-footer .social-icons-menu a .fa {
+      vertical-align: middle;
+      text-align: center;
+      width: 15px; }
+    .main-footer .social-icons-menu a:hover {
+      color: #f7e326;
+      border-color: #f7e326; }
   @media print, screen and (min-width: 40em) {
     .main-footer .menu li {
       font-size: 0.85714rem; } }
+  .main-footer .footer-scrollup {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    height: 40px; }
 
 .hero-slideshow .owl-dots {
   position: absolute;
@@ -5777,6 +5811,13 @@ form .description {
   .home-next-events-block .item {
     position: relative;
     margin-bottom: 0.14286rem; }
+    .home-next-events-block .item .overlay {
+      background: rgba(0, 0, 0, 0.42);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0; }
     .home-next-events-block .item .teaser {
       background: #414042;
       padding: 1.42857rem;
@@ -5835,7 +5876,13 @@ form .description {
       background: #f7e326;
       color: #414042;
       padding: 1.42857rem;
-      display: none; }
+      display: none;
+      min-height: 220px;
+      max-height: 220px; }
+      @media print, screen and (min-width: 64em) {
+        .home-next-events-block .item .full {
+          min-height: 320px;
+          max-height: 320px; } }
       .home-next-events-block .item .full.open {
         display: block; }
       @media print, screen and (min-width: 64em) {
@@ -5870,6 +5917,10 @@ form .description {
 
 .home-vouchers-block .home-vouchers-block-item h2 {
   font-weight: 800; }
+  .home-vouchers-block .home-vouchers-block-item h2 a {
+    color: #545456; }
+    .home-vouchers-block .home-vouchers-block-item h2 a:hover {
+      color: #f7e326; }
 
 .home-vouchers-block .home-voucher-block-link {
   margin-top: 1.42857rem; }
@@ -5932,16 +5983,22 @@ form .description {
     .home-featured-block .home-featured-block-item .teaser-heading a {
       color: #fefefe; } }
 
+.home-featured-block .home-featured-block-item .field-category:hover {
+  color: #0a0a0a; }
+
 .home-featured-block .home-featured-block-item .teaser-body {
   font-size: 0.85714rem; }
 
-.home-featured-block .home-featured-block-item:hover {
-  color: #0a0a0a; }
-  .home-featured-block .home-featured-block-item:hover h2 a {
+@media print, screen and (min-width: 64em) {
+  .home-featured-block .home-featured-block-item:hover {
     color: #0a0a0a; }
-  .home-featured-block .home-featured-block-item:hover img {
-    -webkit-filter: brightness(90%);
-            filter: brightness(90%); }
+    .home-featured-block .home-featured-block-item:hover h2 a {
+      color: #0a0a0a; }
+    .home-featured-block .home-featured-block-item:hover .field-category a {
+      color: #0a0a0a; }
+    .home-featured-block .home-featured-block-item:hover img {
+      -webkit-filter: brightness(90%);
+              filter: brightness(90%); } }
 
 @media print, screen and (min-width: 40em) {
   .home-featured-block .home-featured-block-item {
@@ -6021,21 +6078,27 @@ form .description {
     .page-home .main-header .main-header-event h1 {
       color: #fefefe;
       font-weight: 400;
-      line-height: 1.1; }
+      line-height: 1.1;
+      text-shadow: 1px 1px 1px #000; }
       @media print, screen and (min-width: 40em) {
         .page-home .main-header .main-header-event h1 {
           font-size: 4.07143rem;
           font-weight: 200; } }
     .page-home .main-header .main-header-event p {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      text-shadow: 1px 1px 1px #000; }
     .page-home .main-header .main-header-event .button {
       margin: 1.07143rem 0; }
     .page-home .main-header .main-header-event .field-category {
-      font-weight: 600; }
+      padding: 0.71429rem 0;
+      font-weight: 600;
+      text-shadow: 1px 1px 1px #000; }
       .page-home .main-header .main-header-event .field-category a {
         color: #fefefe; }
         .page-home .main-header .main-header-event .field-category a:hover {
           color: #f7e326; }
+    .page-home .main-header .main-header-event .hero-slideshow-item-overlay {
+      background-color: #333; }
     @media print, screen and (min-width: 40em) {
       .page-home .main-header .main-header-event {
         min-height: 650px;
@@ -6044,6 +6107,11 @@ form .description {
 
 .page-home .home-vouchers-section .home-voucher-heading {
   width: 100%; }
+
+.page-home .home-vouchers-section .home-voucher-button .button {
+  border-width: 2px; }
+  .page-home .home-vouchers-section .home-voucher-button .button:hover {
+    background: #f7e326; }
 
 .page-home .home-about-section .home-about-inner {
   background-repeat: no-repeat;
@@ -6054,7 +6122,7 @@ form .description {
   padding-top: 4.28571rem; }
   .page-home .home-about-section .home-about-content h2 {
     background-color: #f7e326;
-    color: #fefefe;
+    color: #545456;
     display: initial;
     padding: 0.57143rem;
     font-size: 1.78571rem;

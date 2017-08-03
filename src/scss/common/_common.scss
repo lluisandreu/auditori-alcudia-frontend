@@ -28,11 +28,27 @@
     }
 }
 
-.button-yellow {
-    border: 1px solid $primary-color;
-    color: $body-font-color;
+.button-primary {
+    color: $dark-gray;
     font-weight: 800;
-    background: $white;
+    background: $primary-color;
+
+    &:hover {
+        background: $dark-gray;
+        color: $white;
+    }
+}
+
+.button-primary-transparent {
+    color: $primary-color !important;
+    font-weight: 800;
+    background: transparent;
+    border: 1px solid $primary-color;
+
+    &:hover {
+        background: $primary-color;
+        color: $dark-gray;
+    }
 }
 
 /// Forms

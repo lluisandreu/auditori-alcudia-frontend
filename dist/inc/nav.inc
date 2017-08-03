@@ -26,6 +26,7 @@
 			<ul class="vertical medium-horizontal menu">
 				<li><a href="#">L'Auditori</a></li>
 				<li><a href="#">Històric</a></li>
+				<li><a href="#">Actualitat</a></li>
 			</ul>
 		</div>
 		<div class="site-account-menu menu-inline">

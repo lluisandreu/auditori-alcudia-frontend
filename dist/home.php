@@ -6,7 +6,7 @@
 	<header class="main-header">
 		<div class="main-header-inner">
 			<div class="hero-slideshow owl-carousel owl-theme">
-				<div class="hero-slideshow-item main-header-event" style="background-image: url('images/hero/hero_home.jpg');">
+				<div class="hero-slideshow-item main-header-event relative" style="background-image: url('images/hero/hero_home.jpg');">
 					<div class="row">
 						<div class="column medium-offset-1 medium-8 align-left">
 							<h1>Vida i miracles de n'Aineta dels matalassos</h1>
@@ -18,7 +18,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="hero-slideshow-item main-header-event" style="background-image: url('images/hero/test_event.jpg');">
+				<div class="hero-slideshow-item main-header-event relative" style="background-image: url('images/hero/test_event.jpg');">
 					<div class="row">
 						<div class="column medium-offset-1 medium-8 align-left">
 							<h1>Òpera al palau de la música</h1>
@@ -45,6 +45,7 @@
 				<div class="column item flip-container">
 					<div class="flipper">
 						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
+							<div class="overlay"></div>
 							<div class="teaser-date">
 								<div class="teaser-date-day">DIM</div>
 								<div class="teaser-date-day-month">28 Jul</div>
@@ -66,20 +67,20 @@
 							</div>
 							<div class="white-separator"></div>
 							<div class="full-body">
-								<span class="full-body-date"><strong>03/08.</strong></span>
-								<span>Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</span>
+								<p><span class="full-body-date"><strong>03/08.</strong></span>
+								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
 							</div>
 							<div class="full-price">
 								Preu: <strong>30€</strong>
 							</div>
-							<a href="#" class="full-more show-for-large">Més ></a>
-							<a href="#" class="button button-dark hide-for-large float-right"><i class="fa fa-plus"></i></a>
+							<a href="#" class="button button-dark float-right"><i class="fa fa-plus"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="column item flip-container">
 					<div class="flipper">
 						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
+							<div class="overlay"></div>
 							<div class="teaser-date">
 								<div class="teaser-date-day">DIM</div>
 								<div class="teaser-date-day-month">28 Jul</div>
@@ -101,20 +102,20 @@
 							</div>
 							<div class="white-separator"></div>
 							<div class="full-body">
-								<span class="full-body-date"><strong>03/08.</strong></span>
-								<span>Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</span>
+								<p><span class="full-body-date"><strong>03/08.</strong></span>
+								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
 							</div>
 							<div class="full-price">
 								Preu: <strong>30€</strong>
 							</div>
-							<a href="#" class="full-more show-for-large">Més ></a>
-							<a href="#" class="button button-dark hide-for-large float-right"><i class="fa fa-plus"></i></a>
+							<a href="#" class="button button-dark float-right"><i class="fa fa-plus"></i></a>
 						</div>
 					</div>
 				</div>
 				<div class="column item flip-container">
 					<div class="flipper">
 						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
+							<div class="overlay"></div>
 							<div class="teaser-date">
 								<div class="teaser-date-day">DIM</div>
 								<div class="teaser-date-day-month">28 Jul</div>
@@ -136,14 +137,13 @@
 							</div>
 							<div class="white-separator"></div>
 							<div class="full-body">
-								<span class="full-body-date"><strong>03/08.</strong></span>
-								<span>Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Donec rutrum congue leo eget malesuada.</span>
+								<p><span class="full-body-date"><strong>03/08.</strong></span>
+								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
 							</div>
 							<div class="full-price">
 								Preu: <strong>30€</strong>
 							</div>
-							<a href="#" class="full-more show-for-large">Més ></a>
-							<a href="#" class="button button-dark hide-for-large float-right"><i class="fa fa-plus"></i></a>
+							<a href="#" class="button button-dark float-right"><i class="fa fa-plus"></i></a>
 						</div>
 					</div>
 				</div>
@@ -155,16 +155,16 @@
 			<div class="home-voucher-heading relative">
 				<span class="yellow-fullwidth-line"></span>
 				<div class="home-voucher-button text-center relative">
-					<a href="#" class="button button-yellow no-margin">Abonaments</a>
+					<div class="button button-yellow no-margin">Abonaments</div>
 				</div>
 			</div>
 			<div class="home-vouchers-block row expanded section-padding">
 				<div class="home-vouchers-block-item small-12 column text-center">
-					<h2>Títol de l'abonament</h2>
+					<h2><a href="#">Títol de l'abonament</a></h2>
 					<p>del 20 de maig de 2017 al 30 de juliol del 2017</p>
 				</div>
 				<div class="home-vouchers-block-item small-12 column text-center">
-					<h2>Títol de l'abonament</h2>
+					<h2><a href="#">Títol de l'abonament</a></h2>
 					<p>del 20 de maig de 2017 al 30 de juliol del 2017</p>
 				</div>
 				<div class="home-voucher-block-link small-12 column text-center">
@@ -206,7 +206,7 @@
 						</div>
 						<div class="teaser-heading">
 							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
-							<div class="field-category"><a href="#" class="black-bold">Teatre</a></div>
+							<div class="field-category"><a href="#" class="gray-bold">Teatre</a></div>
 						</div>
 						<div class="teaser-body show-for-large">
 							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
@@ -265,34 +265,6 @@
 			</div>
 		</div>
 	</section>
-	<footer class="main-footer section-padding section-dark">
-		<div class="main-footer-inner">
-			<div class="main-footer-top row"></div>
-			<hr>
-			<div class="main-footer-bottom row">
-				<div class="medium-6 columns text-left">
-					<div class="main-footer-logo text-left">
-						<a href="#" title="Pàgina principal">
-							<img src="images/logos/logo-white.png" alt="Logo de l'Auditori d'Alcúdia">
-						</a>
-					</div>
-				</div>
-				<div class="medium-6 columns text-right">
-					<p><a href="#">Contacte</a><br>
-					Adreça del teatre<br>
-					<a href="tel:">+92 485 99 00</a></p>
-				</div>
-			</div>
-			<div class="main-footer-legal row">
-				<div class="column">
-					<ul class="menu vertical medium-horizontal align-center">
-						<li><a href="#">Avís Legal</a></li>
-						<li><a href="#">Cookies</a></li>
-						<li><a href="#">&copy; Tots els drets reservats</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</footer>
+	<?php include "inc/footer.inc"; ?>
 </div>
-<?php include "inc/footer.inc"; ?>
+<?php include "inc/bottom.inc"; ?>
