@@ -2,8 +2,6 @@
 
 .page-home {
     .main-header {
-        background-color: #888888;
-
         @include breakpoint(medium) {
             min-height: 640px;
         }
@@ -75,9 +73,12 @@
         .home-voucher-button {
             .button {
                 border-width: 2px;
+                background: $white;
+                color: $body-font-color !important;
+                cursor: initial;
 
                 &:hover {
-                    background: $primary-color;
+                    background: $white;
                 }
             }
         }
@@ -106,7 +107,7 @@
                 color: $body-font-color;
 
                 &:hover {
-                    color: $primary-color;
+                    color: $anchor-color;
                 }
 
                 @include breakpoint(medium down) {

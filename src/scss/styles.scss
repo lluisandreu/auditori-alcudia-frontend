@@ -88,6 +88,9 @@
 
 @include foundation-float-classes;
 
+@import "owl.carousel";
+@import "owl.theme.default";
+
 @import "mixins/mixins";
 @import "common/elements";
 @import "common/common";

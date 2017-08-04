@@ -11,8 +11,6 @@
     <script src="https://use.fontawesome.com/62c0422ecf.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="../bower_components/owl.carousel/dist/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/styles.min.css">
 
     <script src="js/vendor/modernizr.min.js"></script>

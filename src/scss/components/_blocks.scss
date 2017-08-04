@@ -66,8 +66,7 @@
             color: $medium-gray;
             padding: rem-calc(20);
             display: none;
-            min-height: 220px;
-            max-height: 220px;
+            height: auto;
 
             @include breakpoint(large) {
                 min-height: 320px;
@@ -242,6 +241,7 @@
         font-size: rem-calc(12);
         background: $dark-gray;
         color: $white;
+        min-height: 120px;
 
         h2 {
             font-weight: 600;
@@ -261,7 +261,11 @@
             width: 100%;
         }
 
-        .teaser-image {}
+        .teaser-image {
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
 
         .teaser-body {
             padding-left: rem-calc(12);
@@ -277,6 +281,7 @@
         }
 
         @include breakpoint(medium) {
+            padding: 0;
             color: $body-font-color;
             background: none;
             padding-right: 2px !important;

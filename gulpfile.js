@@ -29,7 +29,11 @@ gulp.task('styles', function () {
             }
         }))
         .pipe(sass({
-            includePaths: ['bower_components/foundation-sites/scss', 'bower_components/motion-ui/src'],
+            includePaths: [
+                'bower_components/foundation-sites/scss',
+                'bower_components/motion-ui/src',
+                'bower_components/owl.carousel/src/scss'
+            ],
         }))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(gulp.dest('dist/css/'))
@@ -41,7 +45,9 @@ gulp.task('styles', function () {
 });
 
 gulp.task('scripts', function () {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src([
+            'src/js/**/*.js',
+        ])
         .pipe(plumber({
             errorHandler: function (error) {
                 console.log(error.message);

@@ -8,7 +8,7 @@
 			<div class="hero-slideshow owl-carousel owl-theme">
 				<div class="hero-slideshow-item main-header-event relative" style="background-image: url('images/hero/hero_home.jpg');">
 					<div class="row">
-						<div class="column medium-offset-1 medium-8 align-left">
+						<div class="column medium-offset-1 large-8 align-left">
 							<h1>Vida i miracles de n'Aineta dels matalassos</h1>
 							<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt</p>
 							<div class="field-category">
@@ -20,7 +20,7 @@
 				</div>
 				<div class="hero-slideshow-item main-header-event relative" style="background-image: url('images/hero/test_event.jpg');">
 					<div class="row">
-						<div class="column medium-offset-1 medium-8 align-left">
+						<div class="column medium-offset-1 large-8 align-left">
 							<h1>Òpera al palau de la música</h1>
 							<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt</p>
 							<div class="field-category">
@@ -155,7 +155,7 @@
 			<div class="home-voucher-heading relative">
 				<span class="yellow-fullwidth-line"></span>
 				<div class="home-voucher-button text-center relative">
-					<div class="button button-yellow no-margin">Abonaments</div>
+					<div class="button button-primary-transparent no-margin">Abonaments</div>
 				</div>
 			</div>
 			<div class="home-vouchers-block row expanded section-padding">
@@ -211,6 +211,23 @@
 						<div class="teaser-body show-for-large">
 							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 						</div>
+					</div>
+					<div class="home-featured-block-item">
+						<div class="teaser-date">
+							<div class="teaser-date-day">DIM</div>
+							<div class="teaser-date-day-month">28 Jul</div>
+						</div>
+						<div class="teaser-featured-image">
+							<a href="#">
+								<img src="images/placeholder/featured_placeholder.jpg" alt="">
+							</a>
+						</div>
+						<div class="teaser-heading">
+							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
+							<div class="field-category"><a href="#" class="gray-bold">Teatre</a></div>
+						</div>
+						<div class="teaser-body show-for-large">
+							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 						</div>
 					</div>
 				</div>
@@ -229,8 +246,24 @@
 			<div class="medium-10 columns">
 				<div class="row collapse">
 					<div class="home-news-block-item small-12 medium-4 column row collapse flex">
-						<div class="teaser-image small-4 medium-12 columns">
-							<a href="#"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
+						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
+							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
+						</div>
+						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
+							<div class="cell">
+								<h2><a href="#">Vivamus suscipit tortor eget</a></h2>
+								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="teaser-link small-1 show-for-small-only columns grid-x grid-padding-x align-middle">
+							<div class="cell">
+								<a href="#"><i class="fa fa-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="home-news-block-item small-12 medium-4 column row collapse flex">
+						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
+							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
 						</div>
 						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
 							<div class="cell">
