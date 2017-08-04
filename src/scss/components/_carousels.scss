@@ -28,15 +28,17 @@
         padding-top: rem-calc(90);
     }
 
-    .owl-dot span {
-        background: $white;
-    }
+    .owl-dots {
+        .owl-dot span {
+            background: $white;
+        }
 
-    .owl-dot:hover span {
-        background: $primary-color;
-    }
+        .owl-dot:hover span {
+            background: $dark-gray;
+        }
 
-    .owl-dot.active span {
-        background: $primary-color;
+        .owl-dot.active span {
+            background: $dark-gray;
+        }
     }
 }

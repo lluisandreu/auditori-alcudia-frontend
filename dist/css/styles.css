@@ -5796,7 +5796,7 @@ form .description {
   display: none;
   content: '';
   height: 2px;
-  width: 90%;
+  width: 80%;
   position: absolute;
   background: #f7e326;
   left: 0;
@@ -5806,12 +5806,15 @@ form .description {
   @media print, screen and (min-width: 40em) {
     .yellow-left-line {
       display: block; } }
+  @media print, screen and (min-width: 64em) {
+    .yellow-left-line {
+      width: 90%; } }
 
 .white-left-line {
   display: none;
   content: '';
   height: 2px;
-  width: 90%;
+  width: 80%;
   position: absolute;
   background: #fefefe;
   left: 0;
@@ -5821,6 +5824,9 @@ form .description {
   @media print, screen and (min-width: 40em) {
     .white-left-line {
       display: block; } }
+  @media print, screen and (min-width: 64em) {
+    .white-left-line {
+      width: 90%; } }
 
 .yellow-fullwidth-line {
   width: 100%;
@@ -6020,14 +6026,14 @@ form .description {
 .featured-carousel .owl-stage-outer {
   padding-top: 6.42857rem; }
 
-.featured-carousel .owl-dot span {
+.featured-carousel .owl-dots .owl-dot span {
   background: #fefefe; }
 
-.featured-carousel .owl-dot:hover span {
-  background: #f7e326; }
+.featured-carousel .owl-dots .owl-dot:hover span {
+  background: #414042; }
 
-.featured-carousel .owl-dot.active span {
-  background: #f7e326; }
+.featured-carousel .owl-dots .owl-dot.active span {
+  background: #414042; }
 
 .home-next-events-block {
   padding: 2.85714rem 0; }

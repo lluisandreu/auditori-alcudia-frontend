@@ -2,7 +2,7 @@
     display: none;
     content: '';
     height: 2px;
-    width: $width;
+    width: 80%;
     position: absolute;
     background: $color;
     left: 0;
@@ -12,6 +12,11 @@
 
     @include breakpoint(medium) {
         display: block;
+    }
+
+
+    @include breakpoint(large) {
+        width: $width;
     }
 }
 
