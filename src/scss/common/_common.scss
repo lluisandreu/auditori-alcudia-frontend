@@ -28,6 +28,18 @@
     }
 }
 
+.button-dark-bg {
+    background: $dark-gray;
+    border: none;
+    color: $white;
+    font-weight: 600;
+
+    &:hover {
+        color: $black;
+        border-color: $primary-color;
+    }
+}
+
 .button-primary {
     color: $dark-gray;
     font-weight: 800;
@@ -48,6 +60,12 @@
     &:hover {
         background: $primary-color;
         color: $dark-gray;
+    }
+}
+
+.button.small-expanded {
+    @include breakpoint(small only) {
+        display: block;
     }
 }
 

@@ -35,6 +35,10 @@
                 @include teaser-date($primary-color);
             }
 
+            .teaser-price {
+                font-weight: 800;
+            }
+
             .teaser-heading {
                 position: relative;
                 max-width: 180px;
@@ -337,5 +341,133 @@
     .input-group {
         border-bottom: 2px solid $dark-gray;
         margin-bottom: rem-calc(10);
+    }
+}
+
+.programacio-events-block {
+    @extend .home-next-events-block;
+
+    .item {
+        &.tabbed {
+            margin-top: rem-calc(20);
+
+            @include breakpoint(large) {
+                margin-top: rem-calc(-40);
+
+                &:hover {
+                    .status-tab {
+                        .tab {
+                            opacity: .1;
+                        }
+                    }
+                }
+
+                .full {
+                    top: 40px;
+                }
+            }
+        }
+
+        &:not(.tabbed) {
+            .status-tab {
+                display: none;
+            }
+        }
+
+        @include breakpoint(large) {
+            margin-bottom: rem-calc(80);
+        }
+
+
+        .teaser {
+            padding: rem-calc(40);
+            min-height: auto;
+            max-height: 100%;
+            padding-bottom: 100px;
+
+            @include breakpoint(large) {
+                min-height: 320px;
+                max-height: 320px;
+                padding-bottom: rem-calc(40);
+            }
+
+
+            .teaser-heading {
+                padding-top: 0;
+                padding: rem-calc(10) 0;
+                margin-top: rem-calc(30);
+                background: $primary-color;
+                max-width: 100%;
+                float: none;
+
+                h2 {
+                    color: $body-font-color;
+                }
+
+                h2 a {
+                    color: $body-font-color;
+                }
+            }
+
+            .teaser-info {
+                background: $dark-gray;
+                color: $white;
+                padding: rem-calc(20);
+                margin-top: rem-calc(20);
+            }
+
+            .teaser-date {
+                margin: 0;
+                padding: rem-calc(7);
+                max-width: 90px;
+            }
+        }
+
+        .full {
+            .button {
+                margin-top: rem-calc(40);
+            }
+        }
+
+        &.full-event {
+            .overlay {
+                background: rgba(255, 255, 255, 0.68);
+                z-index: 10;
+            }
+
+            .teaser {
+                .teaser-heading, .teaser-info {
+                    background: $white;
+                    color: $body-font-color;
+                }
+
+                .teaser-date {
+                    border-color: $body-font-color;
+                    color: $body-font-color;
+                }
+            }
+        }
+    }
+
+    .status-tab {
+        .tab {
+            padding: rem-calc(10) rem-calc(20);
+            font-weight: 800;
+            display: inline-block;
+            font-size: rem-calc(13);
+            margin-left: rem-calc(40);
+            transition: opacity ease-in-out .5s;
+        }
+
+        .featured-tab {
+            background: $primary-color;
+            color: $body-font-color;
+        }
+
+        .full-tab {
+            background: $white;
+            font-weight: 800;
+            display: inline-block;
+        }
     }
 }

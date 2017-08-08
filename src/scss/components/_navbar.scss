@@ -9,6 +9,44 @@
         width: 100%;
     }
 
+    &.white {
+        @include breakpoint(medium) {
+            .menu > li > a {
+                color: $white;
+
+                &:hover {
+                    color: $anchor-color;
+                }
+            }
+        }
+
+
+        .menu-toggle {
+            color: $white;
+        }
+    }
+
+    &.dark {
+        @include breakpoint(medium) {
+            .menu > li > a {
+                color: $body-font-color;
+
+                &:hover {
+                    color: $anchor-color;
+                }
+            }
+        }
+
+
+        .logo img {
+            filter: brightness(30%);
+        }
+
+        .menu-toggle {
+            color: $body-font-color;
+        }
+    }
+
     .menu li {
         font-size: rem-calc(15);
         font-weight: 600;
@@ -25,18 +63,7 @@
         }
     }
 
-    &.white {
-        .menu > li > a {
-            color: $white;
-
-            &:hover {
-                color: $primary-color;
-            }
-        }
-    }
-
     .menu-toggle {
-        color: $white;
         font-size: rem-calc(30);
         line-height: 30px;
         margin-left: rem-calc(5);

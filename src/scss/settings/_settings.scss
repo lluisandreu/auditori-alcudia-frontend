@@ -83,7 +83,7 @@ $global-position: 1rem;
 $global-weight-normal: 400;
 $global-weight-bold: bold;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
+$global-menu-padding: 0.5rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
 $global-flexbox: true;
@@ -257,7 +257,7 @@ $button-color: $body-font-color;
 $button-color-alt: $black;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
-$button-sizes: (tiny: 0.6rem, small: 0.75rem, default: 15px, large: 15px);
+$button-sizes: (tiny: 0.6rem, small: 13px, default: 15px, large: 15px);
 
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
