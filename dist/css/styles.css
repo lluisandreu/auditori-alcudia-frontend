@@ -5725,7 +5725,7 @@ img {
 
 @media screen and (max-width: 39.9375em) {
   .button.small-expanded {
-    display: block; } }
+    display: block !important; } }
 
 form .description {
   font-size: 0.71429rem; }
@@ -5982,7 +5982,7 @@ form .description {
       .nav-bar .programacio-menu .menu-separator {
         color: #f7e326;
         font-size: 27px;
-        line-height: 34px;
+        line-height: 30px;
         height: 0;
         width: 0px;
         vertical-align: bottom;
@@ -6375,15 +6375,15 @@ form .description {
 .programacio-events-block .item .full .button {
   margin-top: 2.85714rem; }
 
-.programacio-events-block .item.full-event .overlay {
+.programacio-events-block .item.event-full .overlay {
   background: rgba(255, 255, 255, 0.68);
   z-index: 10; }
 
-.programacio-events-block .item.full-event .teaser .teaser-heading, .programacio-events-block .item.full-event .teaser .teaser-info {
+.programacio-events-block .item.event-full .teaser .teaser-heading, .programacio-events-block .item.event-full .teaser .teaser-info {
   background: #fefefe;
   color: #545456; }
 
-.programacio-events-block .item.full-event .teaser .teaser-date {
+.programacio-events-block .item.event-full .teaser .teaser-date {
   border-color: #545456;
   color: #545456; }
 
@@ -6404,10 +6404,18 @@ form .description {
   font-weight: 800;
   display: inline-block; }
 
+.programacio-events-block .load-more-pager {
+  margin-top: 2.85714rem; }
+
 .filters-section {
   background-color: #4d4d4f;
   border-bottom: 1px solid #f7e326;
   font-size: 1rem; }
+  .filters-section   #filters {
+    display: none; }
+    @media print, screen and (min-width: 40em) {
+      .filters-section   #filters {
+        display: block; } }
   .filters-section a:not(.button) {
     color: #fefefe; }
     .filters-section a:not(.button):hover {
@@ -6418,20 +6426,21 @@ form .description {
   .filters-section ul.menu .active {
     color: #f7e326;
     font-weight: 600; }
-  .filters-section .filter-label:not(.no-arrow) {
-    position: relative; }
-  .filters-section .filter-label:not(.no-arrow):after {
-    content: "\f054";
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    text-decoration: inherit;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    margin-top: -4px;
-    color: #fff; }
+  @media print, screen and (min-width: 40em) {
+    .filters-section .filter-label:not(.no-arrow) {
+      position: relative; }
+    .filters-section .filter-label:not(.no-arrow):after {
+      content: "\f054";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      text-decoration: inherit;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -3px;
+      color: #fff; } }
   .filters-section .filter-label a {
     padding-left: 0; }
   @media screen and (max-width: 39.9375em) {
@@ -6448,7 +6457,13 @@ form .description {
     height: 1px;
     background: #f7e326;
     margin: 10px auto -10px auto;
-    max-width: 1142px; }
+    max-width: 1170px; }
+  .filters-section .all-categories-button {
+    margin-top: 1.42857rem; }
+    @media print, screen and (min-width: 40em) {
+      .filters-section .all-categories-button {
+        margin-top: 0;
+        margin-right: 1.07143rem; } }
   @media print, screen and (min-width: 40em) {
     .filters-section {
       font-size: 0.92857rem; }
@@ -6539,3 +6554,6 @@ form .description {
   @media print, screen and (min-width: 40em) {
     .page-home .home-about-section .home-about-content {
       padding-top: 11.42857rem; } }
+
+.menu .button {
+  white-space: normal; }

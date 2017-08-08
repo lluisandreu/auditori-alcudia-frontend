@@ -3,6 +3,13 @@
     border-bottom: 1px solid $primary-color;
     font-size: rem-calc(14);
 
+     
+#filters {
+    display: none;
+    @include breakpoint(medium) {
+        display: block;
+    }
+}
     a:not(.button) {
         color: $white;
 
@@ -24,22 +31,24 @@
     }
 
     .filter-label {
-        &:not(.no-arrow) {
-            position: relative;
-        }
+        @include breakpoint(medium){ 
+            &:not(.no-arrow) {
+                position: relative;
+            }
 
-        &:not(.no-arrow):after {
-            content: "\f054";
-            font-family: FontAwesome;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 10px;
-            text-decoration: inherit;
-            position: absolute;
-            top: 50%;
-            right: 0;
-            margin-top: -4px;
-            color: #fff;
+            &:not(.no-arrow):after {
+                content: "\f054";
+                font-family: FontAwesome;
+                font-style: normal; 
+                font-weight: 400;
+                font-size: 10px;
+                text-decoration: inherit;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                margin-top: -3px;
+                color: #fff;
+            }
         }
 
         a {
@@ -66,7 +75,15 @@
         height: 1px;
         background: $primary-color;
         margin: 10px auto -10px auto;
-        max-width: 1142px;
+        max-width: 1170px;
+    }
+
+    .all-categories-button {
+        margin-top: rem-calc(20);
+        @include breakpoint(medium) {
+            margin-top: 0;
+            margin-right: rem-calc(15);
+        }
     }
 
     @include breakpoint(medium) {

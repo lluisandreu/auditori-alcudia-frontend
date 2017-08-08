@@ -65,7 +65,7 @@
 
 .button.small-expanded {
     @include breakpoint(small only) {
-        display: block;
+        display: block !important;
     }
 }
 
