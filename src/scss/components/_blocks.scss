@@ -429,7 +429,7 @@
             }
         }
 
-        &.full-event {
+        &.event-full {
             .overlay {
                 background: rgba(255, 255, 255, 0.68);
                 z-index: 10;
@@ -469,5 +469,9 @@
             font-weight: 800;
             display: inline-block;
         }
+    }
+
+    .load-more-pager {
+        margin-top: rem-calc(40);
     }
 }
