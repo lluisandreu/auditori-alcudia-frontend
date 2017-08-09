@@ -32,7 +32,7 @@
 		<div class="site-account-menu menu-inline">
 			<ul class="vertical medium-horizontal menu" data-responsive-menu="accordion medium-dropdown">
 				<li class="is-dropdown-submenu-parent">
-					<a href="#"><i class="fa fa-circle-o hide-for-small-only"></i> El menu compte</a>
+					<a href="#"><i class="fa fa-circle-o hide-for-small-only"></i> El meu compte</a>
 					<ul class="menu vertical">
 						<li><a href="#">Crear compte</a></li>
 						<li><a href="#">Accedir</a></li>

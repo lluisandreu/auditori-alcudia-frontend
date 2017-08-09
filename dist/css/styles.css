@@ -5890,23 +5890,6 @@ form .description {
     left: 0;
     z-index: 99;
     width: 100%; }
-  @media print, screen and (min-width: 40em) {
-    .nav-bar.white .menu > li > a {
-      color: #fefefe; }
-      .nav-bar.white .menu > li > a:hover {
-        color: #e2cd08; } }
-  .nav-bar.white .menu-toggle {
-    color: #fefefe; }
-  @media print, screen and (min-width: 40em) {
-    .nav-bar.dark .menu > li > a {
-      color: #545456; }
-      .nav-bar.dark .menu > li > a:hover {
-        color: #e2cd08; } }
-  .nav-bar.dark .logo img {
-    -webkit-filter: brightness(30%);
-            filter: brightness(30%); }
-  .nav-bar.dark .menu-toggle {
-    color: #545456; }
   .nav-bar .menu li {
     font-size: 1.07143rem;
     font-weight: 600; }
@@ -5921,6 +5904,25 @@ form .description {
     margin-left: 0.35714rem; }
   .nav-bar .responsive-menu.open {
     display: block; }
+  @media print, screen and (min-width: 40em) {
+    .nav-bar.white .menu > li > a {
+      color: #fefefe; }
+      .nav-bar.white .menu > li > a:hover {
+        color: #e2cd08; } }
+  .nav-bar.white .menu-toggle {
+    color: #fefefe; }
+  @media print, screen and (min-width: 40em) {
+    .nav-bar.dark .menu > li > a {
+      color: #545456; }
+      .nav-bar.dark .menu > li > a:hover {
+        color: #e2cd08; }
+    .nav-bar.dark .is-dropdown-submenu {
+      background: #fefefe !important; } }
+  .nav-bar.dark .logo img {
+    -webkit-filter: brightness(30%);
+            filter: brightness(30%); }
+  .nav-bar.dark .menu-toggle {
+    color: #545456; }
   @media screen and (max-width: 39.9375em) {
     .nav-bar .responsive-menu {
       display: none;
@@ -5963,7 +5965,6 @@ form .description {
     .nav-bar .menu li {
       font-size: 0.92857rem; }
     .nav-bar .dropdown.menu .menu {
-      background: transparent;
       border: none;
       margin-left: 20px;
       border-left: 1px solid #f7e326; }
@@ -6324,68 +6325,67 @@ form .description {
   border-bottom: 2px solid #414042;
   margin-bottom: 0.71429rem; }
 
-.programacio-events-block .item.tabbed {
-  margin-top: 1.42857rem; }
-  @media print, screen and (min-width: 64em) {
-    .programacio-events-block .item.tabbed {
-      margin-top: -2.85714rem; }
-      .programacio-events-block .item.tabbed:hover .status-tab .tab {
-        opacity: .1; }
-      .programacio-events-block .item.tabbed .full {
-        top: 40px; } }
-
-.programacio-events-block .item:not(.tabbed) .status-tab {
-  display: none; }
-
-@media print, screen and (min-width: 64em) {
-  .programacio-events-block .item {
-    margin-bottom: 5.71429rem; } }
-
-.programacio-events-block .item .teaser {
-  padding: 2.85714rem;
-  min-height: auto;
-  max-height: 100%;
-  padding-bottom: 100px; }
-  @media print, screen and (min-width: 64em) {
-    .programacio-events-block .item .teaser {
-      min-height: 320px;
-      max-height: 320px;
-      padding-bottom: 2.85714rem; } }
-  .programacio-events-block .item .teaser .teaser-heading {
-    padding-top: 0;
-    padding: 0.71429rem 0;
-    margin-top: 2.14286rem;
-    background: #f7e326;
-    max-width: 100%;
-    float: none; }
-    .programacio-events-block .item .teaser .teaser-heading h2 {
-      color: #545456; }
-    .programacio-events-block .item .teaser .teaser-heading h2 a {
-      color: #545456; }
-  .programacio-events-block .item .teaser .teaser-info {
-    background: #414042;
-    color: #fefefe;
-    padding: 1.42857rem;
+.programacio-events-block .item {
+  margin-bottom: 1.42857rem; }
+  .programacio-events-block .item.tabbed {
     margin-top: 1.42857rem; }
-  .programacio-events-block .item .teaser .teaser-date {
-    margin: 0;
-    padding: 0.5rem;
-    max-width: 90px; }
-
-.programacio-events-block .item .full .button {
-  margin-top: 2.85714rem; }
-
-.programacio-events-block .item.event-full .overlay {
-  background: rgba(255, 255, 255, 0.68);
-  z-index: 10; }
-
-.programacio-events-block .item.event-full .teaser .teaser-heading, .programacio-events-block .item.event-full .teaser .teaser-info {
-  background: #fefefe;
-  color: #545456; }
-
-.programacio-events-block .item.event-full .teaser .teaser-date {
-  border-color: #545456;
-  color: #545456; }
+    @media print, screen and (min-width: 64em) {
+      .programacio-events-block .item.tabbed {
+        margin-top: -2.85714rem; }
+        .programacio-events-block .item.tabbed:hover .status-tab .tab {
+          opacity: .1; }
+        .programacio-events-block .item.tabbed .full {
+          top: 40px; } }
+  .programacio-events-block .item:not(.tabbed) .status-tab {
+    display: none; }
+  @media print, screen and (min-width: 64em) {
+    .programacio-events-block .item {
+      margin-bottom: 5.71429rem; } }
+  .programacio-events-block .item .teaser {
+    padding: 2.85714rem;
+    min-height: auto;
+    max-height: 100%;
+    padding-bottom: 100px; }
+    @media print, screen and (min-width: 64em) {
+      .programacio-events-block .item .teaser {
+        min-height: 320px;
+        max-height: 320px;
+        padding-bottom: 2.85714rem; } }
+    .programacio-events-block .item .teaser .teaser-heading {
+      padding-top: 0;
+      padding: 0.71429rem 0;
+      margin-top: 2.14286rem;
+      background: #f7e326;
+      max-width: 100%;
+      float: none; }
+      .programacio-events-block .item .teaser .teaser-heading h2 {
+        color: #545456; }
+      .programacio-events-block .item .teaser .teaser-heading h2 a {
+        color: #545456; }
+    .programacio-events-block .item .teaser .teaser-info {
+      background: #414042;
+      color: #fefefe;
+      padding: 1.42857rem;
+      margin-top: 1.42857rem; }
+    .programacio-events-block .item .teaser .teaser-date {
+      margin: 0;
+      padding: 0.5rem;
+      max-width: 90px; }
+  .programacio-events-block .item .full h2 {
+    font-weight: 100; }
+  .programacio-events-block .item .full .button {
+    margin-top: 2.85714rem; }
+  .programacio-events-block .item.event-full {
+    cursor: not-allowed; }
+    .programacio-events-block .item.event-full .overlay {
+      background: rgba(255, 255, 255, 0.68);
+      z-index: 10; }
+    .programacio-events-block .item.event-full .teaser .teaser-heading, .programacio-events-block .item.event-full .teaser .teaser-info {
+      background: #fefefe;
+      color: #545456; }
+    .programacio-events-block .item.event-full .teaser .teaser-date {
+      border-color: #545456;
+      color: #545456; }
 
 .programacio-events-block .status-tab .tab {
   padding: 0.71429rem 1.42857rem;

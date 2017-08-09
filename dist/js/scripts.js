@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
         });
     }
 
-
+    // Small menu toggle
     $('.toggle-full').on('click', function (event) {
         event.preventDefault();
         $(this).parents('.teaser').siblings('.full').toggleClass('open');
@@ -52,5 +52,12 @@ jQuery(document).ready(function ($) {
         } else {
             fa.addClass('fa-chevron-down').removeClass('fa-chevron-up');
         }
+    });
+
+    // Disable event info when is full event
+
+    var eventFull = $(document.querySelectorAll('.event-full'));
+    eventFull.each(function (index, el) {
+        $(this).removeClass('flip-container');
     });
 });

@@ -348,6 +348,8 @@
     @extend .home-next-events-block;
 
     .item {
+        margin-bottom: rem-calc(20);
+
         &.tabbed {
             margin-top: rem-calc(20);
 
@@ -424,12 +426,18 @@
         }
 
         .full {
+            h2 {
+                font-weight: 100;
+            }
+
             .button {
                 margin-top: rem-calc(40);
             }
         }
 
         &.event-full {
+            cursor: not-allowed;
+
             .overlay {
                 background: rgba(255, 255, 255, 0.68);
                 z-index: 10;
