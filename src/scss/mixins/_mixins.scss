@@ -20,6 +20,28 @@
     }
 }
 
+@mixin right-line($color, $width) {
+    display: none;
+    content: '';
+    height: 2px;
+    width: 80%;
+    position: absolute;
+    background: $color;
+    right: 0;
+    top: 50%;
+    margin-right: -50%;
+    margin-top: 1px;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+
+
+    @include breakpoint(large) {
+        width: $width;
+    }
+}
+
 @mixin text-shadow {
     text-shadow: 1px 1px 1px #000;
 }

@@ -432,6 +432,11 @@
 
             .button {
                 margin-top: rem-calc(40);
+
+                &:hover {
+                    background: $white;
+                    color: $body-font-color;
+                }
             }
         }
 
@@ -481,5 +486,106 @@
 
     .load-more-pager {
         margin-top: rem-calc(40);
+    }
+}
+
+.event-tickets-block {
+    padding: rem-calc(40) 0;
+
+    .event-status {
+        display: none;
+        margin-bottom: rem-calc(10);
+        font-size: rem-calc(12);
+        color: $success-color;
+        font-weight: 600;
+        transition: color .3s ease-in-out .1s;
+
+        @include breakpoint(medium) {
+            display: block;
+            margin: 0;
+        }
+    }
+
+    .event-actions {
+        .button {
+            background: transparent;
+            color: $body-font-color;
+            border: 2px solid $primary-color;
+            margin: rem-calc(10) 0 0 0;
+
+            &:hover {
+                background: $dark-gray;
+                color: $white;
+            }
+
+            &:disabled:hover, &.disabled:hover {
+                background: transparent;
+            }
+
+            @include breakpoint(medium) {
+                margin: 0;
+            }
+        }
+    }
+
+    .event-tickets-item.callout {
+        border-color: $primary-color;
+        transition: background .3s ease-in-out .1s;
+        margin-top: -2px;
+
+        @include breakpoint(small only) {
+            padding: rem-calc(20);
+        }
+
+
+        &:hover {
+            background: $primary-color;
+
+            .event-status {
+                color: $body-font-color;
+            }
+        }
+    }
+
+    .event-tickets-item.callout.event-full {
+        background: $very-light-gray;
+        border-color: $very-light-gray;
+        color: $light-gray;
+
+        .event-status {
+            display: block !important;
+            color: $light-gray;
+        }
+
+        .event-actions {
+            .button {
+                &:hover {
+                    color: $light-gray;
+                }
+            }
+        }
+    }
+
+    .event-tickets-item.callout.event-cancelled {
+        background: $alert-color;
+        border-color: $alert-color;
+        color: darken($alert-color, 30%);
+
+        .event-status {
+            display: block !important;
+            color: darken($alert-color, 30%);
+        }
+
+        .event-actions {
+            .button {
+                color: darken($alert-color, 30%);
+                border-color: darken($alert-color, 30%);
+
+                &:hover {
+                    background: darken($alert-color, 30%);
+                    color: $white;
+                }
+            }
+        }
     }
 }

@@ -42,6 +42,19 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    if ($('.event-trailer-carousel').length) {
+        var eventTrailer = $('.event-trailer-carousel');
+        eventTrailer.owlCarousel({
+            loop: true,
+            items: 1,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            autoHeight: true
+        });
+    }
+
     // Small menu toggle
     $('.toggle-full').on('click', function (event) {
         event.preventDefault();

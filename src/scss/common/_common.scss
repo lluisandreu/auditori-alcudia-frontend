@@ -66,6 +66,7 @@
 .button.small-expanded {
     @include breakpoint(small only) {
         display: block !important;
+        margin-top: rem-calc(10);
     }
 }
 
@@ -188,8 +189,17 @@ form {
     @include left-line($white, 90%);
 }
 
+.yellow-right-line {
+    @include right-line($primary-color, 90%);
+}
+
 .yellow-fullwidth-line {
     @include fullwidth-line($primary-color);
+}
+
+.underline-primary {
+    border-bottom: 2px solid $primary-color;
+    display: initial;
 }
 
 /// Fliper
