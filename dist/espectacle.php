@@ -132,19 +132,63 @@
 		<div class="event-trailer-block grid-container">
 			<div class="grid-x grid-padding-x align-center">
 				<div class="event-trailer-carousel cell medium-8 owl-carousel owl-theme">
-					<div class="item">
-						<div class="responsive-embed widescreen">
-							<iframe width="560" height="315" src="https://www.youtube.com/embed/Z1uvnuQkmUU" frameborder="0" allowfullscreen></iframe>
+					<div class="item item-video">
+						<a href="https://www.youtube.com/embed/lMpqHsWUnL4" class="owl-video">
+						<div class="text-center event-trailer-link">
+							<a href="#"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
 						</div>
-						<div class="text-center">
-							<a href="#">Veure el trailer</a>
+					</div>
+					<div class="item item-video">
+						<a href="https://www.youtube.com/embed/lMpqHsWUnL4" class="owl-video">
+						<div class="text-center event-trailer-link">
+							<a href="#"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
 						</div>
-					</di>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="event-related"></section>
+	<section class="event-recommended section-padding-2x relative">
+		<div class="primary-triangle-background-bottom"></div>
+		<div class="event-recommended-heading row expanded collapse">
+			<div class="column text-center">
+				<h2>També et pot interessar</h2>
+			</div>
+		</div>
+		<div class="event-recommended-block grid-container">
+			<div class="grid-x grid-padding-x grid-margin-y">
+				<div class="cell small-12 medium-6">
+					<div class="event-recommended-item" style="background-image: url('images/placeholder/event_placeholder.jpg');">
+						<a href="#"><div class="overlay"></div></a>
+						<div class="item-heading">
+							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
+							<div class="field-category">
+								<a href="#">Música ></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="cell small-12 medium-6">
+					<div class="event-recommended-item" style="background-image: url('images/placeholder/event_placeholder.jpg');">
+						<a href="#"><div class="overlay"></div></a>
+						<div class="item-heading">
+							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
+							<div class="field-category">
+								<a href="#">Música ></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="event-more section-padding section-primary section-padding">
+		<div class="row">
+			<div class="column text-center aling-center">
+				<a href="#" class="button button-dark">Veure tots els espectacles</a>
+			</div>
+		</div>
+	</section>
 	<?php include "inc/footer.inc"; ?>
 </div>
 <?php include "inc/bottom.inc"; ?>

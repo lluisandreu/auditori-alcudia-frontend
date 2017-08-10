@@ -23,8 +23,8 @@
     font-weight: 600;
 
     &:hover {
-        color: $black;
-        border-color: $primary-color;
+        color: $white;
+        background: $dark-gray;
     }
 }
 
@@ -160,6 +160,12 @@ form {
 
 .section-primary {
     background: $primary-color;
+}
+
+/// Fields
+
+.field-category {
+    font-weight: 800;
 }
 
 /// Typography

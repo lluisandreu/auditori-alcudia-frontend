@@ -51,7 +51,11 @@ jQuery(document).ready(function ($) {
             autoplay: true,
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
-            autoHeight: true
+            //autoHeight: true,
+            video: true,
+            lazyLoad: true,
+            center: true,
+            videoHeight: 400, // Default false; Type: Boolean/Number
         });
     }
 
