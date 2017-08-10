@@ -9,44 +9,6 @@
         width: 100%;
     }
 
-    &.white {
-        @include breakpoint(medium) {
-            .menu > li > a {
-                color: $white;
-
-                &:hover {
-                    color: $anchor-color;
-                }
-            }
-        }
-
-
-        .menu-toggle {
-            color: $white;
-        }
-    }
-
-    &.dark {
-        @include breakpoint(medium) {
-            .menu > li > a {
-                color: $body-font-color;
-
-                &:hover {
-                    color: $anchor-color;
-                }
-            }
-        }
-
-
-        .logo img {
-            filter: brightness(30%);
-        }
-
-        .menu-toggle {
-            color: $body-font-color;
-        }
-    }
-
     .menu li {
         font-size: rem-calc(15);
         font-weight: 600;
@@ -73,11 +35,54 @@
         display: block;
     }
 
+    &.white {
+        @include breakpoint(medium) {
+            .menu > li > a {
+                color: $white;
+
+                &:hover {
+                    color: $anchor-color;
+                }
+            }
+        }
+
+
+        .menu-toggle {
+            color: $white;
+        }
+    }
+
+    &.dark {
+        @include breakpoint(medium) {
+            .menu > li > a {
+                color: $body-font-color;
+
+                &:hover {
+                    color: $anchor-color;
+                }
+            }
+
+            .is-dropdown-submenu {
+                background: $white !important;
+            }
+        }
+
+
+        .logo img {
+            filter: brightness(30%);
+        }
+
+        .menu-toggle {
+            color: $body-font-color;
+        }
+    }
+
     @include breakpoint(small only) {
         .responsive-menu {
             display: none;
-            background: $light-gray;
+            background: $dark-gray;
             margin-top: rem-calc(20);
+            margin-bottom: -40px;
         }
 
         .menu-inline {
@@ -146,7 +151,6 @@
 
         .dropdown.menu {
             .menu {
-                background: transparent;
                 border: none;
                 margin-left: 20px;
                 border-left: 1px solid $primary-color;

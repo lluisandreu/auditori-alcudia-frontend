@@ -42,7 +42,24 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    if ($('.event-trailer-carousel').length) {
+        var eventTrailer = $('.event-trailer-carousel');
+        eventTrailer.owlCarousel({
+            loop: true,
+            items: 1,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            //autoHeight: true,
+            video: true,
+            lazyLoad: true,
+            center: true,
+            videoHeight: 400, // Default false; Type: Boolean/Number
+        });
+    }
 
+    // Small menu toggle
     $('.toggle-full').on('click', function (event) {
         event.preventDefault();
         $(this).parents('.teaser').siblings('.full').toggleClass('open');
@@ -52,5 +69,12 @@ jQuery(document).ready(function ($) {
         } else {
             fa.addClass('fa-chevron-down').removeClass('fa-chevron-up');
         }
+    });
+
+    // Disable event info when is full event
+
+    var eventFull = $(document.querySelectorAll('.event-full'));
+    eventFull.each(function (index, el) {
+        $(this).removeClass('flip-container');
     });
 });

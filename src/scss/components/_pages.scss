@@ -131,3 +131,134 @@
         }
     }
 }
+
+.page-event {
+    .event-header-teaser {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 400px;
+
+        @include breakpoint(medium) {
+            min-height: 470px;
+        }
+
+
+        .event-header-row {
+            min-height: 400px;
+
+            @include breakpoint(medium) {
+                min-height: 470px;
+            }
+
+
+            h1 {
+                color: $white;
+
+                @include text-shadow;
+
+                margin-bottom: rem-calc(20);
+            }
+
+            .button-date {
+                background: $white;
+                font-weight: normal;
+                cursor: initial;
+
+                .fa {
+                    font-size: 10px;
+                    line-height: 13px;
+                    vertical-align: bottom;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+
+    .event-content {
+        .event-content-main {
+            padding: rem-calc(40) 0;
+
+            .event-info {
+                padding: rem-calc(30);
+                background: $primary-color;
+
+                h2 {
+                    background: $white;
+                    padding: rem-calc(10);
+                    font-weight: 100;
+                    margin-top: rem-calc(20);
+                }
+
+                hr {
+                    border-color: $white;
+                    margin: rem-calc(10) 0;
+                    border-width: 2px;
+                }
+
+                .field {
+                    margin-bottom: rem-calc(15);
+                }
+
+                .field-tech-details.callout {
+                    background: $white;
+                    border: none;
+
+                    hr {
+                        border-color: $primary-color;
+                        border-width: 1px;
+                    }
+                }
+
+                .field-more-link {
+                    margin-top: 20px;
+
+                    a {
+                        color: $dark-gray;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+
+            .event-extra {
+                @include breakpoint(small only) {
+                    padding: 0;
+                }
+
+
+                .event-extra-inner {
+                    border: 2px solid $primary-color;
+                    padding: rem-calc(30);
+
+                    @include breakpoint(medium) {
+                        &, .grid-x {
+                            height: 100%;
+                        }
+                    }
+
+
+                    h4 {
+                        font-weight: 800;
+                        font-style: italic;
+                        margin-top: rem-calc(20);
+                    }
+
+                    .heading {
+                        margin-bottom: rem-calc(30);
+                    }
+
+                    .event-extra-second-column {
+                        @include breakpoint(medium) {
+                            height: 100%;
+                            border-left: 2px solid $primary-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

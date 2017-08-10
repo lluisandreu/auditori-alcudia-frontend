@@ -23,8 +23,8 @@
     font-weight: 600;
 
     &:hover {
-        color: $black;
-        border-color: $primary-color;
+        color: $white;
+        background: $dark-gray;
     }
 }
 
@@ -66,6 +66,7 @@
 .button.small-expanded {
     @include breakpoint(small only) {
         display: block !important;
+        margin-top: rem-calc(10);
     }
 }
 
@@ -161,6 +162,12 @@ form {
     background: $primary-color;
 }
 
+/// Fields
+
+.field-category {
+    font-weight: 800;
+}
+
 /// Typography
 
 .black-bold {
@@ -188,8 +195,17 @@ form {
     @include left-line($white, 90%);
 }
 
+.yellow-right-line {
+    @include right-line($primary-color, 90%);
+}
+
 .yellow-fullwidth-line {
     @include fullwidth-line($primary-color);
+}
+
+.underline-primary {
+    border-bottom: 2px solid $primary-color;
+    display: initial;
 }
 
 /// Fliper
