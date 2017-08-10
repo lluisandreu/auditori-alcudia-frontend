@@ -1,3 +1,5 @@
+/// These are sections that can be copied to other pages, not specific sections
+
 .filters-section {
     background-color: #4d4d4f;
     border-bottom: 1px solid $primary-color;
@@ -108,6 +110,60 @@
         z-index: 0;
         bottom: 0;
         left: 0;
+    }
+}
+
+.contact-section {
+    .contact-content {
+
+        .callout {
+            border-color: $primary-color;
+            background: transparent;
+        }
+        a {
+            color: $body-font-color;
+        }
+        .separator {
+            color: $primary-color; 
+                font-size: 27px;
+    line-height: 0;
+    height: 0;
+    width: 0;
+    vertical-align: bottom;
+    text-align: center;
+    display: inline-table;
+    font-weight: 400;
+    margin-right: -10px;
+    margin-left: 10px;
+        }
+    }
+    .contact-form {
+        #contact-form {
+
+        padding: rem-calc(40);
+        background: $dark-gray;
+        }
+        input[type=text], input[type=email], textarea {
+            background: transparent;
+            border: 2px solid $white;
+            color: $white;
+            margin-bottom: rem-calc(40);
+            &:focus, &:hover {
+                border-color: $primary-color;
+            }
+        }
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $white;
+}
     }
 }
 

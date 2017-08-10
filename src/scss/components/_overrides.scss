@@ -5,3 +5,8 @@
 .row {
     //overflow: hidden;
 }
+
+.grid-container-padded {
+    padding-left: rem-calc(15);
+    padding-right: rem-calc(15);
+}
