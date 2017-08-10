@@ -262,3 +262,149 @@
         }
     }
 }
+
+.page-about {
+    .about-header {
+        .about-header-inner {
+            position: relative;
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            background-color: $dark-gray;
+
+            &:after {
+                content: '';
+                height: 2px;
+                width: 100%;
+                background: $primary-color;
+                position: absolute;
+                left: 0;
+                bottom: 400px;
+                z-index: 1;
+            }
+        }
+
+        .about-header-heading {
+            padding: rem-calc(40) 0;
+
+            h1 {
+                font-size: rem-calc(27);
+                color: $white;
+            }
+        }
+    }
+
+    .about-header-content {
+        @include breakpoint(small only) {
+            margin-top: 208px;
+        }
+
+
+        .about-description, .about-description-2 {
+            background: transparentize($primary-color, 0.1);
+            padding: rem-calc(20);
+            color: $dark-gray;
+
+            hr {
+                border-color: $white;
+                border-width: 2px;
+            }
+
+            .about-description-heading {
+                background: $white;
+                padding: rem-calc(10);
+                margin-left: rem-calc(-20);
+                margin-bottom: rem-calc(20);
+
+                h2 {
+                    margin: 0;
+                    padding-left: rem-calc(20);
+                }
+            }
+
+            @include breakpoint(medium) {
+                margin-top: 150px;
+            }
+        }
+
+        .about-next-events {
+            h3 {
+                color: $white;
+                text-transform: uppercase;
+                margin-bottom: rem-calc(0);
+            }
+        }
+    }
+
+    .about-header-gallery {
+        position: relative;
+        z-index: 2;
+
+        @include breakpoint(medium) {
+            margin-top: -150px;
+        }
+
+
+        .cell:nth-child(2), .cell:nth-child(4) {
+            @include breakpoint(medium) {
+                margin-top: 145px;
+            }
+        }
+
+        .cell:nth-child(3) {
+            @include breakpoint(medium) {
+                margin-top: 260px;
+            }
+        }
+
+        .cell {
+            img {
+                width: 100%;
+                margin-bottom: rem-calc(20);
+            }
+        }
+    }
+
+    .about-bookings-info {
+        padding: rem-calc(20) 0;
+
+        h3 {
+            color: $body-font-color;
+            font-size: rem-calc(20);
+            font-weight: 100;
+        }
+
+        hr {
+            border-color: $white;
+            border-width: 2px;
+        }
+    }
+
+    .about-cultura {
+        .about-cultura-heading {
+            padding: rem-calc(40) 0;
+
+            .yellow-left-line {
+                width: 85%;
+            }
+        }
+
+        .about-cultura-content {
+            .callout {
+                border-color: $primary-color;
+                max-width: 350px;
+                margin-top: rem-calc(20);
+            }
+        }
+    }
+
+    .about-workshops {
+        .about-cultura-heading {
+            padding: rem-calc(40) 0;
+
+            .yellow-right-line {
+                width: 85%;
+            }
+        }
+    }
+}

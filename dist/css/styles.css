@@ -5803,6 +5803,9 @@ form .description {
 .section-primary {
   background: #f7e326; }
 
+.section-light-gray {
+  background: #f1f2f2; }
+
 .field-category {
   font-weight: 800; }
 
@@ -6636,6 +6639,54 @@ form .description {
     bottom: 0;
     left: 0; }
 
+.contact-section .contact-content .callout {
+  border-color: #f7e326;
+  background: transparent; }
+
+.contact-section .contact-content a {
+  color: #545456; }
+
+.contact-section .contact-content .separator {
+  color: #f7e326;
+  font-size: 27px;
+  line-height: 0;
+  height: 0;
+  width: 0;
+  vertical-align: bottom;
+  text-align: center;
+  display: inline-table;
+  font-weight: 400;
+  margin-right: -10px;
+  margin-left: 10px; }
+
+.contact-section .contact-form #contact-form {
+  padding: 2.85714rem;
+  background: #414042; }
+
+.contact-section .contact-form input[type=text], .contact-section .contact-form input[type=email], .contact-section .contact-form textarea {
+  background: transparent;
+  border: 2px solid #fefefe;
+  color: #fefefe;
+  margin-bottom: 2.85714rem; }
+  .contact-section .contact-form input[type=text]:focus, .contact-section .contact-form input[type=text]:hover, .contact-section .contact-form input[type=email]:focus, .contact-section .contact-form input[type=email]:hover, .contact-section .contact-form textarea:focus, .contact-section .contact-form textarea:hover {
+    border-color: #f7e326; }
+
+.contact-section .contact-form ::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #fefefe; }
+
+.contact-section .contact-form ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fefefe; }
+
+.contact-section .contact-form :-ms-input-placeholder {
+  /* IE 10+ */
+  color: #fefefe; }
+
+.contact-section .contact-form :-moz-placeholder {
+  /* Firefox 18- */
+  color: #fefefe; }
+
 @media print, screen and (min-width: 40em) {
   .page-home .main-header {
     min-height: 640px; } }
@@ -6797,5 +6848,100 @@ form .description {
         height: 100%;
         border-left: 2px solid #f7e326; } }
 
+.page-about .about-header .about-header-inner {
+  position: relative;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #414042; }
+  .page-about .about-header .about-header-inner:after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #f7e326;
+    position: absolute;
+    left: 0;
+    bottom: 400px;
+    z-index: 1; }
+
+.page-about .about-header .about-header-heading {
+  padding: 2.85714rem 0; }
+  .page-about .about-header .about-header-heading h1 {
+    font-size: 1.92857rem;
+    color: #fefefe; }
+
+@media screen and (max-width: 39.9375em) {
+  .page-about .about-header-content {
+    margin-top: 208px; } }
+
+.page-about .about-header-content .about-description, .page-about .about-header-content .about-description-2 {
+  background: rgba(247, 227, 38, 0.9);
+  padding: 1.42857rem;
+  color: #414042; }
+  .page-about .about-header-content .about-description hr, .page-about .about-header-content .about-description-2 hr {
+    border-color: #fefefe;
+    border-width: 2px; }
+  .page-about .about-header-content .about-description .about-description-heading, .page-about .about-header-content .about-description-2 .about-description-heading {
+    background: #fefefe;
+    padding: 0.71429rem;
+    margin-left: -1.42857rem;
+    margin-bottom: 1.42857rem; }
+    .page-about .about-header-content .about-description .about-description-heading h2, .page-about .about-header-content .about-description-2 .about-description-heading h2 {
+      margin: 0;
+      padding-left: 1.42857rem; }
+  @media print, screen and (min-width: 40em) {
+    .page-about .about-header-content .about-description, .page-about .about-header-content .about-description-2 {
+      margin-top: 150px; } }
+
+.page-about .about-header-content .about-next-events h3 {
+  color: #fefefe;
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
+.page-about .about-header-gallery {
+  position: relative;
+  z-index: 2; }
+  @media print, screen and (min-width: 40em) {
+    .page-about .about-header-gallery {
+      margin-top: -150px; } }
+  @media print, screen and (min-width: 40em) {
+    .page-about .about-header-gallery .cell:nth-child(2), .page-about .about-header-gallery .cell:nth-child(4) {
+      margin-top: 145px; } }
+  @media print, screen and (min-width: 40em) {
+    .page-about .about-header-gallery .cell:nth-child(3) {
+      margin-top: 260px; } }
+  .page-about .about-header-gallery .cell img {
+    width: 100%;
+    margin-bottom: 1.42857rem; }
+
+.page-about .about-bookings-info {
+  padding: 1.42857rem 0; }
+  .page-about .about-bookings-info h3 {
+    color: #545456;
+    font-size: 1.42857rem;
+    font-weight: 100; }
+  .page-about .about-bookings-info hr {
+    border-color: #fefefe;
+    border-width: 2px; }
+
+.page-about .about-cultura .about-cultura-heading {
+  padding: 2.85714rem 0; }
+  .page-about .about-cultura .about-cultura-heading .yellow-left-line {
+    width: 85%; }
+
+.page-about .about-cultura .about-cultura-content .callout {
+  border-color: #f7e326;
+  max-width: 350px;
+  margin-top: 1.42857rem; }
+
+.page-about .about-workshops .about-cultura-heading {
+  padding: 2.85714rem 0; }
+  .page-about .about-workshops .about-cultura-heading .yellow-right-line {
+    width: 85%; }
+
 .menu .button {
   white-space: normal; }
+
+.grid-container-padded {
+  padding-left: 1.07143rem;
+  padding-right: 1.07143rem; }
