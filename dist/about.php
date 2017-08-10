@@ -167,13 +167,13 @@
 			<div class="row column">
 				<form id="contact-form" action="" method="POST">
 					<div class="row">
-						<div class="medium-4 columns">
+						<div class="small-12 medium-4 columns">
 							<input type="text" name="name" placeholder="Nom">
 						</div>
-						<div class="medium-4 columns">
+						<div class="small-12 medium-4 columns">
 							<input type="email" name="email" placeholder="Email">
 						</div>
-						<div class="medium-4 columns">
+						<div class="small-12 medium-4 columns">
 							<input type="text" name="phone" placeholder="Telèfon">
 						</div>
 					</div>

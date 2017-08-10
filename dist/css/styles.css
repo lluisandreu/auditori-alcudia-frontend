@@ -5964,7 +5964,8 @@ form .description {
       display: none;
       background: #414042;
       margin-top: 1.42857rem;
-      margin-bottom: -40px; }
+      padding-bottom: remc-calc(20);
+      margin-bottom: -30px; }
     .nav-bar .menu-inline {
       margin-top: 1.42857rem; }
       .nav-bar .menu-inline .menu li {
