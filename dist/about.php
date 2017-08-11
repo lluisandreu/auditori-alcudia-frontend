@@ -3,7 +3,7 @@
 	<div class="nav-bar dark">
 		<?php include "inc/nav.inc"; ?>
 	</div>
-	<section class="about-header">
+	<section class="about-header overflow-x-hidden">
 		<div class="about-header-inner" style="background-image: url('images/about/about_header.jpg');">
 			<div class="about-header-heading text-center">
 				<h1 class="relative">Auditori d'Alcúdia <span class="yellow-right-line"></span></h1>
