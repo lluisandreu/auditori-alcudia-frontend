@@ -6877,7 +6877,7 @@ form .description {
 
 @media screen and (max-width: 39.9375em) {
   .page-about .about-header-content {
-    margin-top: 170px; } }
+    margin-top: 20%; } }
 
 .page-about .about-header-content .about-description, .page-about .about-header-content .about-description-2 {
   background: rgba(247, 227, 38, 0.9);
