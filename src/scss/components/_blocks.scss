@@ -485,7 +485,7 @@
 }
 
 .event-tickets-block {
-    padding: rem-calc(40) 0;
+    padding: rem-calc(40) 0 0 0;
 
     .event-status {
         display: none;
@@ -615,8 +615,9 @@
         .item-heading {
             position: absolute;
             bottom: 20px;
-            left: 40px;
+            left: 0;
             width: 100%;
+            padding-left: 40px;
 
             h2 {
                 color: $white;
