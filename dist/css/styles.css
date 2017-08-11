@@ -5780,6 +5780,9 @@ form .description {
 .overflow-x-hidden {
   overflow-x: hidden; }
 
+.heading-padding {
+  padding: 0 0 3.57143rem 0; }
+
 .section-padding {
   padding: 2.85714rem 0; }
   @media print, screen and (min-width: 40em) {
@@ -6693,6 +6696,16 @@ form .description {
   /* Firefox 18- */
   color: #fefefe; }
 
+.share-section .share-section-heading {
+  padding-bottom: 1.42857rem; }
+
+.share-section .share-section-content ul.menu a {
+  color: #828385; }
+  .share-section .share-section-content ul.menu a:hover {
+    color: #e2cd08; }
+  .share-section .share-section-content ul.menu a .fa {
+    font-size: 2rem; }
+
 @media print, screen and (min-width: 40em) {
   .page-home .main-header {
     min-height: 640px; } }
@@ -6953,6 +6966,56 @@ form .description {
     @media print, screen and (min-width: 64em) {
       .page-about .about-workshops .about-cultura-heading .yellow-right-line {
         width: 85%; } }
+
+.page-blog-list .blog-list-item {
+  margin-bottom: 4.28571rem; }
+
+.page-blog-list .blog-list-heading h1 {
+  font-size: 1.78571rem;
+  margin: 0; }
+
+@media print, screen and (min-width: 64em) {
+  .page-blog-list .blog-list-heading .yellow-left-line {
+    width: 95%; } }
+
+.page-blog-list .blog-list-image {
+  margin-bottom: 0.71429rem; }
+  @media print, screen and (min-width: 40em) {
+    .page-blog-list .blog-list-image {
+      margin-bottom: 0; } }
+
+.page-blog-list .blog-list-teaser h2 a {
+  color: #545456; }
+  .page-blog-list .blog-list-teaser h2 a:hover {
+    color: #e2cd08; }
+
+.page-blog-list .blog-list-teaser .blog-list-date {
+  font-size: 1.42857rem;
+  padding-bottom: 0.71429rem;
+  color: #828385;
+  font-weight: 100; }
+
+.page-blog .blog-header-inner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .page-blog .blog-header-inner .blog-header-heading {
+    padding-top: 14.28571rem;
+    padding-bottom: 1.42857rem; }
+    @media print, screen and (min-width: 40em) {
+      .page-blog .blog-header-inner .blog-header-heading {
+        padding-top: 25rem; } }
+    .page-blog .blog-header-inner .blog-header-heading h1 {
+      color: #fefefe;
+      text-shadow: 1px 1px 1px #000; }
+    .page-blog .blog-header-inner .blog-header-heading .blog-header-date {
+      font-size: 1.78571rem;
+      color: #fefefe;
+      font-weight: 100;
+      text-shadow: 1px 1px 1px #000; }
+
+.page-blog .blog-content-section .blog-content-full p {
+  font-size: 1.28571rem; }
 
 .menu .button {
   white-space: normal; }
