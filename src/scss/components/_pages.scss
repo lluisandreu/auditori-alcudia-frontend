@@ -390,7 +390,11 @@
             padding: rem-calc(40) 0;
 
             .yellow-left-line {
-                width: 85%;
+                width: 60%;
+
+                @include breakpoint(large) {
+                    width: 85%;
+                }
             }
         }
 
@@ -408,7 +412,11 @@
             padding: rem-calc(40) 0;
 
             .yellow-right-line {
-                width: 85%;
+                width: 60%;
+
+                @include breakpoint(large) {
+                    width: 85%;
+                }
             }
         }
     }
