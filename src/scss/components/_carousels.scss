@@ -44,22 +44,14 @@
 }
 
 .event-trailer-carousel {
-    .item-video {
-        height: 400px;
-    }
-
-    .owl-video-play-icon {
-        background: url("../images/owl/owl.video.play.png");
-    }
-
     .owl-dots {
         position: absolute;
-        bottom: 20px;
+        bottom: 40px;
         width: 100%;
         max-width: 770px;
 
         @include breakpoint(medium) {
-            bottom: 20px;
+            bottom: 40px;
         }
 
 
