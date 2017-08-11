@@ -70,6 +70,19 @@
     }
 }
 
+.close-button, .close-button.medium {
+    right: 1rem;
+    top: 0.5rem;
+    font-size: 2em;
+    line-height: 1;
+}
+
+.close-button {
+    position: absolute;
+    color: #8a8a8a;
+    cursor: pointer;
+}
+
 /// Forms
 
 form {
@@ -134,6 +147,15 @@ form {
 
 .heading-padding {
     padding: 0 0 rem-calc(50) 0;
+}
+
+.trailer-reveal {
+    background: $black;
+    padding: rem-calc(60) rem-calc(20) rem-calc(20) rem-calc(20);
+
+    .close-button {
+        color: $white;
+    }
 }
 
 /// Sections

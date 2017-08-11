@@ -5732,6 +5732,17 @@ img {
     display: block !important;
     margin-top: 0.71429rem; } }
 
+.close-button, .close-button.medium {
+  right: 1rem;
+  top: 0.5rem;
+  font-size: 2em;
+  line-height: 1; }
+
+.close-button {
+  position: absolute;
+  color: #8a8a8a;
+  cursor: pointer; }
+
 form .description {
   font-size: 0.71429rem; }
 
@@ -5782,6 +5793,12 @@ form .description {
 
 .heading-padding {
   padding: 0 0 3.57143rem 0; }
+
+.trailer-reveal {
+  background: #0a0a0a;
+  padding: 4.28571rem 1.42857rem 1.42857rem 1.42857rem; }
+  .trailer-reveal .close-button {
+    color: #fefefe; }
 
 .section-padding {
   padding: 2.85714rem 0; }
@@ -6102,20 +6119,14 @@ form .description {
 .featured-carousel .owl-dots .owl-dot.active span {
   background: #414042; }
 
-.event-trailer-carousel .item-video {
-  height: 400px; }
-
-.event-trailer-carousel .owl-video-play-icon {
-  background: url("../images/owl/owl.video.play.png"); }
-
 .event-trailer-carousel .owl-dots {
   position: absolute;
-  bottom: 20px;
+  bottom: 40px;
   width: 100%;
   max-width: 770px; }
   @media print, screen and (min-width: 40em) {
     .event-trailer-carousel .owl-dots {
-      bottom: 20px; } }
+      bottom: 40px; } }
   .event-trailer-carousel .owl-dots .owl-dot span {
     background: #fefefe; }
   .event-trailer-carousel .owl-dots .owl-dot:hover span {
@@ -6632,18 +6643,6 @@ form .description {
       .filters-section ul.menu li {
         font-size: 0.92857rem; } }
 
-.event-trailer {
-  position: relative; }
-  .event-trailer:after {
-    content: '';
-    background-color: #f7e326;
-    height: 200px;
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-    bottom: 0;
-    left: 0; }
-
 .contact-section .contact-content .callout {
   border-color: #f7e326;
   background: transparent; }
@@ -6866,6 +6865,20 @@ form .description {
       .page-event .event-content .event-content-main .event-extra .event-extra-inner .event-extra-second-column {
         height: 100%;
         border-left: 2px solid #f7e326; } }
+
+.page-event .event-trailer {
+  position: relative; }
+  .page-event .event-trailer:after {
+    content: '';
+    background-color: #f7e326;
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0; }
+  .page-event .event-trailer .event-trailer-link {
+    margin-top: 0.71429rem; }
 
 .page-about .about-header .about-header-inner {
   position: relative;

@@ -261,6 +261,25 @@
             }
         }
     }
+
+    .event-trailer {
+        position: relative;
+
+        &:after {
+            content: '';
+            background-color: $primary-color;
+            height: 200px;
+            width: 100%;
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        .event-trailer-link {
+            margin-top: rem-calc(10);
+        }
+    }
 }
 
 .page-about {

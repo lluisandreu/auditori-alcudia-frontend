@@ -99,19 +99,6 @@
     }
 }
 
-.event-trailer {
-    position: relative;
-    &:after {
-        content: '';
-        background-color: $primary-color;
-        height: 200px;
-        width: 100%;
-        position: absolute;
-        z-index: 0;
-        bottom: 0;
-        left: 0;
-    }
-}
 
 .contact-section {
     .contact-content {
@@ -174,7 +161,7 @@
 
 .share-section {
     .share-section-heading {
-        padding-bottom: rem-calc(20);
+        padding-bottom: rem-calc(20); 
     }
     .share-section-content {
         ul.menu {

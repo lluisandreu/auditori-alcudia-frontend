@@ -51,11 +51,7 @@ jQuery(document).ready(function ($) {
             autoplay: true,
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
-            //autoHeight: true,
-            video: true,
-            lazyLoad: true,
             center: true,
-            videoHeight: 400, // Default false; Type: Boolean/Number
         });
     }
 
@@ -77,4 +73,14 @@ jQuery(document).ready(function ($) {
     eventFull.each(function (index, el) {
         $(this).removeClass('flip-container');
     });
+
+    $('.trailer-reveal').each(function (index, el) {
+        var reveal = $(this);
+        $(this).find('.close-button').on('click', function () {
+            var iframe = reveal.find('iframe');
+            reveal.find('iframe').remove();
+            reveal.find('.responsive-embed').append(iframe);
+        });
+    });
+
 });

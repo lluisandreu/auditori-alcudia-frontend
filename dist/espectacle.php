@@ -74,7 +74,7 @@
 		</div>
 		<div class="event-content-main grid-container">
 			<div class="grid-x grid-padding-x align-stretch">
-				<div class="cell small-12 medium-4 event-info">
+				<div class="cell small-12 medium-6 event-info">
 					<h2>Praesent sapien massa, convallis a pellentesque nec</h2>
 					<div class="field-company-name field">
 						Nom de la companyia
@@ -100,10 +100,10 @@
 						<a href="#">Més informació <i class="fa fa-chevron-right"></i></a>
 					</div>
 				</div>
-				<div class="cell small-12 medium-8 event-extra">
+				<div class="cell small-12 medium-6 event-extra">
 					<div class="event-extra-inner">
 						<div class="grid-x grid-padding-x align-stretch">
-							<div class="small-12 medium-6 cell event-extra-first-column">
+							<div class="small-12 cell event-extra-first-column">
 								<div class="heading">
 									<h4 class="underline-primary"><strong>Repartiment</strong></h4>
 								</div>
@@ -116,12 +116,6 @@
 								<h4>Música</h4>
 								<p>Praesent sapien massa.</p>
 							</div>
-							<div class="small-12 medium-6 cell event-extra-second-column">
-								<h4>Director</h4>
-								<p>Praesent sapien massa.</p>
-								<h4>Actors</h4>
-								<p>Praesent sapien massa.</p>
-							</div>
 						</div>
 					</div>
 				</div>
@@ -132,16 +126,34 @@
 		<div class="event-trailer-block grid-container">
 			<div class="grid-x align-center">
 				<div class="event-trailer-carousel cell medium-8 owl-carousel owl-theme">
-					<div class="item item-video">
-						<a href="https://www.youtube.com/embed/lMpqHsWUnL4" class="owl-video">
+					<div class="item">
+						<img src="images/placeholder/carousel_placeholder.jpg" alt="">
 						<div class="text-center event-trailer-link">
-							<a href="#"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
+							<a data-open="trailer-1"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
+						</div>
+						<!-- We need to inject a number to the ID -->
+						<div class="reveal trailer-reveal" id="trailer-1" data-reveal>
+							<div class="responsive-embed widescreen">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Xcpc8VDsv3c" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
+							</div>
+							<button class="close-button" data-close aria-label="Tanca" type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
 						</div>
 					</div>
-					<div class="item item-video">
-						<a href="https://www.youtube.com/embed/lMpqHsWUnL4" class="owl-video">
+					<div class="item">
+						<img src="images/placeholder/carousel_placeholder.jpg" alt="">
 						<div class="text-center event-trailer-link">
-							<a href="#"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
+							<a data-open="trailer-2"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
+						</div>
+						<!-- We need to inject a number to the ID -->
+						<div class="reveal trailer-reveal" id="trailer-2" data-reveal>
+							<div class="responsive-embed widescreen">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/f2O6mQkFiiw" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
+							</div>
+							<button class="close-button" data-close aria-label="Tanca" type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
 						</div>
 					</div>
 				</div>
