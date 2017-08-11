@@ -341,6 +341,11 @@
         z-index: 2;
 
         @include breakpoint(medium) {
+            margin-top: -80px;
+        }
+
+
+        @include breakpoint(large) {
             margin-top: -150px;
         }
 
