@@ -122,26 +122,31 @@
         }
         a {
             color: $body-font-color;
+            font-size: rem-calc(22);
+            @include breakpoint(medium) {
+                font-size: rem-calc(14);
+            }
         }
         .separator {
             color: $primary-color; 
-                font-size: 27px;
-    line-height: 0;
-    height: 0;
-    width: 0;
-    vertical-align: bottom;
-    text-align: center;
-    display: inline-table;
-    font-weight: 400;
-    margin-right: -10px;
-    margin-left: 10px;
+            font-size: 27px;
+            line-height: 0;
+            height: 0;
+            width: 0;
+            vertical-align: bottom;
+            text-align: center;
+            display: inline-table;
+            font-weight: 400;
+            margin-right: -10px;
+            margin-left: 10px;
         }
     }
     .contact-form {
         #contact-form {
 
-        padding: rem-calc(40);
-        background: $dark-gray;
+            padding: rem-calc(40);
+            background: $dark-gray;
+        
         }
         input[type=text], input[type=email], textarea {
             background: transparent;
@@ -153,17 +158,17 @@
             }
         }
         ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: $white;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: $white;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: $white;
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: $white;
-}
+          color: $white;
+        }
+        ::-moz-placeholder { /* Firefox 19+ */
+          color: $white;
+        }
+        :-ms-input-placeholder { /* IE 10+ */
+          color: $white;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+          color: $white;
+        }
     }
 }
 

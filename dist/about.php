@@ -106,7 +106,7 @@
 			<h2 class="relative"><span class="yellow-left-line"></span> Auditori d'Alcúdia = Compromís + <strong>Cultura</strong></h2>
 		</div>
 		<div class="about-cultura-content grid-container">
-			<div class="grid-x grid-padding-x">
+			<div class="grid-x grid-padding-x grid-margin-y">
 				<div class="cell medium-6 small-12 text-right">
 					<img src="images/placeholder/cultura_placeholder.jpg" alt="">
 				</div>
@@ -131,8 +131,8 @@
 			<h2 class="relative"><span class="yellow-right-line"></span>Tallers de Teatre de l’Auditori d’Alcúdia <br>per infants, joves i adults</strong></h2>
 		</div>
 		<div class="about-workshops-content grid-container">
-			<div class="grid-x grid-padding-x">
-				<div class="cell medium-6 small-12 text-right">
+			<div class="grid-x grid-padding-x grid-margin-y">
+				<div class="cell medium-6 small-12 medium-text-right">
 					<p>L’Ajuntament d’Alcúdia organitza des de fa molts d’anys  tallers de teatre TTdA per a tots els segments de la població entre  els mesos de novembre a  maig i dins el programa Tardor Cultural.</p>
 					<p>Aquest tallers se realitzen amb l’objectiu  d’apropar les arts escèniques a la població i que sigui el teatre un element actiu i no passiu. El ciutadà no és només tractat com un espectador sinó com a part important del fet cultural, que participa activament en la programació teatral de la ciutat. Els tallers donen lloc a petites i mitjanes produccions que posteriorment se representen com a part important de la programació al llarg de tot l’any.</p>
 				</div>

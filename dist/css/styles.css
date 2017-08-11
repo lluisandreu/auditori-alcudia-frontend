@@ -5964,7 +5964,7 @@ form .description {
       display: none;
       background: #414042;
       margin-top: 1.42857rem;
-      padding-bottom: remc-calc(20);
+      padding-bottom: 1.42857rem;
       margin-bottom: -30px; }
     .nav-bar .menu-inline {
       margin-top: 1.42857rem; }
@@ -6645,7 +6645,11 @@ form .description {
   background: transparent; }
 
 .contact-section .contact-content a {
-  color: #545456; }
+  color: #545456;
+  font-size: 1.57143rem; }
+  @media print, screen and (min-width: 40em) {
+    .contact-section .contact-content a {
+      font-size: 1rem; } }
 
 .contact-section .contact-content .separator {
   color: #f7e326;
@@ -6873,7 +6877,7 @@ form .description {
 
 @media screen and (max-width: 39.9375em) {
   .page-about .about-header-content {
-    margin-top: 208px; } }
+    margin-top: 170px; } }
 
 .page-about .about-header-content .about-description, .page-about .about-header-content .about-description-2 {
   background: rgba(247, 227, 38, 0.9);
