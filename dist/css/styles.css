@@ -6935,7 +6935,10 @@ form .description {
 .page-about .about-cultura .about-cultura-heading {
   padding: 2.85714rem 0; }
   .page-about .about-cultura .about-cultura-heading .yellow-left-line {
-    width: 85%; }
+    width: 60%; }
+    @media print, screen and (min-width: 64em) {
+      .page-about .about-cultura .about-cultura-heading .yellow-left-line {
+        width: 85%; } }
 
 .page-about .about-cultura .about-cultura-content .callout {
   border-color: #f7e326;
@@ -6945,7 +6948,10 @@ form .description {
 .page-about .about-workshops .about-cultura-heading {
   padding: 2.85714rem 0; }
   .page-about .about-workshops .about-cultura-heading .yellow-right-line {
-    width: 85%; }
+    width: 60%; }
+    @media print, screen and (min-width: 64em) {
+      .page-about .about-workshops .about-cultura-heading .yellow-right-line {
+        width: 85%; } }
 
 .menu .button {
   white-space: normal; }
