@@ -5773,8 +5773,8 @@ form .description {
   bottom: -1px; }
 
 .primary-triangle-background-bottom {
-  -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
-          clip-path: polygon(0 0, 0 50%, 100% 0);
+  -webkit-clip-path: polygon(0 0, 0 30%, 100% 0);
+          clip-path: polygon(0 0, 0 30%, 100% 0);
   top: 0; }
 
 .overflow-x-hidden {
@@ -5787,10 +5787,10 @@ form .description {
       padding: 4.28571rem 0; } }
 
 .section-padding-2x {
-  padding: 5.71429rem 0 2.85714rem 0; }
+  padding: 4.28571rem 0 2.85714rem 0; }
   @media print, screen and (min-width: 40em) {
     .section-padding-2x {
-      padding: 8.57143rem 0 4.28571rem 0; } }
+      padding: 7.14286rem 0 4.28571rem 0; } }
 
 .section-light {
   background: #fefefe; }
@@ -6470,7 +6470,7 @@ form .description {
   margin-top: 2.85714rem; }
 
 .event-tickets-block {
-  padding: 2.85714rem 0; }
+  padding: 2.85714rem 0 0 0; }
   .event-tickets-block .event-status {
     display: none;
     margin-bottom: 0.71429rem;
@@ -6554,8 +6554,9 @@ form .description {
     .event-recommended-block .event-recommended-item .item-heading {
       position: absolute;
       bottom: 20px;
-      left: 40px;
-      width: 100%; }
+      left: 0;
+      width: 100%;
+      padding-left: 40px; }
       .event-recommended-block .event-recommended-item .item-heading h2 {
         color: #fefefe; }
       .event-recommended-block .event-recommended-item .item-heading a {
@@ -6805,7 +6806,7 @@ form .description {
         margin-right: 5px; }
 
 .page-event .event-content .event-content-main {
-  padding: 2.85714rem 0; }
+  padding: 2.85714rem 0 0 0; }
   .page-event .event-content .event-content-main .event-info {
     padding: 2.14286rem;
     background: #f7e326; }

@@ -10,17 +10,17 @@
 					<h1>Praesent sapien massa, convallis a pellentesque nec</h1>
 					<div class="event-header-content">
 						<button class="button button-date"><i class="fa fa-long-arrow-right"></i>DIL <strong>01 MAR</strong> - DIM <strong>02 MAR</strong></button>
-						<button class="button button-primary">Entrades</button>
+						<a class="button button-primary" href="#entrades" data-smooth-scroll>Entrades</a>
 					</div>
-					<a href="#" class="button button-white">Més Informació</a>
+					<a href="#informacio" class="button button-white" data-smooth-scroll>Més Informació</a>
 				</div>
 			</div>
 		</div>
 	</header>
-	<section class="event-tickets section-padding">
+	<section class="event-tickets section-padding overflow-x-hidden">
 		<div class="event-tickets-content row expanded collapse">
 			<div class="column text-center">
-				<h2 class="relative">Selecciona una data <span class="yellow-right-line"></span></h2>
+				<h2 id="entrades" class="relative">Selecciona una data <span class="yellow-right-line"></span></h2>
 			</div>
 		</div>
 		<div class="event-tickets-block grid-container">
@@ -69,7 +69,7 @@
 	<section class="event-content section-padding">
 		<div class="event-content-heading row expanded collapse">
 			<div class="column text-center">
-				<h2 class="relative"><span class="yellow-left-line"></span> Informació</h2>
+				<h2 id="informacio" class="relative"><span class="yellow-left-line"></span> Informació</h2>
 			</div>
 		</div>
 		<div class="event-content-main grid-container">
@@ -130,7 +130,7 @@
 	</section>
 	<section class="event-trailer section-padding">
 		<div class="event-trailer-block grid-container">
-			<div class="grid-x grid-padding-x align-center">
+			<div class="grid-x align-center">
 				<div class="event-trailer-carousel cell medium-8 owl-carousel owl-theme">
 					<div class="item item-video">
 						<a href="https://www.youtube.com/embed/lMpqHsWUnL4" class="owl-video">
@@ -148,9 +148,9 @@
 			</div>
 		</div>
 	</section>
-	<section class="event-recommended section-padding-2x relative">
+	<section class="event-recommended section-padding relative">
 		<div class="primary-triangle-background-bottom"></div>
-		<div class="event-recommended-heading row expanded collapse">
+		<div class="event-recommended-heading">
 			<div class="column text-center">
 				<h2>També et pot interessar</h2>
 			</div>

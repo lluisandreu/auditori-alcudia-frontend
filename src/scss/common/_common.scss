@@ -124,7 +124,7 @@ form {
 .primary-triangle-background-bottom {
     @extend .primary-triangle-background-top;
 
-    clip-path: polygon(0 0, 0 50%, 100% 0);
+    clip-path: polygon(0 0, 0 30%, 100% 0);
     top: 0;
 }
 
@@ -143,10 +143,10 @@ form {
 }
 
 .section-padding-2x {
-    padding: rem-calc(80) 0 rem-calc(40) 0;
+    padding: rem-calc(60) 0 rem-calc(40) 0;
 
     @include breakpoint(medium) {
-        padding: rem-calc(120) 0 rem-calc(60) 0;
+        padding: rem-calc(100) 0 rem-calc(60) 0;
     }
 }
 
