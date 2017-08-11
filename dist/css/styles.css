@@ -6696,6 +6696,16 @@ form .description {
   /* Firefox 18- */
   color: #fefefe; }
 
+.share-section .share-section-heading {
+  padding-bottom: 1.42857rem; }
+
+.share-section .share-section-content ul.menu a {
+  color: #828385; }
+  .share-section .share-section-content ul.menu a:hover {
+    color: #e2cd08; }
+  .share-section .share-section-content ul.menu a .fa {
+    font-size: 2rem; }
+
 @media print, screen and (min-width: 40em) {
   .page-home .main-header {
     min-height: 640px; } }
@@ -6984,6 +6994,28 @@ form .description {
   padding-bottom: 0.71429rem;
   color: #828385;
   font-weight: 100; }
+
+.page-blog .blog-header-inner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center; }
+  .page-blog .blog-header-inner .blog-header-heading {
+    padding-top: 14.28571rem;
+    padding-bottom: 1.42857rem; }
+    @media print, screen and (min-width: 40em) {
+      .page-blog .blog-header-inner .blog-header-heading {
+        padding-top: 25rem; } }
+    .page-blog .blog-header-inner .blog-header-heading h1 {
+      color: #fefefe;
+      text-shadow: 1px 1px 1px #000; }
+    .page-blog .blog-header-inner .blog-header-heading .blog-header-date {
+      font-size: 1.78571rem;
+      color: #fefefe;
+      font-weight: 100;
+      text-shadow: 1px 1px 1px #000; }
+
+.page-blog .blog-content-section .blog-content-full p {
+  font-size: 1.28571rem; }
 
 .menu .button {
   white-space: normal; }

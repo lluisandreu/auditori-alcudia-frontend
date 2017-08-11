@@ -172,3 +172,22 @@
     }
 }
 
+.share-section {
+    .share-section-heading {
+        padding-bottom: rem-calc(20);
+    }
+    .share-section-content {
+        ul.menu {
+            a {
+                color: $light-gray;
+                &:hover {
+                    color: $anchor-color;
+                }
+                .fa {
+                    font-size: rem-calc(28);
+                }
+            }
+        }
+    }
+}
+
