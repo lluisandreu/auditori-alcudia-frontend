@@ -11,7 +11,7 @@
 			<div class="about-header-content">
 				<div class="grid-container">
 					<div class="grid-x grid-padding-x align-right align-bottom">
-						<div class="small-12 medium-4 large-3 cell">
+						<div class="small-12 medium-5 large-3 cell">
 							<div class="about-description">
 								<div class="about-description-heading">
 									<h2>Modernitat i tradició</h2>
@@ -22,7 +22,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="small-12 medium-4 large-3 cell">
+						<div class="small-12 medium-5 large-3 cell">
 							<div class="about-description-2">
 								<p>L’Auditori d’Alcúdia, és  el nou  equipament cultural de la ciutat  por excel·lència, un emblema de la contemporaneïtat.</p>
 								<p>L’Auditori d’Alcúdia, és un edifici polivalent que està al servei  dels   ciutadans  i visitants per gaudir de la cultura. Es caracteritza per tenir una programació estable al llarg de tot l’any d’arts escèniques i musicals i és la seu de  l’0Escola Municipal de Música d’Alcúdia</p>
@@ -101,13 +101,13 @@
 			</div>
 		</div>
 	</section>
-	<section class="about-cultura section-padding">
+	<section class="about-cultura section-padding overflow-x-hidden">
 		<div class="about-cultura-heading text-center">
 			<h2 class="relative"><span class="yellow-left-line"></span> Auditori d'Alcúdia = Compromís + <strong>Cultura</strong></h2>
 		</div>
 		<div class="about-cultura-content grid-container">
 			<div class="grid-x grid-padding-x grid-margin-y">
-				<div class="cell medium-6 small-12 text-right">
+				<div class="cell medium-6 small-12 text-center medium-text-right">
 					<img src="images/placeholder/cultura_placeholder.jpg" alt="">
 				</div>
 				<div class="cell medium-6 small-12">
@@ -126,7 +126,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="about-workshops section-padding">
+	<section class="about-workshops section-padding overflow-x-hidden">
 		<div class="about-cultura-heading text-center">
 			<h2 class="relative"><span class="yellow-right-line"></span>Tallers de Teatre de l’Auditori d’Alcúdia <br>per infants, joves i adults</strong></h2>
 		</div>
@@ -136,7 +136,7 @@
 					<p>L’Ajuntament d’Alcúdia organitza des de fa molts d’anys  tallers de teatre TTdA per a tots els segments de la població entre  els mesos de novembre a  maig i dins el programa Tardor Cultural.</p>
 					<p>Aquest tallers se realitzen amb l’objectiu  d’apropar les arts escèniques a la població i que sigui el teatre un element actiu i no passiu. El ciutadà no és només tractat com un espectador sinó com a part important del fet cultural, que participa activament en la programació teatral de la ciutat. Els tallers donen lloc a petites i mitjanes produccions que posteriorment se representen com a part important de la programació al llarg de tot l’any.</p>
 				</div>
-				<div class="cell medium-6 small-12">
+				<div class="cell medium-6 small-12 text-center medium-text-left">
 					<img src="images/about/about_header.jpg" alt="">
 				</div>
 			</div>

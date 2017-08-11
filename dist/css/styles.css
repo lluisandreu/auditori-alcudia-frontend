@@ -5670,9 +5670,6 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       background: #869791; }
 
-body {
-  overflow-x: hidden; }
-
 h1 {
   font-weight: 100;
   line-height: 1; }
@@ -5779,6 +5776,9 @@ form .description {
   -webkit-clip-path: polygon(0 0, 0 50%, 100% 0);
           clip-path: polygon(0 0, 0 50%, 100% 0);
   top: 0; }
+
+.overflow-x-hidden {
+  overflow-x: hidden; }
 
 .section-padding {
   padding: 2.85714rem 0; }
@@ -6907,6 +6907,9 @@ form .description {
   position: relative;
   z-index: 2; }
   @media print, screen and (min-width: 40em) {
+    .page-about .about-header-gallery {
+      margin-top: -80px; } }
+  @media print, screen and (min-width: 64em) {
     .page-about .about-header-gallery {
       margin-top: -150px; } }
   @media print, screen and (min-width: 40em) {
