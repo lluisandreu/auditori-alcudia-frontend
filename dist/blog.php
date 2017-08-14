@@ -14,7 +14,7 @@
 	<section class="blog-content-section section-padding section-light-gray">
 		<div class="row">
 			<div class="column">
-				<div class="blog-content-full">
+				<div class="field-body">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Proin eget tortor </a>risus. Vivamus suscipit tortor eget felis porttitor volutpat. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. </p>
 					<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit <strong>amet aliquam vel</strong>, ullamcorper sit amet ligula. Proin eget tortor risus. Nulla porttitor accumsan tincidunt. Nulla quis lorem ut libero malesuada feugiat. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				</div>
