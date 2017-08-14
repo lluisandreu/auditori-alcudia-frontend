@@ -307,7 +307,7 @@
             padding: rem-calc(40) 0;
 
             h1 {
-                font-size: rem-calc(27);
+                font-size: rem-calc(25);
                 color: $white;
             }
         }
@@ -524,5 +524,11 @@
                 font-size: rem-calc(18);
             }
         }
+    }
+}
+
+.page-basic {
+    h1 {
+        font-size: rem-calc(25);
     }
 }

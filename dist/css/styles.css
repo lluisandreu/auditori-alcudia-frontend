@@ -5829,6 +5829,9 @@ form .description {
 .field-category {
   font-weight: 800; }
 
+.field-body, .field-body p {
+  font-size: 1.14286rem; }
+
 .black-bold, .gray-bold, .white-bold {
   color: #0a0a0a;
   font-weight: 600; }
@@ -6899,7 +6902,7 @@ form .description {
 .page-about .about-header .about-header-heading {
   padding: 2.85714rem 0; }
   .page-about .about-header .about-header-heading h1 {
-    font-size: 1.92857rem;
+    font-size: 1.78571rem;
     color: #fefefe; }
 
 @media screen and (max-width: 39.9375em) {
@@ -7029,6 +7032,9 @@ form .description {
 
 .page-blog .blog-content-section .blog-content-full p {
   font-size: 1.28571rem; }
+
+.page-basic h1 {
+  font-size: 1.78571rem; }
 
 .menu .button {
   white-space: normal; }
