@@ -642,3 +642,181 @@
         }
     }
 }
+
+.seats-map-seats-block {
+    .seats-block-fullarea {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+        border: 2px solid $white;
+
+        .seats-block-area {
+            position: relative;
+            border-bottom: 2px dashed transparentize($white, 0.4);
+
+            @include breakpoint(medium) {
+                padding: rem-calc(20);
+            }
+
+
+            .area-name {
+                text-align: center;
+                font-size: rem-calc(25);
+
+                @include breakpoint(medium) {
+                    font-size: rem-calc(14);
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    text-align: left;
+                }
+            }
+        }
+
+        .seats-block-stage {
+            padding: rem-calc(10);
+
+            .stage-box {
+                background: $light-gray;
+                color: $body-font-color;
+                display: inline-block;
+                padding: 10px 100px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .seats-row {
+        @include breakpoint(medium) {
+            @include flex;
+
+            @include flex-align("center", "middle");
+        }
+
+
+        text-align: center;
+        margin-bottom: rem-calc(5);
+        position: relative;
+
+        @include breakpoint(small only) {
+            padding: rem-calc(10);
+
+            &:nth-child(odd) {
+                background: #797979;
+            }
+        }
+
+
+        a {
+            padding: rem-calc(2);
+
+            @include breakpoint(medium) {
+                padding: rem-calc(5);
+            }
+        }
+
+        .seat {
+            position: relative;
+
+            &:hover {
+                .seat-tooltip {
+                    display: block !important;
+                }
+            }
+
+            .seat-tooltip {
+                padding: rem-calc(10) rem-calc(5);
+                font-size: rem-calc(12);
+                background: $primary-color;
+                position: absolute;
+                width: 100px;
+                top: -35px;
+                left: 0;
+                color: $body-font-color;
+                z-index: 99;
+
+                &.seat-full {
+                    background: $light-gray;
+                    color: $white;
+                }
+            }
+        }
+
+        .wheelchair-row {
+            @include breakpoint(medium) {
+                position: absolute;
+                right: 0;
+            }
+
+
+            .fa {
+                font-size: rem-calc(20);
+            }
+        }
+
+        .left {
+            width: 100%;
+
+            &:before {
+                content: 'Dreta';
+                display: block;
+            }
+
+            @include breakpoint(medium) {
+                @include xy-cell(5, true, 10);
+
+                text-align: right;
+            }
+        }
+
+        .center {
+            width: 100%;
+
+            &:before {
+                content: 'Centre';
+                display: block;
+            }
+
+            @include breakpoint(medium) {
+                @include xy-cell(2, true, 5);
+
+                text-align: center;
+            }
+        }
+
+        .right {
+            width: 100%;
+
+            &:before {
+                content: 'Esquerra';
+                display: block;
+            }
+
+            @include breakpoint(medium) {
+                @include xy-cell(5, true, 10);
+
+                text-align: left;
+            }
+        }
+
+        .left, .center, .right {
+            margin-bottom: rem-calc(10);
+
+            @include breakpoint(medium) {
+                margin-bottom: 0;
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        a:hover .seat-icon, a:focus .seat-icon, a.seat-selected .seat-icon {
+            @include seat-icon($primary-color, $primary-color);
+        }
+
+        a.seat-full .seat-icon {
+            @include seat-icon($light-gray, $light-gray);
+        }
+    }
+}

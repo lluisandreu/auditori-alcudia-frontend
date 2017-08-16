@@ -94,3 +94,29 @@
         font-weight: 800;
     }
 }
+
+@mixin seat-icon($background, $border-color) {
+    height: 20px;
+    width: 20px;
+    background-color: $background;
+    border: 2px solid;
+    border-color: $border-color;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    transition: all .3s ease-in-out;
+
+    @include breakpoint(medium) {
+        height: 12px;
+        width: 12px;
+    }
+
+
+    @include breakpoint(large) {
+        height: 15px;
+        width: 15px;
+    }
+
+
+    @include border-radius(50px);
+}

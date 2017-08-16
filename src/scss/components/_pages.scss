@@ -532,3 +532,50 @@
         font-size: rem-calc(25);
     }
 }
+
+.page-seats-map {
+    color: $white;
+
+    .seats-teaser {
+        .seats-teaser-image {
+            width: 100%;
+        }
+
+        .seats-teaser-heading {
+            background: $primary-color;
+            width: auto;
+            max-width: 500px;
+            margin: 20px 0 0 -70px;
+
+            h2 {
+                color: $body-font-color;
+                font-size: rem-calc(20);
+                padding: rem-calc(10);
+                font-weight: 100;
+            }
+        }
+
+        .seats-teaser-more-link {
+            margin-top: rem-calc(10);
+            display: block;
+        }
+    }
+
+    .seats-filter {
+        .seats-filter-inner {
+            padding: rem-calc(10) 0;
+            border-top: 2px solid $primary-color;
+            border-bottom: 2px solid $primary-color;
+            font-size: rem-calc(12);
+
+            span {
+                line-height: 1.2;
+                vertical-align: bottom;
+            }
+
+            .cell {
+                white-space: nowrap;
+            }
+        }
+    }
+}
