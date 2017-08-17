@@ -67,6 +67,7 @@
     @include breakpoint(small only) {
         display: block !important;
         margin-top: rem-calc(10);
+        width: 100%;
     }
 }
 
@@ -225,6 +226,10 @@ form {
     color: $white;
 }
 
+.primary-color {
+    color: $primary-color;
+}
+
 .yellow-left-line {
     @include left-line($primary-color, 90%);
 }
@@ -244,6 +249,20 @@ form {
 .underline-primary {
     border-bottom: 2px solid $primary-color;
     display: initial;
+}
+
+/// Seat icons
+
+.seat-icon {
+    @include seat-icon(transparent, $white);
+}
+
+.seat-icon-full {
+    @include seat-icon($light-gray, $light-gray);
+}
+
+.seat-icon-selected {
+    @include seat-icon($primary-color, $primary-color);
 }
 
 /// Fliper
