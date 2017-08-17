@@ -265,6 +265,16 @@ form {
     @include seat-icon($primary-color, $primary-color);
 }
 
+/// Reveal
+
+.reveal-dark {
+    background-color: $dark-gray;
+
+    * {
+        color: $white;
+    }
+}
+
 /// Fliper
 @include breakpoint(large) {
     /* entire container, keeps perspective */

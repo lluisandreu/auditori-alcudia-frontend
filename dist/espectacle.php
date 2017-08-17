@@ -39,7 +39,7 @@
 				<div class="cell small-4 medium-2 event-time"><i class="fa fa-clock-o"></i>&nbsp;<strong>19:00</strong>h</div>
 				<div class="cell small-4 medium-2 event-location"><i class="fa fa-map-marker"></i> Annex A</div>
 				<div class="cell small-12 medium-3 event-actions">
-					<a href="#" class="button small-expanded">Comprar Entrades</a>
+					<a href="#" data-open="tickets-offline" class="button small-expanded">Comprar Entrades</a>
 				</div>
 			</div>
 			<div class="event-tickets-item callout event-full grid-x grid-padding-x align-middle">
@@ -61,9 +61,33 @@
 				<div class="cell small-4 medium-2 event-time"><i class="fa fa-clock-o"></i>&nbsp;<strong>18:00</strong>h</div>
 				<div class="cell small-4 medium-2 event-location"><i class="fa fa-map-marker"></i> Auditori d'Alcúdia</div>
 				<div class="cell small-12 medium-3 event-actions">
-					<a href="#" class="button small-expanded">Més informació</a>
+					<a href="#" data-open="tickets-cancelled" class="button small-expanded">Més informació</a>
 				</div>
 			</div>
+		</div>
+		<div class="reveal large reveal-dark event-tickets-offline" id="tickets-offline" data-reveal>
+			<div class="text-center">
+				<h2>Per aquest espectacle la venda online no està activada.</h2>
+				<p>Venda exclusiva a les taquilles de l'Auditori d'Alcúdia.</p>
+				<p><strong>Direcció:</strong>
+				<address>Plaça de la Porta de Mallorca, 3<br>
+				07400 Alcúdia (Illes Balears)</address></p>
+				<p><strong>Telèfon:</strong></p>
+				<p>971 89 71 85</p>
+			</div>
+			<button class="close-button" data-close aria-label="Tanca" type="button">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+		<div class="reveal large reveal-dark event-tickets-cancelled" id="tickets-cancelled" data-reveal>
+			<div class="text-center">
+				<h2>L'espectacle s'ha cancel·lat per motius personals d'un dels intèrprets. </h2>
+				<p>Si ha havieu comprat les entrades podeu venir a les taquilles de l'Auditori d'Alcúdia i us canviarem l'entrada per un altre espectacle o bé us retornarem els doblers.</p>
+				<p>Disculpeu les molèsties.</p>
+			</div>
+			<button class="close-button" data-close aria-label="Tanca" type="button">
+			  <span aria-hidden="true">&times;</span>
+			</button>
 		</div>
 	</section>
 	<section class="event-content section-padding">

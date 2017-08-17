@@ -5972,6 +5972,11 @@ form .description {
       height: 15px;
       width: 15px; } }
 
+.reveal-dark {
+  background-color: #414042; }
+  .reveal-dark * {
+    color: #fefefe; }
+
 @media print, screen and (min-width: 64em) {
   /* entire container, keeps perspective */
   .flip-container {
@@ -6518,17 +6523,17 @@ form .description {
     .programacio-events-block .item .full .button:hover {
       background: #fefefe;
       color: #545456; }
-  .programacio-events-block .item.event-full {
-    cursor: not-allowed; }
-    .programacio-events-block .item.event-full .overlay {
-      background: rgba(255, 255, 255, 0.68);
-      z-index: 10; }
-    .programacio-events-block .item.event-full .teaser .teaser-heading, .programacio-events-block .item.event-full .teaser .teaser-info {
-      background: #fefefe;
-      color: #545456; }
-    .programacio-events-block .item.event-full .teaser .teaser-date {
-      border-color: #545456;
-      color: #545456; }
+  .programacio-events-block .item.event-full .overlay {
+    background: rgba(255, 255, 255, 0.68);
+    z-index: 10; }
+  .programacio-events-block .item.event-full .teaser .teaser-heading, .programacio-events-block .item.event-full .teaser .teaser-info {
+    background: #fefefe;
+    color: #545456; }
+  .programacio-events-block .item.event-full .teaser .teaser-date {
+    border-color: #545456;
+    color: #545456; }
+  .programacio-events-block .item.event-full .full .button {
+    display: none; }
 
 .programacio-events-block .status-tab .tab {
   padding: 0.71429rem 1.42857rem;

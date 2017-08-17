@@ -69,11 +69,6 @@ jQuery(document).ready(function ($) {
 
     // Disable event info when is full event
 
-    var eventFull = $(document.querySelectorAll('.event-full'));
-    eventFull.each(function (index, el) {
-        $(this).removeClass('flip-container');
-    });
-
     $('.trailer-reveal').each(function (index, el) {
         var reveal = $(this);
         $(this).find('.close-button').on('click', function () {
@@ -81,6 +76,13 @@ jQuery(document).ready(function ($) {
             reveal.find('iframe').remove();
             reveal.find('.responsive-embed').append(iframe);
         });
+    });
+
+    /// Others
+
+    $('a[data-open]').on('click', function (event) {
+        event.preventDefault();
+        /* Act on the event */
     });
 
 });
