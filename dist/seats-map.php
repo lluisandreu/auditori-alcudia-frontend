@@ -93,7 +93,7 @@
 								</div>
 							</div>
 							<div class="seats-block-platea seats-block-area">
-								<div class="area-name">Platea <i class="fa fa-chevron-down show-for-mobile-only"></i></div>
+								<div class="area-name">Platea <i class="fa fa-chevron-down show-for-small-only"></i></div>
 								<div class="seats-row" data-seat-row data-file="3">
 									<div class="seats">
 										<div class="right">
