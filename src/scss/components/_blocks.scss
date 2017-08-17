@@ -662,6 +662,8 @@
             .area-name {
                 text-align: center;
                 font-size: rem-calc(25);
+                padding: rem-calc(10) 0;
+                display: block;
 
                 @include breakpoint(medium) {
                     font-size: rem-calc(14);
@@ -669,6 +671,7 @@
                     top: 20px;
                     left: 20px;
                     text-align: left;
+                    padding: 0;
                 }
             }
         }
@@ -687,31 +690,56 @@
     }
 
     .seats-row {
-        @include breakpoint(medium) {
-            @include flex;
+        display: none;
+        margin-bottom: rem-calc(5);
+        position: relative;
+        text-align: center;
 
-            @include flex-align("center", "middle");
+        @include breakpoint(medium) {
+            display: block;
         }
 
 
-        text-align: center;
-        margin-bottom: rem-calc(5);
-        position: relative;
-
         @include breakpoint(small only) {
-            padding: rem-calc(10);
+            padding: rem-calc(5);
 
             &:nth-child(odd) {
-                background: #797979;
+                background: #545454;
             }
         }
 
+
+        &.expanded {
+            display: block;
+        }
 
         a {
             padding: rem-calc(2);
 
             @include breakpoint(medium) {
                 padding: rem-calc(5);
+            }
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        .seats {
+            display: none;
+            text-align: center;
+
+            @include breakpoint(medium) {
+                display: block;
+
+                @include flex;
+
+                @include flex-align("center", "middle");
+            }
+
+
+            &.expanded {
+                display: block;
             }
         }
 
@@ -734,6 +762,7 @@
                 left: 0;
                 color: $body-font-color;
                 z-index: 99;
+                text-align: center;
 
                 &.seat-full {
                     background: $light-gray;
@@ -754,7 +783,7 @@
             }
         }
 
-        .left {
+        .right {
             width: 100%;
 
             &:before {
@@ -784,7 +813,7 @@
             }
         }
 
-        .right {
+        .left {
             width: 100%;
 
             &:before {
@@ -817,6 +846,56 @@
 
         a.seat-full .seat-icon {
             @include seat-icon($light-gray, $light-gray);
+        }
+    }
+}
+
+.seat-map-tickets-block {
+    .seat-map-tickets-inner {
+        background: $primary-color;
+        padding: rem-calc(20);
+        color: $body-font-color;
+    }
+
+    .seat-map-ticket {
+        border: 2px solid $black;
+        padding: rem-calc(20);
+        position: relative;
+        margin-bottom: rem-calc(20);
+
+        hr {
+            margin: rem-calc(5) 0;
+            border-width: 2px;
+            border-color: $black;
+        }
+
+        .values {
+            font-weight: 800;
+            font-size: rem-calc(20);
+        }
+
+        .labels {
+            font-size: rem-calc(12);
+        }
+
+        .seat-map-ticket-price {
+            font-weight: 800;
+        }
+
+        .seat-map-ticket-remove {
+            border: 2px solid $body-font-color;
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            margin: 0;
+            padding: 10px 11px;
+        }
+    }
+
+    .seat-map-ticket-total {
+        hr {
+            border-width: 2px;
+            border-color: $black;
         }
     }
 }

@@ -5730,7 +5730,8 @@ img {
 @media screen and (max-width: 39.9375em) {
   .button.small-expanded {
     display: block !important;
-    margin-top: 0.71429rem; } }
+    margin-top: 0.71429rem;
+    width: 100%; } }
 
 .close-button, .close-button.medium {
   right: 1rem;
@@ -5912,8 +5913,8 @@ form .description {
   display: initial; }
 
 .seat-icon {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   background-color: transparent;
   border: 2px solid;
   border-color: #fefefe;
@@ -5932,8 +5933,8 @@ form .description {
       width: 15px; } }
 
 .seat-icon-full {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   background-color: #828385;
   border: 2px solid;
   border-color: #828385;
@@ -5952,8 +5953,8 @@ form .description {
       width: 15px; } }
 
 .seat-icon-selected {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   background-color: #f7e326;
   border: 2px solid;
   border-color: #f7e326;
@@ -6659,14 +6660,17 @@ form .description {
         padding: 1.42857rem; } }
     .seats-map-seats-block .seats-block-fullarea .seats-block-area .area-name {
       text-align: center;
-      font-size: 1.78571rem; }
+      font-size: 1.78571rem;
+      padding: 0.71429rem 0;
+      display: block; }
       @media print, screen and (min-width: 40em) {
         .seats-map-seats-block .seats-block-fullarea .seats-block-area .area-name {
           font-size: 1rem;
           position: absolute;
           top: 20px;
           left: 20px;
-          text-align: left; } }
+          text-align: left;
+          padding: 0; } }
   .seats-map-seats-block .seats-block-fullarea .seats-block-stage {
     padding: 0.71429rem; }
     .seats-map-seats-block .seats-block-fullarea .seats-block-stage .stage-box {
@@ -6677,30 +6681,44 @@ form .description {
       font-weight: 600; }
 
 .seats-map-seats-block .seats-row {
-  text-align: center;
+  display: none;
   margin-bottom: 0.35714rem;
-  position: relative; }
+  position: relative;
+  text-align: center; }
   @media print, screen and (min-width: 40em) {
     .seats-map-seats-block .seats-row {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
+      display: block; } }
   @media screen and (max-width: 39.9375em) {
     .seats-map-seats-block .seats-row {
-      padding: 0.71429rem; }
+      padding: 0.35714rem; }
       .seats-map-seats-block .seats-row:nth-child(odd) {
-        background: #797979; } }
+        background: #545454; } }
+  .seats-map-seats-block .seats-row.expanded {
+    display: block; }
   .seats-map-seats-block .seats-row a {
     padding: 0.14286rem; }
     @media print, screen and (min-width: 40em) {
       .seats-map-seats-block .seats-row a {
         padding: 0.35714rem; } }
+  .seats-map-seats-block .seats-row h3 {
+    margin: 0; }
+  .seats-map-seats-block .seats-row .seats {
+    display: none;
+    text-align: center; }
+    @media print, screen and (min-width: 40em) {
+      .seats-map-seats-block .seats-row .seats {
+        display: block;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; } }
+    .seats-map-seats-block .seats-row .seats.expanded {
+      display: block; }
   .seats-map-seats-block .seats-row .seat {
     position: relative; }
     .seats-map-seats-block .seats-row .seat:hover .seat-tooltip {
@@ -6714,7 +6732,8 @@ form .description {
       top: -35px;
       left: 0;
       color: #545456;
-      z-index: 99; }
+      z-index: 99;
+      text-align: center; }
       .seats-map-seats-block .seats-row .seat .seat-tooltip.seat-full {
         background: #828385;
         color: #fefefe; }
@@ -6724,13 +6743,13 @@ form .description {
       right: 0; } }
   .seats-map-seats-block .seats-row .wheelchair-row .fa {
     font-size: 1.42857rem; }
-  .seats-map-seats-block .seats-row .left {
+  .seats-map-seats-block .seats-row .right {
     width: 100%; }
-    .seats-map-seats-block .seats-row .left:before {
+    .seats-map-seats-block .seats-row .right:before {
       content: 'Dreta';
       display: block; }
     @media print, screen and (min-width: 40em) {
-      .seats-map-seats-block .seats-row .left {
+      .seats-map-seats-block .seats-row .right {
         width: calc(41.66667% - 0.71429rem);
         margin-right: 0.35714rem;
         margin-left: 0.35714rem;
@@ -6746,13 +6765,13 @@ form .description {
         margin-right: 0.17857rem;
         margin-left: 0.17857rem;
         text-align: center; } }
-  .seats-map-seats-block .seats-row .right {
+  .seats-map-seats-block .seats-row .left {
     width: 100%; }
-    .seats-map-seats-block .seats-row .right:before {
+    .seats-map-seats-block .seats-row .left:before {
       content: 'Esquerra';
       display: block; }
     @media print, screen and (min-width: 40em) {
-      .seats-map-seats-block .seats-row .right {
+      .seats-map-seats-block .seats-row .left {
         width: calc(41.66667% - 0.71429rem);
         margin-right: 0.35714rem;
         margin-left: 0.35714rem;
@@ -6765,8 +6784,8 @@ form .description {
         .seats-map-seats-block .seats-row .left:before, .seats-map-seats-block .seats-row .center:before, .seats-map-seats-block .seats-row .right:before {
           display: none; } }
   .seats-map-seats-block .seats-row a:hover .seat-icon, .seats-map-seats-block .seats-row a:focus .seat-icon, .seats-map-seats-block .seats-row a.seat-selected .seat-icon {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color: #f7e326;
     border: 2px solid;
     border-color: #f7e326;
@@ -6784,8 +6803,8 @@ form .description {
         height: 15px;
         width: 15px; } }
   .seats-map-seats-block .seats-row a.seat-full .seat-icon {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color: #828385;
     border: 2px solid;
     border-color: #828385;
@@ -6802,6 +6821,39 @@ form .description {
       .seats-map-seats-block .seats-row a.seat-full .seat-icon {
         height: 15px;
         width: 15px; } }
+
+.seat-map-tickets-block .seat-map-tickets-inner {
+  background: #f7e326;
+  padding: 1.42857rem;
+  color: #545456; }
+
+.seat-map-tickets-block .seat-map-ticket {
+  border: 2px solid #0a0a0a;
+  padding: 1.42857rem;
+  position: relative;
+  margin-bottom: 1.42857rem; }
+  .seat-map-tickets-block .seat-map-ticket hr {
+    margin: 0.35714rem 0;
+    border-width: 2px;
+    border-color: #0a0a0a; }
+  .seat-map-tickets-block .seat-map-ticket .values {
+    font-weight: 800;
+    font-size: 1.42857rem; }
+  .seat-map-tickets-block .seat-map-ticket .labels {
+    font-size: 0.85714rem; }
+  .seat-map-tickets-block .seat-map-ticket .seat-map-ticket-price {
+    font-weight: 800; }
+  .seat-map-tickets-block .seat-map-ticket .seat-map-ticket-remove {
+    border: 2px solid #545456;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    margin: 0;
+    padding: 10px 11px; }
+
+.seat-map-tickets-block .seat-map-ticket-total hr {
+  border-width: 2px;
+  border-color: #0a0a0a; }
 
 .filters-section {
   background-color: #4d4d4f;
@@ -7274,15 +7326,28 @@ form .description {
     margin-top: 0.71429rem;
     display: block; }
   .page-seats-map .seats-filter .seats-filter-inner {
-    padding: 0.71429rem 0;
     border-top: 2px solid #f7e326;
     border-bottom: 2px solid #f7e326;
     font-size: 0.85714rem; }
+    @media print, screen and (min-width: 40em) {
+      .page-seats-map .seats-filter .seats-filter-inner {
+        padding: 0.71429rem 0; } }
     .page-seats-map .seats-filter .seats-filter-inner span {
       line-height: 1.2;
       vertical-align: bottom; }
     .page-seats-map .seats-filter .seats-filter-inner .cell {
-      white-space: nowrap; }
+      white-space: nowrap;
+      margin-bottom: 0.71429rem; }
+      @media print, screen and (min-width: 40em) {
+        .page-seats-map .seats-filter .seats-filter-inner .cell {
+          margin-bottom: 0; } }
+  .page-seats-map .seats-filter #filter-toggler {
+    display: none; }
+    .page-seats-map .seats-filter #filter-toggler.expanded {
+      display: block; }
+    @media print, screen and (min-width: 40em) {
+      .page-seats-map .seats-filter #filter-toggler {
+        display: block; } }
 
 .menu .button {
   white-space: normal; }

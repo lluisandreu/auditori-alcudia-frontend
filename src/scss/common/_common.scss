@@ -67,6 +67,7 @@
     @include breakpoint(small only) {
         display: block !important;
         margin-top: rem-calc(10);
+        width: 100%;
     }
 }
 

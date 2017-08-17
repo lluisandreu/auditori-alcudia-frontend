@@ -96,8 +96,8 @@
 }
 
 @mixin seat-icon($background, $border-color) {
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     background-color: $background;
     border: 2px solid;
     border-color: $border-color;

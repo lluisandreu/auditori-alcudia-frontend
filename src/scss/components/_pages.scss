@@ -563,10 +563,14 @@
 
     .seats-filter {
         .seats-filter-inner {
-            padding: rem-calc(10) 0;
             border-top: 2px solid $primary-color;
             border-bottom: 2px solid $primary-color;
             font-size: rem-calc(12);
+
+            @include breakpoint(medium) {
+                padding: rem-calc(10) 0;
+            }
+
 
             span {
                 line-height: 1.2;
@@ -575,6 +579,23 @@
 
             .cell {
                 white-space: nowrap;
+                margin-bottom: rem-calc(10);
+
+                @include breakpoint(medium) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        #filter-toggler {
+            display: none;
+
+            &.expanded {
+                display: block;
+            }
+
+            @include breakpoint(medium) {
+                display: block;
             }
         }
     }
