@@ -755,7 +755,7 @@
             .seat-tooltip {
                 padding: rem-calc(10) rem-calc(5);
                 font-size: rem-calc(12);
-                background: $primary-color;
+                background: #e6e7e8;
                 position: absolute;
                 width: 100px;
                 top: -35px;
@@ -763,6 +763,11 @@
                 color: $body-font-color;
                 z-index: 99;
                 text-align: center;
+
+                .fa {
+                    color: #60cbe8;
+                    font-size: rem-calc(15);
+                }
 
                 &.seat-full {
                     background: $light-gray;
@@ -780,6 +785,7 @@
 
             .fa {
                 font-size: rem-calc(20);
+                color: #60cbe8;
             }
         }
 
@@ -846,6 +852,10 @@
 
         a.seat-full .seat-icon {
             @include seat-icon($light-gray, $light-gray);
+        }
+
+        a[data-wheelchair="true"] .seat-icon {
+            @include seat-icon(transparent, #60cbe8);
         }
     }
 }
