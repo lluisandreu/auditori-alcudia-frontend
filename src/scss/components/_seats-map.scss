@@ -1,0 +1,186 @@
+.seats-map-seats-block {
+    overflow-x: hidden;
+
+    .seats-block-fullarea {
+        max-width: 800px;
+        min-width: 100%;
+        overflow-x: auto;
+        position: relative;
+        margin: auto;
+        border: 2px solid $white;
+
+        .seats-block-area {
+            position: relative;
+            border-bottom: 2px dashed transparentize($white, 0.4);
+
+            @include breakpoint(medium) {
+                padding: rem-calc(20);
+            }
+
+
+            .area-name {
+                text-align: center;
+                font-size: rem-calc(25);
+                padding: rem-calc(10) 0;
+                display: block;
+
+                @include breakpoint(medium) {
+                    font-size: rem-calc(14);
+                    text-align: left;
+                    padding: 0;
+                }
+            }
+        }
+
+        .seats-block-stage {
+            padding: rem-calc(10);
+
+            .stage-box {
+                background: $light-gray;
+                color: $body-font-color;
+                display: inline-block;
+                padding: 10px 100px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .seats-row {
+        margin-bottom: rem-calc(5);
+        position: relative;
+        text-align: center;
+
+        a {
+            padding: rem-calc(2);
+
+            @include breakpoint(medium) {
+                padding: rem-calc(4);
+            }
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        .wheelchair-row {
+            @include breakpoint(medium) {
+                position: absolute;
+                right: 0;
+            }
+
+
+            .fa {
+                font-size: rem-calc(20);
+                color: #60cbe8;
+            }
+        }
+
+        .seats {
+            text-align: center;
+
+            @include flex;
+
+            @include flex-align("center", "middle");
+        }
+
+        .seat {
+            position: relative;
+
+            @include breakpoint(medium) {
+                &:hover {
+                    .seat-tooltip {
+                        display: block !important;
+                    }
+                }
+            }
+
+
+            .seat-tooltip {
+                padding: rem-calc(10) rem-calc(5);
+                font-size: rem-calc(12);
+                background: #e6e7e8;
+                position: absolute;
+                width: 100px;
+                top: -35px;
+                left: 0;
+                color: $body-font-color;
+                z-index: 99;
+                text-align: center;
+
+                .fa {
+                    color: #60cbe8;
+                    font-size: rem-calc(15);
+                }
+
+                &.seat-full {
+                    background: $light-gray;
+                    color: $white;
+                }
+            }
+        }
+
+        .seat-column {
+            width: 100%;
+
+            @include xy-cell(6, true, 10);
+
+            @include flex;
+        }
+
+        &.two-columns .seats {
+            .seat-column {
+                @include xy-cell(6, true, 30);
+            }
+
+            .seat-column:first-child {
+                text-align: right;
+
+                @include flex-align("right", "middle");
+            }
+
+            .seat-column:last-child {
+                text-align: left;
+
+                @include flex-align("left", "middle");
+            }
+        }
+
+        &.three-columns .seats {
+            .seat-column:first-child {
+                text-align: right;
+
+                @include xy-cell-static(5, true, 5);
+
+                @include flex-align("right", "middle");
+            }
+
+            .seat-column:nth-child(2) {
+                text-align: center;
+
+                @include xy-cell-static(2, true, 5);
+
+                @include flex-align("center", "middle");
+            }
+
+            .seat-column:last-child {
+                text-align: left;
+
+                @include xy-cell-static(5, true, 5);
+
+                @include flex-align("left", "middle");
+            }
+        }
+
+        a:hover .seat-icon, a:focus .seat-icon, a.seat-selected .seat-icon {
+            @include seat-icon($primary-color, $primary-color);
+        }
+
+        a.seat-full .seat-icon {
+            @include seat-icon($light-gray, $light-gray);
+        }
+
+        a[data-wheelchair="true"] .seat-icon {
+            @include seat-icon(transparent, #60cbe8);
+        }
+    }
+}
