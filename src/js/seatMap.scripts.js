@@ -12,7 +12,7 @@ jQuery(document).ready(function ($) {
                 event.preventDefault();
             });
             if ($(this).data('num') != undefined) {
-                var $tooltip = $('<div />').attr('class', 'seat-tooltip').css('display', 'none');
+                var $tooltip = $('<div />').attr('class', 'seat-tooltip');
                 var num = $(this).data('num');
                 if ($(this).data('full')) {
                     $(this).addClass('seat-full')
@@ -23,6 +23,11 @@ jQuery(document).ready(function ($) {
                 if ($(this).data('wheelchair')) {
                     $tooltip.prepend('<i class="fa fa-wheelchair"></i>&nbsp;');
                 }
+                $(this).hover(function () {
+                    $tooltip.fadeIn(200);
+                }, function () {
+                    $tooltip.fadeOut(200);
+                });
 
                 $(this).append($tooltip);
             }

@@ -115,10 +115,16 @@
 						<img src="http://via.placeholder.com/80x50" alt="">
 						<img src="http://via.placeholder.com/80x50" alt="">
 					</div>
-					<div class="field-tech-details callout grid-x field">
-						<div class="field-price small-3 cell">Preu: <strong>30€</strong></div>
-						<div class="field-duration small-9 cell">Durada: <strong>1.35h</strong></div>
-						<div class="field-location small-12 cell"><hr><i class="fa fa-map-marker"></i> Auditori d'Alcúdia</div>
+					<div class="field-tech-details callout field">
+						<div class="grid-x">
+							<div class="field-price small-5 cell">Preu venta anticipada: <strong>30€</strong></div>
+							<div class="field-price small-7 cell">Preu venta a taquilla: <strong>40€</strong></div>
+						</div>
+						<hr>
+						<div class="grid-x">
+							<div class="field-duration small-5 cell">Durada: <strong>1.35h</strong></div>
+							<div class="field-location small-7 cell"><i class="fa fa-map-marker"></i> Auditori d'Alcúdia</div>
+						</div>
 					</div>
 					<div class="field-more-link field">
 						<a href="#">Més informació <i class="fa fa-chevron-right"></i></a>

@@ -1,5 +1,15 @@
 .seats-map-seats-block {
     overflow-x: hidden;
+    display: none;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+
+
+    &.expanded {
+        display: block !important;
+    }
 
     .seats-block-fullarea {
         max-width: 800px;
@@ -85,17 +95,12 @@
         }
 
         .seat {
-            &:hover {
-                .seat-tooltip {
-                    display: block !important;
-                }
-            }
-
             .seat-tooltip {
+                display: none;
                 padding: rem-calc(20) rem-calc(5);
                 font-size: rem-calc(12);
                 background: #e6e7e8;
-                position: absolute;
+                position: fixed;
                 color: $body-font-color;
                 z-index: 99;
                 text-align: center;
@@ -113,8 +118,13 @@
                     color: $white;
                 }
 
+                &.show {
+                    display: block;
+                }
+
                 @include breakpoint(medium) {
                     padding: rem-calc(10) rem-calc(5);
+                    position: absolute;
                     width: 100px;
                     top: -35px;
                     left: 0;
@@ -128,52 +138,26 @@
         }
 
         .seat-column {
-            width: 100%;
-
-            @include xy-cell(6, true, 10);
-
             @include flex;
         }
 
-        &.two-columns .seats {
+        .seats {
             .seat-column {
-                @include xy-cell(6, true, 30);
-            }
-
-            .seat-column:first-child {
-                text-align: right;
-
-                @include flex-align("right", "middle");
-            }
-
-            .seat-column:last-child {
-                text-align: left;
-
-                @include flex-align("left", "middle");
-            }
-        }
-
-        &.three-columns .seats {
-            .seat-column:first-child {
-                text-align: right;
-
-                @include xy-cell-static(5, true, 5);
-
-                @include flex-align("right", "middle");
-            }
-
-            .seat-column:nth-child(2) {
-                text-align: center;
-
-                @include xy-cell-static(2, true, 5);
+                @include xy-cell-static(auto, true, 10);
 
                 @include flex-align("center", "middle");
             }
 
+            .seat-column:first-child {
+                text-align: right;
+
+                @include xy-cell-static(auto, true, 10);
+
+                @include flex-align("right", "middle");
+            }
+
             .seat-column:last-child {
                 text-align: left;
-
-                @include xy-cell-static(5, true, 5);
 
                 @include flex-align("left", "middle");
             }

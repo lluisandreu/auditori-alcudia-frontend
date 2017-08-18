@@ -95,12 +95,20 @@
             padding-top: rem-calc(60);
 
             h2 {
-                background-color: $primary-color;
-                color: $body-font-color;
-                display: initial;
-                padding: rem-calc(8);
                 font-size: rem-calc(25);
                 margin-bottom: rem-calc(20);
+                display: initial;
+
+                a {
+                    color: $body-font-color;
+                    padding: rem-calc(8);
+                    background-color: $primary-color;
+
+                    &:hover {
+                        background-color: $dark-gray;
+                        color: $white;
+                    }
+                }
             }
 
             a {
@@ -385,6 +393,10 @@
             img {
                 width: 100%;
                 margin-bottom: rem-calc(20);
+
+                &:hover {
+                    filter: saturate(20%);
+                }
             }
         }
     }
@@ -581,11 +593,19 @@
                 vertical-align: bottom;
             }
 
-            .cell {
-                white-space: nowrap;
+            ul.menu {
+                @include flex-align("center", "middle");
+
+                @include breakpoint(medium) {
+                    @include flex-align("right", "middle");
+                }
+            }
+
+            li {
                 margin-bottom: rem-calc(10);
 
                 @include breakpoint(medium) {
+                    margin-right: rem-calc(10);
                     margin-bottom: 0;
                 }
             }
