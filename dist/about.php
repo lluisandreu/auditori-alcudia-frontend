@@ -55,34 +55,48 @@
 					<div class="grid-x grid-padding-x">
 						<div class="cell small-6 medium-3">
 							<div class="gallery-item-1">
+								<a href="images/about/about_header.jpg" data-lightbox="about">
+									<img src="images/placeholder/about_gallery_placeholder.jpg">
+								</a>
+							</div>
+							<a href="images/about/about_header.jpg" data-lightbox="about">
 								<img src="images/placeholder/about_gallery_placeholder.jpg">
+							</a>
+						</div>
+						<div class="cell small-6 medium-3">
+							<div class="gallery-item-1">
+								<a href="images/about/about_header.jpg" data-lightbox="about">
+									<img src="images/placeholder/about_gallery_placeholder.jpg">
+								</a>
 							</div>
 							<div class="gallery-item-5">
-								<img src="images/placeholder/about_gallery_placeholder.jpg">
+								<a href="images/about/about_header.jpg" data-lightbox="about">
+									<img src="images/placeholder/about_gallery_placeholder.jpg">
+								</a>
 							</div>
 						</div>
 						<div class="cell small-6 medium-3">
 							<div class="gallery-item-1">
-								<img src="images/placeholder/about_gallery_placeholder.jpg">
+								<a href="images/about/about_header.jpg" data-lightbox="about">
+									<img src="images/placeholder/about_gallery_placeholder.jpg">
+								</a>
 							</div>
 							<div class="gallery-item-5">
-								<img src="images/placeholder/about_gallery_placeholder.jpg">
+								<a href="images/about/about_header.jpg" data-lightbox="about">
+									<img src="images/placeholder/about_gallery_placeholder.jpg">
+								</a>
 							</div>
 						</div>
 						<div class="cell small-6 medium-3">
 							<div class="gallery-item-1">
-								<img src="images/placeholder/about_gallery_placeholder.jpg">
+								<a href="images/about/about_header.jpg" data-lightbox="about">
+									<img src="images/placeholder/about_gallery_placeholder.jpg">
+								</a>
 							</div>
 							<div class="gallery-item-5">
-								<img src="images/placeholder/about_gallery_placeholder.jpg">
-							</div>
-						</div>
-						<div class="cell small-6 medium-3">
-							<div class="gallery-item-1">
-								<img src="images/placeholder/about_gallery_placeholder.jpg">
-							</div>
-							<div class="gallery-item-5">
-								<img src="images/placeholder/about_gallery_placeholder.jpg">
+								<a href="images/about/about_header.jpg" data-lightbox="about">
+									<img src="images/placeholder/about_gallery_placeholder.jpg">
+								</a>
 							</div>
 						</div>
 					</div>

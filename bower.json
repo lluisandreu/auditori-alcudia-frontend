@@ -16,7 +16,9 @@
   ],
   "devDependencies": {
     "foundation-sites": "^6.4.1",
-    "motion-ui": "^1.2.3"
+    "motion-ui": "^1.2.3",
+    "jquery-colorbox": "^1.6.4",
+    "lightbox2": "^2.9.0"
   },
   "dependencies": {
     "owl.carousel": "^2.2.1"

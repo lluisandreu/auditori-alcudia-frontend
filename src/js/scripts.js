@@ -78,6 +78,13 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    /// Lightbox 
+
+    lightbox.option({
+        'albumLabel': "Imatge %1 de %2",
+        'wrapAround': true
+    });
+
     /// Others
 
     $('a[data-open]').on('click', function (event) {

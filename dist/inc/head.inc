@@ -11,6 +11,7 @@
     <script src="https://use.fontawesome.com/62c0422ecf.js"></script>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../bower_components/lightbox2/dist/css/lightbox.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
 
     <script src="js/vendor/modernizr.min.js"></script>

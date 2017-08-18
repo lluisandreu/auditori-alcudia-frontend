@@ -648,6 +648,17 @@
 }
 
 .seat-map-tickets-block {
+    display: none;
+
+    @include breakpoint(medium) {
+        display: block;
+    }
+
+
+    &.expanded {
+        display: block;
+    }
+
     .seat-map-tickets-inner {
         background: $primary-color;
         padding: rem-calc(20);

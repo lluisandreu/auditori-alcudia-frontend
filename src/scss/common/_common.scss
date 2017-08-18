@@ -28,6 +28,18 @@
     }
 }
 
+.button-light-gray {
+    background: $light-gray;
+    border: 1px solid $light-gray;
+    color: $white;
+    font-weight: 600;
+
+    &:hover {
+        color: $body-font-color;
+        background: $primary-color;
+    }
+}
+
 .button-dark-bg {
     background: $dark-gray;
     border: none;
