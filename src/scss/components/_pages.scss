@@ -603,10 +603,4 @@
             }
         }
     }
-
-    .seats-map-seats {
-        @include breakpoint(small only) {
-            padding: 0;
-        }
-    }
 }

@@ -63,14 +63,14 @@
 								<div class="seats-row" data-seat-row data-row-wheelchair="true" data-file="1">
 									<div class="seats">
 										<a href="#" class="seat" data-seat data-num="1" data-wheelchair="true"><i class="seat-icon"></i></a>
-										<a href="#" class="seat" data-seat data-num="2" data-full="true"><i class="seat-icon"></i></a>
-										<a href="#" class="seat" data-seat data-num="3" data-full="true"><i class="seat-icon"></i></a>
+										<a href="#" class="seat" data-seat data-num="2"  data-wheelchair="true" data-full="true"><i class="seat-icon"></i></a>
+										<a href="#" class="seat" data-seat data-num="3" data-wheelchair="true" data-full="true"><i class="seat-icon"></i></a>
 										<a href="#" class="seat" data-seat data-num="4" data-full="true"><i class="seat-icon"></i></a>
 										<a href="#" class="seat" data-seat data-num="5"><i class="seat-icon"></i></a>
 										<a href="#" class="seat" data-seat data-num="6"><i class="seat-icon"></i></a>
 									</div>
 								</div>
-								<div class="seats-row two-columns" data-seat-row data-file="2">
+								<div class="seats-row two-columns"  data-seat-row data-file="2">
 									<div class="seats">
 										<div class="seat-column">
 											<a href="#" class="seat" data-seat data-num="1"><i class="seat-icon"></i></a>
@@ -86,7 +86,7 @@
 										</div>
 									</div>
 								</div>
-								<div class="seats-row two-columns" data-seat-row data-file="3">
+								<div class="seats-row two-columns" data-seat-row data-row-wheelchair="true" data-seat-row data-file="3">
 									<div class="seats">
 										<div class="seat-column">
 											<a href="#" class="seat" data-seat data-num="1"><i class="seat-icon"></i></a>

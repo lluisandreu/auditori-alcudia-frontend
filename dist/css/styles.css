@@ -6698,7 +6698,6 @@ form .description {
     margin: auto;
     border: 2px solid #fefefe; }
     .seats-map-seats-block .seats-block-fullarea .seats-block-area {
-      position: relative;
       border-bottom: 2px dashed rgba(254, 254, 254, 0.6); }
       @media print, screen and (min-width: 40em) {
         .seats-map-seats-block .seats-block-fullarea .seats-block-area {
@@ -6723,7 +6722,6 @@ form .description {
         font-weight: 600; }
   .seats-map-seats-block .seats-row {
     margin-bottom: 0.35714rem;
-    position: relative;
     text-align: center; }
     .seats-map-seats-block .seats-row a {
       padding: 0.14286rem; }
@@ -6732,13 +6730,16 @@ form .description {
           padding: 0.28571rem; } }
     .seats-map-seats-block .seats-row h3 {
       margin: 0; }
-    @media print, screen and (min-width: 40em) {
-      .seats-map-seats-block .seats-row .wheelchair-row {
-        position: absolute;
-        right: 0; } }
-    .seats-map-seats-block .seats-row .wheelchair-row .fa {
-      font-size: 1.42857rem;
-      color: #60cbe8; }
+    .seats-map-seats-block .seats-row .wheelchair-row {
+      display: none; }
+      @media print, screen and (min-width: 40em) {
+        .seats-map-seats-block .seats-row .wheelchair-row {
+          display: block;
+          position: absolute;
+          right: 20px; } }
+      .seats-map-seats-block .seats-row .wheelchair-row .fa {
+        font-size: 1.42857rem;
+        color: #60cbe8; }
     .seats-map-seats-block .seats-row .seats {
       text-align: center;
       display: -webkit-box;
@@ -6750,28 +6751,35 @@ form .description {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-    .seats-map-seats-block .seats-row .seat {
-      position: relative; }
+    .seats-map-seats-block .seats-row .seat:hover .seat-tooltip {
+      display: block !important; }
+    .seats-map-seats-block .seats-row .seat .seat-tooltip {
+      padding: 1.42857rem 0.35714rem;
+      font-size: 0.85714rem;
+      background: #e6e7e8;
+      position: absolute;
+      color: #545456;
+      z-index: 99;
+      text-align: center;
+      width: 100%;
+      bottom: 0;
+      left: 0; }
+      .seats-map-seats-block .seats-row .seat .seat-tooltip .fa {
+        color: #60cbe8;
+        font-size: 1.07143rem; }
+      .seats-map-seats-block .seats-row .seat .seat-tooltip.seat-full {
+        background: #828385;
+        color: #fefefe; }
       @media print, screen and (min-width: 40em) {
-        .seats-map-seats-block .seats-row .seat:hover .seat-tooltip {
-          display: block !important; } }
-      .seats-map-seats-block .seats-row .seat .seat-tooltip {
-        padding: 0.71429rem 0.35714rem;
-        font-size: 0.85714rem;
-        background: #e6e7e8;
-        position: absolute;
-        width: 100px;
-        top: -35px;
-        left: 0;
-        color: #545456;
-        z-index: 99;
-        text-align: center; }
-        .seats-map-seats-block .seats-row .seat .seat-tooltip .fa {
-          color: #60cbe8;
-          font-size: 1.07143rem; }
-        .seats-map-seats-block .seats-row .seat .seat-tooltip.seat-full {
-          background: #828385;
-          color: #fefefe; }
+        .seats-map-seats-block .seats-row .seat .seat-tooltip {
+          padding: 0.71429rem 0.35714rem;
+          width: 100px;
+          top: -35px;
+          left: 0;
+          bottom: auto; } }
+    @media print, screen and (min-width: 40em) {
+      .seats-map-seats-block .seats-row .seat {
+        position: relative; } }
     .seats-map-seats-block .seats-row .seat-column {
       width: 100%;
       width: calc(50% - 0.71429rem);
@@ -6873,6 +6881,26 @@ form .description {
         .seats-map-seats-block .seats-row a.seat-full .seat-icon {
           height: 15px;
           width: 15px; } }
+    .seats-map-seats-block .seats-row a[data-wheelchair="true"].seat-full .seat-icon {
+      height: 8px;
+      width: 8px;
+      background-color: #828385;
+      border: 1px solid;
+      border-color: #60cbe8;
+      display: inline-block;
+      vertical-align: middle;
+      margin: auto;
+      transition: all .3s ease-in-out;
+      border-radius: 50px; }
+      @media print, screen and (min-width: 40em) {
+        .seats-map-seats-block .seats-row a[data-wheelchair="true"].seat-full .seat-icon {
+          height: 12px;
+          width: 12px;
+          border-width: 2px; } }
+      @media print, screen and (min-width: 64em) {
+        .seats-map-seats-block .seats-row a[data-wheelchair="true"].seat-full .seat-icon {
+          height: 15px;
+          width: 15px; } }
     .seats-map-seats-block .seats-row a[data-wheelchair="true"] .seat-icon {
       height: 8px;
       width: 8px;
@@ -6891,6 +6919,26 @@ form .description {
           border-width: 2px; } }
       @media print, screen and (min-width: 64em) {
         .seats-map-seats-block .seats-row a[data-wheelchair="true"] .seat-icon {
+          height: 15px;
+          width: 15px; } }
+    .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):hover .seat-icon, .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):focus .seat-icon {
+      height: 8px;
+      width: 8px;
+      background-color: #f7e326;
+      border: 1px solid;
+      border-color: #60cbe8;
+      display: inline-block;
+      vertical-align: middle;
+      margin: auto;
+      transition: all .3s ease-in-out;
+      border-radius: 50px; }
+      @media print, screen and (min-width: 40em) {
+        .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):hover .seat-icon, .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):focus .seat-icon {
+          height: 12px;
+          width: 12px;
+          border-width: 2px; } }
+      @media print, screen and (min-width: 64em) {
+        .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):hover .seat-icon, .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):focus .seat-icon {
           height: 15px;
           width: 15px; } }
 
@@ -7389,9 +7437,6 @@ form .description {
     @media print, screen and (min-width: 40em) {
       .page-seats-map .seats-filter #filter-toggler {
         display: block; } }
-  @media screen and (max-width: 39.9375em) {
-    .page-seats-map .seats-map-seats {
-      padding: 0; } }
 
 .menu .button {
   white-space: normal; }
