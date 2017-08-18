@@ -545,7 +545,11 @@
             background: $primary-color;
             width: auto;
             max-width: 500px;
-            margin: 20px 0 0 -70px;
+
+            @include breakpoint(medium) {
+                margin: 20px 0 0 -70px;
+            }
+
 
             h2 {
                 color: $body-font-color;
@@ -597,6 +601,12 @@
             @include breakpoint(medium) {
                 display: block;
             }
+        }
+    }
+
+    .seats-map-seats {
+        @include breakpoint(small only) {
+            padding: 0;
         }
     }
 }

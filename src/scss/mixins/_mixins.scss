@@ -96,10 +96,10 @@
 }
 
 @mixin seat-icon($background, $border-color) {
-    height: 25px;
-    width: 25px;
+    height: 8px;
+    width: 8px;
     background-color: $background;
-    border: 2px solid;
+    border: 1px solid;
     border-color: $border-color;
     display: inline-block;
     vertical-align: middle;
@@ -109,6 +109,7 @@
     @include breakpoint(medium) {
         height: 12px;
         width: 12px;
+        border-width: 2px;
     }
 
 
