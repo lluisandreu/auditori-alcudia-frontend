@@ -10,7 +10,6 @@
         border: 2px solid $white;
 
         .seats-block-area {
-            position: relative;
             border-bottom: 2px dashed transparentize($white, 0.4);
 
             @include breakpoint(medium) {
@@ -47,7 +46,6 @@
 
     .seats-row {
         margin-bottom: rem-calc(5);
-        position: relative;
         text-align: center;
 
         a {
@@ -63,9 +61,12 @@
         }
 
         .wheelchair-row {
+            display: none;
+
             @include breakpoint(medium) {
+                display: block;
                 position: absolute;
-                right: 0;
+                right: 20px;
             }
 
 
@@ -84,28 +85,23 @@
         }
 
         .seat {
-            position: relative;
-
-            @include breakpoint(medium) {
-                &:hover {
-                    .seat-tooltip {
-                        display: block !important;
-                    }
+            &:hover {
+                .seat-tooltip {
+                    display: block !important;
                 }
             }
 
-
             .seat-tooltip {
-                padding: rem-calc(10) rem-calc(5);
+                padding: rem-calc(20) rem-calc(5);
                 font-size: rem-calc(12);
                 background: #e6e7e8;
                 position: absolute;
-                width: 100px;
-                top: -35px;
-                left: 0;
                 color: $body-font-color;
                 z-index: 99;
                 text-align: center;
+                width: 100%;
+                bottom: 0;
+                left: 0;
 
                 .fa {
                     color: #60cbe8;
@@ -116,6 +112,18 @@
                     background: $light-gray;
                     color: $white;
                 }
+
+                @include breakpoint(medium) {
+                    padding: rem-calc(10) rem-calc(5);
+                    width: 100px;
+                    top: -35px;
+                    left: 0;
+                    bottom: auto;
+                }
+            }
+
+            @include breakpoint(medium) {
+                position: relative;
             }
         }
 
@@ -179,8 +187,16 @@
             @include seat-icon($light-gray, $light-gray);
         }
 
+        a[data-wheelchair="true"].seat-full .seat-icon {
+            @include seat-icon($light-gray, #60cbe8);
+        }
+
         a[data-wheelchair="true"] .seat-icon {
             @include seat-icon(transparent, #60cbe8);
+        }
+
+        a[data-wheelchair="true"]:not(.seat-full):hover .seat-icon, a[data-wheelchair="true"]:not(.seat-full):focus .seat-icon {
+            @include seat-icon($primary-color, #60cbe8);
         }
     }
 }

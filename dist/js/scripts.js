@@ -93,9 +93,12 @@ jQuery(document).ready(function ($) {
     $('*[data-seat-row]').each(function (index, el) {
         var file = $(this).data('file');
         if ($(this).data('row-wheelchair')) {
-            $(this).find(".seats").prepend('<div class="wheelchair-row"><i class="fa fa-wheelchair"></i></div>');
+            $(this).prepend('<div class="wheelchair-row"><i class="fa fa-wheelchair"></i></div>');
         };
         $(this).find('*[data-seat]').each(function (index, el) {
+            $(this).on('click', function (event) {
+                event.preventDefault();
+            });
             if ($(this).data('num') != undefined) {
                 var $tooltip = $('<div />').attr('class', 'seat-tooltip').css('display', 'none');
                 var num = $(this).data('num');
@@ -113,4 +116,8 @@ jQuery(document).ready(function ($) {
             }
         });
     });
+
+    // Seat selector
+
+
 })
