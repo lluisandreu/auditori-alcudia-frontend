@@ -6755,9 +6755,13 @@ form .description {
     border-color: #f7e326;
     color: #f7e326; }
   .login-form-block .form-message, .register-form-block .form-message, .password-recovery-form-block .form-message, .my-account-form-block .form-message {
-    margin-bottom: 0.35714rem; }
+    margin-bottom: 0.71429rem; }
     .login-form-block .form-message.alert, .register-form-block .form-message.alert, .password-recovery-form-block .form-message.alert, .my-account-form-block .form-message.alert {
       color: #f48497; }
+    .login-form-block .form-message.success, .register-form-block .form-message.success, .password-recovery-form-block .form-message.success, .my-account-form-block .form-message.success {
+      color: #5bc992; }
+    .login-form-block .form-message.warning, .register-form-block .form-message.warning, .password-recovery-form-block .form-message.warning, .my-account-form-block .form-message.warning {
+      color: #ffae00; }
 
 .my-account-form-block form {
   border-bottom: none; }
