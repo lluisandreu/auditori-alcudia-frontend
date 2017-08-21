@@ -182,5 +182,9 @@
         a[data-wheelchair="true"]:not(.seat-full):hover .seat-icon, a[data-wheelchair="true"]:not(.seat-full):focus .seat-icon {
             @include seat-icon($primary-color, #60cbe8);
         }
+
+        a.fake-seat {
+            visibility: hidden;
+        }
     }
 }

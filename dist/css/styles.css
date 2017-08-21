@@ -6935,6 +6935,8 @@ form .description {
         .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):hover .seat-icon, .seats-map-seats-block .seats-row a[data-wheelchair="true"]:not(.seat-full):focus .seat-icon {
           height: 15px;
           width: 15px; } }
+    .seats-map-seats-block .seats-row a.fake-seat {
+      visibility: hidden; }
 
 .filters-section {
   background-color: #4d4d4f;
