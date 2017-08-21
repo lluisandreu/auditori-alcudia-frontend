@@ -624,3 +624,15 @@
         }
     }
 }
+
+.page-register {
+    .register-form-heading {
+        .yellow-left-line {
+            width: 70%;
+
+            @include breakpoint(large) {
+                width: 86%;
+            }
+        }
+    }
+}

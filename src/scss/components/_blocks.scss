@@ -712,13 +712,13 @@
     background-color: $dark-gray;
     padding: rem-calc(20);
 
-    .login-form-block-heading {
+    .form-block-heading {
         color: $primary-color;
         padding-bottom: rem-calc(20);
         border-bottom: 2px solid $primary-color;
     }
 
-    .login-form-block-image {
+    .form-block-image {
         padding: rem-calc(20) 0;
     }
 
@@ -788,4 +788,8 @@
             color: $alert-color;
         }
     }
+}
+
+.register-form-block {
+    @extend .login-form-block;
 }
