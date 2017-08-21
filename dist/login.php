@@ -12,10 +12,10 @@
 				<div class="grid-x grid-padding-x align-center">
 					<div class="cell small-12 medium-6 large-4">
 						<div class="login-form-block">
-							<div class="login-form-block-heading text-center">
+							<div class="form-block-heading text-center">
 								<h2>Introdueix les teves dades</h2>
 							</div>
-							<div class="login-form-block-image text-center">
+							<div class="form-block-image text-center">
 								<img src="images/icons/login-image.png" alt="Introdueix les teves dades">
 							</div>
 							<form id="login-form" action="" method="POST">
