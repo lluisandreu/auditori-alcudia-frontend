@@ -733,7 +733,7 @@
         border-bottom: 2px solid $primary-color;
     }
 
-    input[type=text], input[type=password] {
+    input[type=text], input[type=password], input[type=email] {
         background: transparent;
         border: 2px solid $white;
         color: $white;
@@ -782,14 +782,34 @@
     }
 
     .form-message {
-        margin-bottom: rem-calc(5);
+        margin-bottom: rem-calc(10);
 
         &.alert {
             color: $alert-color;
+        }
+
+        &.success {
+            color: $success-color;
+        }
+
+        &.warning {
+            color: $warning-color;
         }
     }
 }
 
 .register-form-block {
     @extend .login-form-block;
+}
+
+.password-recovery-form-block {
+    @extend .login-form-block;
+}
+
+.my-account-form-block {
+    @extend .login-form-block;
+
+    form {
+        border-bottom: none;
+    }
 }
