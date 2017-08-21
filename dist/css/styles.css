@@ -3703,7 +3703,7 @@ label {
   margin: 0;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 1.8;
+  line-height: 1.5;
   color: #0a0a0a; }
   label.middle {
     margin: 0 0 1.14286rem;
@@ -3791,7 +3791,7 @@ legend {
   margin-bottom: 0.57143rem; }
 
 .fieldset {
-  margin: 1.28571rem 0;
+  margin: 1.07143rem 0;
   padding: 1.42857rem;
   border: 1px solid #414042; }
   .fieldset legend {
@@ -5680,6 +5680,12 @@ a {
 img {
   transition: -webkit-filter .2s ease-in-out, filter .2s ease-in-out; }
 
+.white-link {
+  color: #fefefe; }
+
+.blue-link {
+  color: #60cbe8; }
+
 .button {
   font-weight: 800; }
 
@@ -5822,6 +5828,10 @@ form .description {
     .section-padding-2x {
       padding: 7.14286rem 0 4.28571rem 0; } }
 
+.section-title {
+  font-size: 1.78571rem;
+  position: relative; }
+
 .section-light {
   background: #fefefe; }
 
@@ -5834,7 +5844,7 @@ form .description {
   background: #f7e326; }
 
 .section-light-gray {
-  background: #f1f2f2; }
+  background: #f6f6f6; }
 
 .field-category {
   font-weight: 800; }
@@ -6701,6 +6711,53 @@ form .description {
   .seat-map-tickets-block .seat-map-ticket-total hr {
     border-width: 2px;
     border-color: #0a0a0a; }
+
+.login-form-block {
+  background-color: #414042;
+  padding: 1.42857rem; }
+  .login-form-block .login-form-block-heading {
+    color: #f7e326;
+    padding-bottom: 1.42857rem;
+    border-bottom: 2px solid #f7e326; }
+  .login-form-block .login-form-block-image {
+    padding: 1.42857rem 0; }
+  .login-form-block h3 {
+    color: #fefefe;
+    font-size: 1.28571rem; }
+  .login-form-block form {
+    padding-bottom: 1.42857rem;
+    margin-bottom: 1.42857rem;
+    border-bottom: 2px solid #f7e326; }
+  .login-form-block input[type=text], .login-form-block input[type=password] {
+    background: transparent;
+    border: 2px solid #fefefe;
+    color: #fefefe; }
+    .login-form-block input[type=text]::-webkit-input-placeholder, .login-form-block input[type=password]::-webkit-input-placeholder {
+      color: #fefefe; }
+    .login-form-block input[type=text]::-moz-placeholder, .login-form-block input[type=password]::-moz-placeholder {
+      color: #fefefe; }
+    .login-form-block input[type=text]:-ms-input-placeholder, .login-form-block input[type=password]:-ms-input-placeholder {
+      color: #fefefe; }
+    .login-form-block input[type=text]:focus, .login-form-block input[type=text]:hover, .login-form-block input[type=password]:focus, .login-form-block input[type=password]:hover {
+      color: #f7e326;
+      border-color: #f7e326; }
+      .login-form-block input[type=text]:focus::-webkit-input-placeholder, .login-form-block input[type=text]:hover::-webkit-input-placeholder, .login-form-block input[type=password]:focus::-webkit-input-placeholder, .login-form-block input[type=password]:hover::-webkit-input-placeholder {
+        color: #f7e326; }
+    .login-form-block input[type=text].error, .login-form-block input[type=password].error {
+      color: #f48497;
+      border-color: #f48497; }
+  .login-form-block input[type=checkbox] {
+    margin-bottom: 0; }
+  .login-form-block label {
+    color: #fefefe; }
+  .login-form-block button:hover {
+    background: #414042;
+    border-color: #f7e326;
+    color: #f7e326; }
+  .login-form-block .form-message {
+    margin-bottom: 0.35714rem; }
+    .login-form-block .form-message.alert {
+      color: #f48497; }
 
 .seats-map-seats-block {
   overflow-x: hidden;
