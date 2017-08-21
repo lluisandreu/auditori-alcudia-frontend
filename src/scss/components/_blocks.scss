@@ -707,3 +707,85 @@
         }
     }
 }
+
+.login-form-block {
+    background-color: $dark-gray;
+    padding: rem-calc(20);
+
+    .login-form-block-heading {
+        color: $primary-color;
+        padding-bottom: rem-calc(20);
+        border-bottom: 2px solid $primary-color;
+    }
+
+    .login-form-block-image {
+        padding: rem-calc(20) 0;
+    }
+
+    h3 {
+        color: $white;
+        font-size: rem-calc(18);
+    }
+
+    form {
+        padding-bottom: rem-calc(20);
+        margin-bottom: rem-calc(20);
+        border-bottom: 2px solid $primary-color;
+    }
+
+    input[type=text], input[type=password] {
+        background: transparent;
+        border: 2px solid $white;
+        color: $white;
+
+        &::-webkit-input-placeholder {
+            color: $white;
+        }
+
+        &::-moz-placeholder {
+            color: $white;
+        }
+
+        &:-ms-input-placeholder {
+            color: $white;
+        }
+
+        &:focus, &:hover {
+            color: $primary-color;
+            border-color: $primary-color;
+
+            &::-webkit-input-placeholder {
+                color: $primary-color;
+            }
+        }
+
+        &.error {
+            color: $alert-color;
+            border-color: $alert-color;
+        }
+    }
+
+    input[type=checkbox] {
+        margin-bottom: 0;
+    }
+
+    label {
+        color: $white;
+    }
+
+    button {
+        &:hover {
+            background: $dark-gray;
+            border-color: $primary-color;
+            color: $primary-color;
+        }
+    }
+
+    .form-message {
+        margin-bottom: rem-calc(5);
+
+        &.alert {
+            color: $alert-color;
+        }
+    }
+}
