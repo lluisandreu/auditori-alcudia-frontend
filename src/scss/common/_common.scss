@@ -122,6 +122,26 @@ form {
     }
 }
 
+input[type=checkbox] {
+    visibility: hidden;
+
+    &:after {
+        visibility: visible;
+        content: '';
+        height: 15px;
+        width: 15px;
+        display: block;
+        border: 2px solid $primary-color;
+        margin-top: -2px;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+    }
+
+    &:checked:after {
+        background: $primary-color;
+    }
+}
+
 /// common elements
 
 .clearfix:after {
@@ -267,6 +287,14 @@ form {
 
 .yellow-left-line {
     @include left-line($primary-color, 90%);
+
+    &.short {
+        width: 70%;
+
+        @include breakpoint(large) {
+            width: 83%;
+        }
+    }
 }
 
 .white-left-line {

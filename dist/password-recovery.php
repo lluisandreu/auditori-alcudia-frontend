@@ -5,7 +5,7 @@
 	</div>
 	<section class="password-recovery-form section-padding section-light-gray">
 		<div class="password-recovery-form-heading heading-padding text-center">
-			<h1 class="section-title"><span class="yellow-left-line"></span>Recuperar el meu compte</h1>
+			<h1 class="section-title"><span class="yellow-left-line short"></span>Recuperar la meva contrassenya</h1>
 		</div>
 		<div class="password-recovery-form-body">
 			<div class="grid-container">

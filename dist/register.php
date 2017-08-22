@@ -20,8 +20,8 @@
 							</div>
 							<form id="register-form" action="" method="POST">
 								<div class="form-message alert">Les contrassenyes no són iguals</div>
-								<label class="show-for-sr">Nom d'usuari</label>
-								<input type="text" name="username" value="" placeholder="Tria un nom d'usuari" required>
+								<label class="show-for-sr">Email</label>
+								<input type="email" name="email" value="" placeholder="Introdueix el teu email" required>
 								<label class="show-for-sr">Tria una clau d'accés</label>
 								<input type="password" class="error" name="password" value="" placeholder="Tria una clau d'accés" required>
 								<input type="password" class="error" name="validate-password" value="" placeholder="Torna a introduïr la contrassenya" required>

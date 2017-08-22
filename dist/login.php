@@ -20,14 +20,14 @@
 							</div>
 							<form id="login-form" action="" method="POST">
 								<div class="form-message alert">Dades incorrectes. Revisa-ho</div>
-								<label class="show-for-sr">Nom d'usuari</label>
-								<input type="text" name="username" value="" placeholder="Nom d'usuari" required>
+								<label class="show-for-sr">Email</label>
+								<input type="email" name="email" value="" placeholder="Email" required>
 								<label class="show-for-sr">Clau d'accés</label>
 								<input type="password" class="error" name="password" value="" placeholder="Clau d'accés" required>
 								<button type="submit" class="button expanded">Accedir</button>
 								<div class="grid-x">
 									<div class="cell small-4 text-left">
-										<label><input type="checkbox" name="remember-session">Recorda'm</label>
+										<label><input type="checkbox" class="cool-checkbox" name="remember-session">Recorda'm</label>
 									</div>
 									<div class="cell small-8 text-right">
 										<a href="#" class="white-link"><strong>He oblidat les meves dades</strong> <i class="fa fa-chevron-right"></i></a>
