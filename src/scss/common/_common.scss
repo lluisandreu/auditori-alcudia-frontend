@@ -5,7 +5,7 @@
 }
 
 .blue-link {
-    color: $blue;
+    color: $blue !important;
 }
 
 // Buttons
@@ -104,6 +104,14 @@
     position: absolute;
     color: #8a8a8a;
     cursor: pointer;
+}
+
+.button.unstyled {
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    font-weight: normal;
+    font-size: $global-font-size;
 }
 
 /// Forms
@@ -276,6 +284,10 @@ form {
 .underline-primary {
     border-bottom: 2px solid $primary-color;
     display: initial;
+}
+
+.blue {
+    color: $blue;
 }
 
 /// Seat icons

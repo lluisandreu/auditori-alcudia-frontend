@@ -813,3 +813,116 @@
         border-bottom: none;
     }
 }
+
+.cart-section-tickets-block {
+    .item {
+        padding-top: rem-calc(30);
+        position: relative;
+
+        .item-remove-button {
+            position: absolute;
+            right: 15px;
+            top: 0;
+
+            a {
+                color: #ccc;
+
+                &:hover {
+                    color: $body-font-color;
+                }
+            }
+        }
+
+        .grid-padding-x {
+            margin-left: rem-calc(15);
+            margin-right: rem-calc(15);
+        }
+
+        .item-heading {
+            background: $dark-gray;
+            color: $white;
+            padding-top: rem-calc(10);
+            padding-bottom: rem-calc(10);
+            margin-bottom: rem-calc(3);
+
+            h3 {
+                margin: 0;
+                font-size: rem-calc(15);
+            }
+
+            .item-metadata {
+                ul li {
+                    margin-right: rem-calc(20);
+                }
+            }
+        }
+
+        .item-information {
+            .cell {
+                padding-top: rem-calc(20);
+                padding-bottom: rem-calc(10);
+                position: relative;
+                text-align: center;
+                font-weight: 800;
+
+                &:not(:last-child) {
+                    border-right: 1px solid $white;
+                }
+            }
+
+            .item-cell-name {
+                font-size: rem-calc(12);
+                position: absolute;
+                top: 5px;
+                left: 15px;
+                font-weight: 400;
+            }
+
+            .item-section, .item-file, .item-number {
+                background: $primary-color;
+                color: $body-font-color;
+            }
+
+            .item-tariff, .item-price {
+                background: $very-light-gray;
+            }
+
+            .item-section {
+                .fa-wheelchair {
+                    display: none;
+                }
+            }
+
+            .item-section.section-wheelchair {
+                .fa-wheelchair {
+                    display: inline !important;
+                    font-weight: 800;
+                }
+            }
+        }
+
+        .item-footer {
+            margin-top: rem-calc(5);
+
+            a {
+                font-size: rem-calc(12);
+            }
+
+            .menu hr {
+                margin: 0;
+            }
+
+            .menu a:after {
+                display: none;
+            }
+
+            .menu a:hover {
+                color: $anchor-color;
+            }
+
+            .menu ul a {
+                color: $body-font-color;
+            }
+        }
+    }
+}
