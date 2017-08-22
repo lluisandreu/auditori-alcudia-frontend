@@ -5769,6 +5769,21 @@ img {
 form .description {
   font-size: 0.71429rem; }
 
+input[type=checkbox] {
+  visibility: hidden; }
+  input[type=checkbox]:after {
+    visibility: visible;
+    content: '';
+    height: 15px;
+    width: 15px;
+    display: block;
+    border: 2px solid #f7e326;
+    margin-top: -2px;
+    cursor: pointer;
+    transition: all .3s ease-in-out; }
+  input[type=checkbox]:checked:after {
+    background: #f7e326; }
+
 .clearfix:after {
   content: "";
   display: table;
@@ -5889,6 +5904,11 @@ form .description {
   @media print, screen and (min-width: 64em) {
     .yellow-left-line {
       width: 90%; } }
+  .yellow-left-line.short {
+    width: 70%; }
+    @media print, screen and (min-width: 64em) {
+      .yellow-left-line.short {
+        width: 83%; } }
 
 .white-left-line {
   display: none;
