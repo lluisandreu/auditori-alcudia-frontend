@@ -6,7 +6,7 @@
 	<section class="about-header overflow-x-hidden">
 		<div class="about-header-inner" style="background-image: url('images/about/about_header.jpg');">
 			<div class="about-header-heading text-center">
-				<h1 class="relative">Auditori d'Alcúdia <span class="yellow-right-line"></span></h1>
+				<h1 class="section-title">Auditori d'Alcúdia <span class="yellow-right-line"></span></h1>
 			</div>
 			<div class="about-header-content">
 				<div class="grid-container">
