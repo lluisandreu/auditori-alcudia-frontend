@@ -6916,7 +6916,7 @@ input[type=checkbox] {
     font-weight: 800; }
   .section-subscriptions-available-block .item p {
     margin: 0; }
-  .section-subscriptions-available-block .item .cell {
+  .section-subscriptions-available-block .item .wrapper {
     padding: 1.42857rem;
     background: #f7e326;
     color: #545456; }
