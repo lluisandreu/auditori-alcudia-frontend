@@ -1,6 +1,5 @@
 .seats-map-seats-block {
     overflow-x: hidden;
-    display: none;
 
     @include breakpoint(medium) {
         display: block;
@@ -96,17 +95,23 @@
 
         .seat {
             .seat-tooltip {
-                display: none;
+                opacity: 0;
                 padding: rem-calc(20) rem-calc(5);
                 font-size: rem-calc(12);
                 background: #e6e7e8;
                 position: fixed;
                 color: $body-font-color;
-                z-index: 99;
+                z-index: -99;
                 text-align: center;
                 width: 100%;
                 bottom: 0;
                 left: 0;
+
+                &.show {
+                    display: block;
+                    opacity: 1;
+                    z-index: 99;
+                }
 
                 .fa {
                     color: #60cbe8;
@@ -116,10 +121,6 @@
                 &.seat-full {
                     background: $light-gray;
                     color: $white;
-                }
-
-                &.show {
-                    display: block;
                 }
 
                 @include breakpoint(medium) {
@@ -135,6 +136,13 @@
             @include breakpoint(medium) {
                 position: relative;
             }
+
+
+            &.active, &.selected, &:not(.seat-full):focus {
+                .seat-tooltip {
+                    background: $primary-color;
+                }
+            }
         }
 
         .seat-column {
@@ -146,6 +154,10 @@
                 @include xy-cell-static(auto, true, 10);
 
                 @include flex-align("center", "middle");
+
+                @media screen and (max-width: 320px) {
+                    @include xy-cell-static(auto, true, 0);
+                }
             }
 
             .seat-column:first-child {
@@ -163,7 +175,7 @@
             }
         }
 
-        a:hover .seat-icon, a:focus .seat-icon, a.seat-selected .seat-icon {
+        a:hover .seat-icon, a:focus .seat-icon, a.selected .seat-icon {
             @include seat-icon($primary-color, $primary-color);
         }
 
