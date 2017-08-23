@@ -7,16 +7,18 @@
 		<div class="text-center">
 			<h1 class="section-title"><span class="yellow-left-line"></span>Abonament</h1>
 		</div>
-		<div class="text-center row-padding">
+		<div class="text-center row-padding row column">
 			<h3>Les sessions i les butaques s’han assignat aleatòriament. Pots canviar-ho si tens una altra preferència.</h3>
 		</div>
 		<div class="section-subscriptions-available-block">
 			<div class="items">
 				<div class="item grid-container">
-					<div class="grid-x align-center">
+					<div class="grid-x grid-padding-x align-center">
 						<div class="cell small-12 medium-6 text-center">
-							<h3>Donec rutrum congue leo eget malesuada</h3>
-							<p>del 20 de maig de 2017 al 30 de juliol de 2017</p>
+							<div class="wrapper">
+								<h3>Donec rutrum congue leo eget malesuada</h3>
+								<p>del 20 de maig de 2017 al 30 de juliol de 2017</p>
+							</div>
 						</div>
 					</div>
 				</div>
