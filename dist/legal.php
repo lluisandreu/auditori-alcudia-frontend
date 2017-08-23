@@ -5,7 +5,7 @@
 	</div>
 	<section class="basic-section section-padding">
 		<div class="basic-section-heading heading-padding text-center">
-			<h1 class="relative"><span class="yellow-left-line"></span> Avís Legal</h1>
+			<h1 class="section-title"><span class="yellow-left-line"></span> Avís Legal</h1>
 		</div>
 		<div class="basic-section-content row">
 			<div class="column">

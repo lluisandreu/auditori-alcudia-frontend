@@ -5,7 +5,7 @@
 	</div>
 	<section class="blog-list-section section-padding section-light-gray">
 		<div class="blog-list-heading heading-padding text-center">
-			<h1 class="relative"><span class="yellow-left-line"></span>Actualitat</h1>
+			<h1 class="section-title"><span class="yellow-left-line"></span>Actualitat</h1>
 		</div>
 		<div class="blog-list-content row">
 			<div class="column">

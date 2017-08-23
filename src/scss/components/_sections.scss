@@ -1,7 +1,7 @@
 /// These are sections that can be copied to other pages, not specific sections
 
 .filters-section {
-    background-color: #4d4d4f;
+    background-color: $dark-gray;
     border-bottom: 1px solid $primary-color;
     font-size: rem-calc(14);
 
@@ -10,8 +10,12 @@
     display: none;
     @include breakpoint(medium) {
         display: block;
+    }}
+
+    .filter-toggle {
+        display: block;
     }
-}
+
     a:not(.button) {
         color: $white;
 
@@ -28,7 +32,7 @@
 
         .active {
             color: $primary-color;
-            font-weight: 600;
+            font-weight: 800;
         }
     }
 

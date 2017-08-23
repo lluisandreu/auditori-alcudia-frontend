@@ -5,7 +5,7 @@
 	</div>
 	<section class="basic-section section-padding">
 		<div class="basic-section-heading heading-padding text-center">
-			<h1 class="relative"><span class="yellow-left-line" style="width:86%;"></span> Error 404. Pàgina no trobada</h1>
+			<h1 class="section-title"><span class="yellow-left-line short"></span> Error 404. Pàgina no trobada</h1>
 		</div>
 		<div class="basic-section-content row">
 			<div class="column">

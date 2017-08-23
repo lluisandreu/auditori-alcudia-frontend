@@ -931,3 +931,21 @@
         }
     }
 }
+
+.historial-section-block {
+    @extend .cart-section-tickets-block;
+
+    .item {
+        .item-tickets {
+            background: $very-light-gray;
+        }
+
+        .item-download {
+            background: $primary-color;
+
+            a {
+                color: $body-font-color;
+            }
+        }
+    }
+}
