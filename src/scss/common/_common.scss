@@ -26,6 +26,17 @@
     }
 }
 
+.button-blue {
+    background: $blue;
+    color: $white;
+    font-weight: 600;
+
+    &:hover {
+        color: $white;
+        background: lighten($blue, 15%);
+    }
+}
+
 .button-dark {
     background: transparent;
     border: 2px solid $dark-gray;
@@ -163,6 +174,10 @@ input[type=checkbox] {
     margin: 0;
 }
 
+.no-padding {
+    padding: 0 !important;
+}
+
 .relative {
     position: relative;
     z-index: 5;
@@ -206,6 +221,17 @@ input[type=checkbox] {
 
     .close-button {
         color: $white;
+    }
+}
+
+.item-seat-map.reveal {
+    .close-button {
+        top: 20px;
+        right: 20px;
+
+        span {
+            color: $body-font-color;
+        }
     }
 }
 
@@ -279,6 +305,10 @@ input[type=checkbox] {
     font-weight: 600;
 }
 
+.bold {
+    font-weight: 800;
+}
+
 .gray-bold {
     @extend .black-bold;
 
@@ -347,7 +377,12 @@ input[type=checkbox] {
 .reveal-dark {
     background-color: $dark-gray;
 
-    * {
+    @include breakpoint(small only) {
+        padding: rem-calc(4);
+    }
+
+
+    &, h2, h3, p, a, li {
         color: $white;
     }
 }
