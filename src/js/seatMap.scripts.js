@@ -8,7 +8,7 @@ jQuery(document).ready(function ($) {
             $(this).prepend('<div class="wheelchair-row"><i class="fa fa-wheelchair"></i></div>');
         };
         $(this).find('*[data-seat]').each(function (index, el) {
-            $(this).on('click', function (event) {
+            $(this).on('click tap', function (event) {
                 event.preventDefault();
                 if (!$(this).hasClass('seat-full')) {
                     $(this).toggleClass('selected');
@@ -34,7 +34,20 @@ jQuery(document).ready(function ($) {
                     $tooltip.removeClass('show');
                 });
 
-                $tooltip.on('mouseover', function (event) {
+                $tooltip.on('mouseover vmouseover', function (event) {
+                    $(this).removeClass('show');
+                });
+
+
+                /// Touch events
+                $(this).on('tap', function (event) {
+                    event.preventDefault();
+                    $tooltip.toggleClass('show');
+                }).on('vmousemove', function (event) {
+                    $tooltip.removeClass('show');
+                });
+
+                $tooltip.on('vmouseover', function (event) {
                     $(this).removeClass('show');
                 });
 
