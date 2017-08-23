@@ -549,6 +549,11 @@
     color: $white;
 
     .seats-teaser {
+        @include breakpoint(small only) {
+            padding: rem-calc(20) 0;
+        }
+
+
         .seats-teaser-image {
             width: 100%;
         }
@@ -557,6 +562,8 @@
             background: $primary-color;
             width: auto;
             max-width: 500px;
+            margin-top: -40px;
+            margin-bottom: 20px;
 
             @include breakpoint(medium) {
                 margin: 20px 0 0 -70px;
@@ -565,26 +572,43 @@
 
             h2 {
                 color: $body-font-color;
-                font-size: rem-calc(20);
-                padding: rem-calc(10);
+                padding: rem-calc(5);
+                font-size: rem-calc(16);
                 font-weight: 100;
+
+                @include breakpoint(medium) {
+                    font-size: rem-calc(20);
+                    padding: rem-calc(10);
+                }
             }
         }
 
         .seats-teaser-more-link {
-            margin-top: rem-calc(10);
-            display: block;
+            @include breakpoint(medium) {
+                margin-top: rem-calc(10);
+                display: block;
+            }
+        }
+    }
+
+    .seats-map {
+        @include breakpoint(small only) {
+            padding: rem-calc(20) 0;
         }
     }
 
     .seats-filter {
         .seats-filter-inner {
-            border-top: 2px solid $primary-color;
-            border-bottom: 2px solid $primary-color;
             font-size: rem-calc(12);
+
+            .button {
+                margin: 0;
+            }
 
             @include breakpoint(medium) {
                 padding: rem-calc(10) 0;
+                border-top: 2px solid $primary-color;
+                border-bottom: 2px solid $primary-color;
             }
 
 
@@ -622,6 +646,12 @@
                 display: block;
             }
         }
+    }
+
+    a[data-toggle].active {
+        background: $primary-color;
+        color: $body-font-color;
+        border-color: $primary-color;
     }
 }
 

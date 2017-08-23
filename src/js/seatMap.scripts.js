@@ -10,6 +10,11 @@ jQuery(document).ready(function ($) {
         $(this).find('*[data-seat]').each(function (index, el) {
             $(this).on('click', function (event) {
                 event.preventDefault();
+                if (!$(this).hasClass('seat-full')) {
+                    $(this).toggleClass('selected');
+                }
+                $('#seat-map-tickets-block').addClass('expanded');
+                $('a[data-toggle="seat-map-tickets-block"]').addClass('active');
             });
             if ($(this).data('num') != undefined) {
                 var $tooltip = $('<div />').attr('class', 'seat-tooltip');
@@ -24,9 +29,13 @@ jQuery(document).ready(function ($) {
                     $tooltip.prepend('<i class="fa fa-wheelchair"></i>&nbsp;');
                 }
                 $(this).hover(function () {
-                    $tooltip.fadeIn(200);
+                    $tooltip.addClass('show');
                 }, function () {
-                    $tooltip.fadeOut(200);
+                    $tooltip.removeClass('show');
+                });
+
+                $tooltip.on('mouseover', function (event) {
+                    $(this).removeClass('show');
                 });
 
                 $(this).append($tooltip);
