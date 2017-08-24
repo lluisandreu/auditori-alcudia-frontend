@@ -6299,6 +6299,32 @@ input[type=checkbox] {
   .event-trailer-carousel .owl-dots .owl-dot.active span {
     background: #f7e326; }
 
+.cart-block {
+  background-image: url("../images/icons/cart-icon.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 40px;
+  text-align: center;
+  vertical-align: middle;
+  height: 24px;
+  margin-top: 2px;
+  position: relative; }
+  .cart-block a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #545456; }
+  .cart-block span {
+    font-size: 0.71429rem;
+    background: #fefefe;
+    width: 15px;
+    position: absolute;
+    display: block;
+    top: 4px;
+    left: 8px;
+    text-align: center;
+    border-radius: 50px; }
+
 .home-next-events-block, .programacio-events-block {
   padding: 2.85714rem 0; }
   .home-next-events-block .item, .programacio-events-block .item {
