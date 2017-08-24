@@ -6,9 +6,9 @@
 	</div>
 	<div class="small-6 columns show-for-small-only menu-responsive-icons text-right">
 		<div class="element-inline">
-			<a href="#">
-				<img src="images/icons/menu_toggle.png" alt="">
-			</a>
+			<div class="cart-block">
+				<a href="#"><span>3</span></a>
+			</div>
 		</div>
 		<div class="element-inline">
 			<a href="#" class="menu-toggle" data-toggle="responsive-menu"><i class="fa fa-bars"></i></a>
@@ -39,6 +39,11 @@
 					</ul>
 				</li>
 			</ul>
+		</div>
+		<div class="site-cart menu-inline hide-for-small-only">
+			<div class="cart-block">
+				<a href="#"><span>3</span></a>
+			</div>
 		</div>
 	</div>
 </div>

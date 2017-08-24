@@ -16,7 +16,7 @@
 								<h2>Introdueix les teves dades</h2>
 							</div>
 							<div class="form-block-image text-center">
-								<img src="images/icons/register-image.png" alt="Introdueix les teves dades">
+								<img src="images/icons/register-icon.png" alt="Introdueix les teves dades">
 							</div>
 							<form id="register-form" action="" method="POST">
 								<div class="form-message alert">Les contrassenyes no són iguals</div>

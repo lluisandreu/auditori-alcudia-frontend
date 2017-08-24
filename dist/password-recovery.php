@@ -16,7 +16,7 @@
 								<h2>Introdueix les teves dades</h2>
 							</div>
 							<div class="form-block-image text-center">
-								<img src="images/icons/login-image.png" alt="Introdueix les teves dades">
+								<img src="images/icons/login-icon.png" alt="Introdueix les teves dades">
 							</div>
 							<form id="password-recovery-form" action="" method="POST">
 								<div class="form-message alert">No hem trobat el teu email a la base de dades</div>
