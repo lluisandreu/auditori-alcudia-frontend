@@ -54,24 +54,6 @@
 								<a href="#" class="button button-primary">Selecciona</a>
 							</div>
 						</div>
-						<a href="#" class="toggle-full hide-for-large"><i class="fa fa-chevron-down"></i></a>
-					</div>
-					<div class="full clearfix back">
-						<div class="full-heading">
-							<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-						</div>
-						<div class="full-category field-category">
-							<a href="#" class="gray-bold">Varis</a>
-						</div>
-						<div class="white-separator"></div>
-						<div class="full-body">
-							<p><span class="full-body-date"><strong>03/08.</strong></span>
-							Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
-						</div>
-						<div class="full-price">
-							Preu: <strong>30€</strong>
-						</div>
-						<a href="#" class="button button-dark-bg expanded">Entrades</a>
 					</div>
 				</div>
 				<div class="column tabbed event-full item">
@@ -96,24 +78,6 @@
 								<h4>Nom de la companyia</h4>
 							</div>
 						</div>
-						<a href="#" class="toggle-full hide-for-large"><i class="fa fa-chevron-down"></i></a>
-					</div>
-					<div class="full clearfix back">
-						<div class="full-heading">
-							<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-						</div>
-						<div class="full-category field-category">
-							<a href="#" class="gray-bold">Varis</a>
-						</div>
-						<div class="white-separator"></div>
-						<div class="full-body">
-							<p><span class="full-body-date"><strong>03/08.</strong></span>
-							Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
-						</div>
-						<div class="full-price">
-							Preu: <strong>30€</strong>
-						</div>
-						<a href="#" class="button button-dark-bg expanded">Entrades</a>
 					</div>
 				</div>
 			</div>

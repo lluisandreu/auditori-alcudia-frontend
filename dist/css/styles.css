@@ -6642,6 +6642,7 @@ input[type=checkbox] {
         max-height: 320px;
         padding-bottom: 2.85714rem; } }
     .programacio-events-block .item .teaser .teaser-heading, .subscription-select-events-block .item .teaser .teaser-heading {
+      position: relative;
       padding-top: 0;
       padding: 0.71429rem 0;
       margin-top: 2.14286rem;
@@ -7035,6 +7036,8 @@ input[type=checkbox] {
 .subscription-select-events-block .item .teaser {
   min-height: 350px;
   cursor: pointer; }
+  .subscription-select-events-block .item .teaser .teaser-heading {
+    position: relative; }
   .subscription-select-events-block .item .teaser .teaser-date {
     max-height: 90px; }
     .subscription-select-events-block .item .teaser .teaser-date .multiple {
@@ -7057,8 +7060,9 @@ input[type=checkbox] {
     z-index: 999;
     opacity: 1; }
 
-.subscription-select-events-block .item:not(.event-full):hover .overlay, .subscription-select-events-block .item.selected .overlay {
-  background: rgba(247, 227, 38, 0.5); }
+.subscription-select-events-block .item.selected .overlay {
+  background: rgba(247, 227, 38, 0.5);
+  cursor: pointer; }
 
 .section-subscriptions-list-block .item {
   border: 1px solid #f7e326;
