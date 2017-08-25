@@ -70,7 +70,7 @@
 				</div>
 				<div class="seats-map-tickets small-12 large-3 cell">
 					<div class="seats-map-tickets-toggle show-for-small-only">
-						<a data-toggle="seat-map-tickets-block" class="button button-light-gray small-expanded">2 Confirma les teves entrades</a>
+						<a data-toggle="seat-map-tickets-block" class="seat-map-tickets-toggle button button-light-gray small-expanded">2 Confirma les teves entrades</a>
 					</div>
 					<div class="seat-map-tickets-block" data-toggler=".expanded" id="seat-map-tickets-block">
 						<div class="seat-map-tickets-inner">

@@ -67,16 +67,10 @@
             }
 
             .teaser-heading {
-                position: relative;
+                position: absolute;
+                bottom: 20px;
                 max-width: 180px;
                 margin: auto;
-                float: left;
-
-                @include breakpoint(large) {
-                    float: none;
-                    padding-top: rem-calc(150);
-                }
-
 
                 h2 {
                     color: $white;
@@ -88,7 +82,7 @@
                 font-size: rem-calc(32);
                 position: absolute;
                 bottom: 20px;
-                left: 20px;
+                right: 20px;
             }
         }
 
@@ -544,6 +538,7 @@
             color: $body-font-color;
             border: 2px solid $primary-color;
             margin: rem-calc(10) 0 0 0;
+            transition: all .3s ease-in-out;
 
             &:hover {
                 background: $dark-gray;
@@ -575,6 +570,10 @@
 
             .event-status {
                 color: $body-font-color;
+            }
+
+            .button {
+                border-color: $body-font-color;
             }
         }
     }
@@ -623,6 +622,12 @@
 }
 
 .event-trailer-block {
+    .item img {
+        max-height: 500px;
+        width: auto;
+        margin: auto;
+    }
+
     .event-trailer-link {
         .owl-video-wrapper {
             display: none;
@@ -658,10 +663,13 @@
 
             h2 {
                 color: $white;
+                margin: 0;
+                padding-bottom: rem-calc(10);
             }
 
             a {
                 color: $white;
+                display: block;
             }
         }
 
@@ -937,6 +945,10 @@
                     font-weight: 800;
                 }
             }
+
+            .no-cell-name {
+                padding-top: rem-calc(15);
+            }
         }
 
         .item-footer {
@@ -1118,7 +1130,7 @@
             }
         }
 
-        &:not(.event-full):focus, &:not(.event-full):hover, &.selected {
+        &:not(.event-full):hover, &.selected {
             .overlay {
                 background: transparentize($primary-color, 0.5);
             }

@@ -27,7 +27,8 @@
 								<button type="submit" class="button expanded">Accedir</button>
 								<div class="grid-x">
 									<div class="cell small-4 text-left">
-										<label><input type="checkbox" class="cool-checkbox" name="remember-session">Recorda'm</label>
+										<input type="checkbox" id="remember-session" name="remember-session">
+										<label for="remember-session">Recorda'm</label>
 									</div>
 									<div class="cell small-8 text-right">
 										<a href="#" class="white-link"><strong>He oblidat les meves dades</strong> <i class="fa fa-chevron-right"></i></a>

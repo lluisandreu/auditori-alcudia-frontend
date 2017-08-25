@@ -6,6 +6,10 @@
 
 .blue-link {
     color: $blue !important;
+
+    &:hover {
+        color: transparentize($blue, 0.4) !important;
+    }
 }
 
 // Buttons
@@ -133,22 +137,28 @@ form {
     }
 }
 
+input[type=checkbox] + label {
+    margin: 0;
+}
+
 input[type=checkbox] {
     visibility: hidden;
+    position: absolute;
 
-    &:after {
+    & + label::before {
         visibility: visible;
         content: '';
         height: 15px;
         width: 15px;
-        display: block;
+        display: inline-block;
         border: 2px solid $primary-color;
         margin-top: -2px;
+        margin-right: 4px;
         cursor: pointer;
         transition: all .3s ease-in-out;
     }
 
-    &:checked:after {
+    &:checked + label:before {
         background: $primary-color;
     }
 }
@@ -388,11 +398,17 @@ input[type=checkbox] {
 
 .reveal-dark {
     background-color: $dark-gray;
+    padding-top: rem-calc(80);
 
     @include breakpoint(small only) {
-        padding: rem-calc(4);
+        padding: rem-calc(50) rem-calc(4) rem-calc(4) rem-calc(4);
     }
 
+
+    .close-button {
+        color: $white;
+        font-size: rem-calc(40);
+    }
 
     &, h2, h3, p, a, li {
         color: $white;

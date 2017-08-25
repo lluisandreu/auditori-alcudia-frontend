@@ -14,7 +14,15 @@ jQuery(document).ready(function ($) {
                     $(this).toggleClass('selected');
                 }
                 $('#seat-map-tickets-block').addClass('expanded');
-                $('a[data-toggle="seat-map-tickets-block"]').addClass('active');
+                $('.seat-map-tickets-toggle').addClass('active').on('click tab', function (event) {
+                    $(this).data('toggle', '');
+                    $('.seat-tooltip').removeClass('show');
+                    event.preventDefault();
+                    var target = $('#seat-map-tickets-block');
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                });;
             });
             if ($(this).data('num') != undefined) {
                 var $tooltip = $('<div />').attr('class', 'seat-tooltip');

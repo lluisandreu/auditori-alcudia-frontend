@@ -186,6 +186,21 @@
 							</button>
 						</div>
 					</div>
+					<div class="item">
+						<img src="images/placeholder/carousel_placeholder_vertical.jpg" alt="">
+						<div class="text-center event-trailer-link">
+							<a data-open="trailer-2"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
+						</div>
+						<!-- We need to inject a number to the ID -->
+						<div class="reveal trailer-reveal" id="trailer-2" data-reveal>
+							<div class="responsive-embed widescreen">
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/f2O6mQkFiiw" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
+							</div>
+							<button class="close-button" data-close aria-label="Tanca" type="button">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -203,10 +218,8 @@
 					<div class="event-recommended-item" style="background-image: url('images/placeholder/event_placeholder.jpg');">
 						<a href="#"><div class="overlay"></div></a>
 						<div class="item-heading">
-							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
-							<div class="field-category">
-								<a href="#">Música ></a>
-							</div>
+							<a href="#"><h2>Vida i miracles de n'Aineta dels matalassos</h2></a>
+							<a href="#"><div class="field-category">Música ></div></a>
 						</div>
 					</div>
 				</div>
@@ -214,10 +227,8 @@
 					<div class="event-recommended-item" style="background-image: url('images/placeholder/event_placeholder.jpg');">
 						<a href="#"><div class="overlay"></div></a>
 						<div class="item-heading">
-							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
-							<div class="field-category">
-								<a href="#">Música ></a>
-							</div>
+							<a href="#"><h2>Vida i miracles de n'Aineta dels matalassos</h2></a>
+							<a href="#"><div class="field-category">Música ></div></a>
 						</div>
 					</div>
 				</div>
