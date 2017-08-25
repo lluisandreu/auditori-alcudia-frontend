@@ -416,6 +416,7 @@
 
 
             .teaser-heading {
+                position: relative;
                 padding-top: 0;
                 padding: rem-calc(10) 0;
                 margin-top: rem-calc(30);
@@ -1097,6 +1098,10 @@
             min-height: 350px;
             cursor: pointer;
 
+            .teaser-heading {
+                position: relative;
+            }
+
             .teaser-date {
                 max-height: 90px;
 
@@ -1130,9 +1135,10 @@
             }
         }
 
-        &:not(.event-full):hover, &.selected {
+        &.selected {
             .overlay {
                 background: transparentize($primary-color, 0.5);
+                cursor: pointer;
             }
         }
     }
