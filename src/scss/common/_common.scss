@@ -264,6 +264,18 @@ input[type=checkbox] {
 
 .section-dark {
     background: $dark-gray;
+    color: $white;
+
+    .section-title {
+        h1 {
+            color: $white;
+        }
+    }
+
+    .button-primary:hover {
+        background: $white;
+        color: $body-font-color;
+    }
 
     hr {
         border-color: $light-gray;

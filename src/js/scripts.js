@@ -78,6 +78,15 @@ jQuery(document).ready(function ($) {
         });
     });
 
+    // Subscriptions select
+
+    $('.subscription-select-events-block').find('.item:not(.event-full)').on('click', function (event) {
+        event.preventDefault();
+        $(this).toggleClass('selected');
+        $(this).find('.button-deselect').toggleClass('show');
+
+    });
+
     /// Lightbox 
 
     lightbox.option({
