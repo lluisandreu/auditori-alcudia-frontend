@@ -82,7 +82,7 @@
 								<span class="item-cell-name">Preu</span>
 								23,75€
 							</div>
-							<div class="item-download cell small-12 medium-3">
+							<div class="item-download cell small-12 medium-3 no-cell-name">
 								<a href="#">Descarregar entrades</a>
 							</div>
 						</div>
@@ -113,7 +113,7 @@
 								<span class="item-cell-name">Preu</span>
 								23,75€
 							</div>
-							<div class="item-download cell small-12 medium-3">
+							<div class="item-download cell small-12 medium-3 no-cell-name">
 								<a href="#">Descarregar entrades</a>
 							</div>
 						</div>

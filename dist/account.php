@@ -54,9 +54,8 @@
 								</div>
 								<div class="row">
 									<div class="column">
-										<label>
-											<input type="checkbox" name="newsletter"> Vull rebre per correu electrònic les notícies i la programació relativa a l’Auditori d’Alcúdia
-										</label>
+										<input type="checkbox" name="newsletter" id="newsletter"> 
+										<label for="newsletter">Vull rebre per correu electrònic les notícies i la programació relativa a l’Auditori d’Alcúdia</label>
 									</div>
 								</div>
 								<br>

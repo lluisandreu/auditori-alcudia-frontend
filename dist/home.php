@@ -51,7 +51,7 @@
 								<div class="teaser-date-day-month">28 Jul</div>
 							</div>
 							<div class="teaser-heading">
-								<h2>Vida i miracles de...</h2>
+								<h2>Vida i miracles de n'Aineta dels matalassos</h2>
 								<div class="teaser-category field-category">
 									<a href="#" class="white-bold">Varis</a>
 								</div>

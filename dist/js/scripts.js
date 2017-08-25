@@ -52,6 +52,7 @@ jQuery(document).ready(function ($) {
             autoplayTimeout: 4000,
             autoplayHoverPause: true,
             center: true,
+            autoHeight: true
         });
     }
 
@@ -80,7 +81,7 @@ jQuery(document).ready(function ($) {
 
     // Subscriptions select
 
-    $('.subscription-select-events-block').find('.item:not(.event-full)').on('click', function (event) {
+    $('.subscription-select-events-block').find('.item:not(.event-full)').on('click tab', function (event) {
         event.preventDefault();
         $(this).toggleClass('selected');
         $(this).find('.button-deselect').toggleClass('show');
@@ -118,7 +119,15 @@ jQuery(document).ready(function ($) {
                     $(this).toggleClass('selected');
                 }
                 $('#seat-map-tickets-block').addClass('expanded');
-                $('a[data-toggle="seat-map-tickets-block"]').addClass('active');
+                $('.seat-map-tickets-toggle').addClass('active').on('click tab', function (event) {
+                    $(this).data('toggle', '');
+                    $('.seat-tooltip').removeClass('show');
+                    event.preventDefault();
+                    var target = $('#seat-map-tickets-block');
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                });;
             });
             if ($(this).data('num') != undefined) {
                 var $tooltip = $('<div />').attr('class', 'seat-tooltip');

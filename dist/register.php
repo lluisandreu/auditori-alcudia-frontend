@@ -28,7 +28,8 @@
 								<button type="submit" class="button expanded">Crear compte</button>
 								<div class="grid-x">
 									<div class="cell small-12 text-left">
-										<label><input type="checkbox" name="remember-session">Recorda'm</label>
+										<input type="checkbox" id="remember-session" name="remember-session">
+										<label for="remember-session">Recorda'm</label>
 									</div>
 								</div>
 							</form>

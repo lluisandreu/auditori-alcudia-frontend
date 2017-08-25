@@ -83,16 +83,24 @@
 
 
     .teaser-date-day {
-        font-size: rem-calc(40);
+        font-size: rem-calc(30);
         font-weight: 100;
         line-height: 1;
         text-transform: uppercase;
+
+        @include breakpoint(medium) {
+            font-size: rem-calc(40);
+        }
     }
 
     .teaser-date-day-month {
-        font-size: rem-calc(20);
+        font-size: rem-calc(10);
         text-transform: uppercase;
         font-weight: 800;
+
+        @include breakpoint(medium) {
+            font-size: rem-calc(20);
+        }
     }
 }
 

@@ -44,13 +44,13 @@
 							</div>
 						</div>
 						<div class="teaser-info relative grid-x grid-padding-x">
-							<div class="teaser-date small-4 cell">
+							<div class="teaser-date small-5 medium-4 cell">
 								<div class="teaser-date-day multiple"><small>Múltiples</small></div>
 								<div class="teaser-date-day-month">Dates</div>
 							</div>
-							<div class="small-8 cell">
+							<div class="small-7 medium-8 cell">
 								<h4>Nom de la companyia</h4>
-								<p><a href="#"><strong>Més informació +</strong></a></p>
+								<p><a href="#"><strong>Més info +</strong></a></p>
 								<a href="#" class="button button-primary">Selecciona</a>
 							</div>
 						</div>
