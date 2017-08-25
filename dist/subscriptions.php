@@ -7,8 +7,10 @@
 		<div class="text-center">
 			<h1 class="section-title"><span class="yellow-left-line"></span>Abonament</h1>
 		</div>
-		<div class="text-center row-padding row column">
-			<h3>Les sessions i les butaques s’han assignat aleatòriament. Pots canviar-ho si tens una altra preferència.</h3>
+		<div class="text-center row-padding row">
+			<div class="column text-center">
+				<h3>Les sessions i les butaques s’han assignat aleatòriament. Pots canviar-ho si tens una altra preferència</h3>
+			</div>
 		</div>
 		<div class="section-subscriptions-available-block">
 			<div class="items">

@@ -31,7 +31,7 @@
 }
 
 .home-next-events-block {
-    padding: rem-calc(40) 0;
+    padding: rem-calc(40) 0 0 0;
 
     .item {
         position: relative;
@@ -510,6 +510,7 @@
 
         .full-tab {
             background: $white;
+            color: $body-font-color;
             font-weight: 800;
             display: inline-block;
         }
@@ -1071,6 +1072,108 @@
                 .session-status {
                     color: $body-font-color;
                 }
+            }
+        }
+    }
+}
+
+.subscription-select-events-block {
+    @extend .programacio-events-block;
+
+    .item {
+        .teaser {
+            min-height: 350px;
+            cursor: pointer;
+
+            .teaser-date {
+                max-height: 90px;
+
+                .multiple {
+                    font-size: rem-calc(15);
+                    font-weight: 800;
+                }
+            }
+
+            .button {
+                margin: 0;
+            }
+
+            .button:hover {
+                background: $white;
+                color: $body-font-color;
+            }
+        }
+
+        .button.button-deselect {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            z-index: -999;
+            transition: opacity .3s ease-in-out;
+            opacity: 0;
+
+            &.show {
+                z-index: 999;
+                opacity: 1;
+            }
+        }
+
+        &:not(.event-full):focus, &:not(.event-full):hover, &.selected {
+            .overlay {
+                background: transparentize($primary-color, 0.5);
+            }
+        }
+    }
+}
+
+.section-subscriptions-list-block {
+    .item {
+        border: 1px solid $primary-color;
+        margin-bottom: rem-calc(20);
+
+        .item-heading {
+            background: $white;
+            color: $body-font-color;
+            padding-top: rem-calc(10);
+            padding-bottom: rem-calc(10);
+
+            h2 {
+                color: $body-font-color;
+                font-weight: 800;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .item-body {
+            padding: rem-calc(20);
+
+            ul {
+                margin-left: 0;
+
+                li {
+                    list-style: none;
+                    margin-bottom: rem-calc(5);
+
+                    &:before {
+                        content: "\2014\a0";
+                    }
+                }
+            }
+        }
+
+        .item-image {
+            margin-bottom: rem-calc(20);
+
+            img {
+                width: 100%;
+            }
+
+            @include breakpoint(medium) {
+                margin: 0;
             }
         }
     }
