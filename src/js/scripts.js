@@ -81,11 +81,28 @@ jQuery(document).ready(function ($) {
 
     // Subscriptions select
 
-    $('.subscription-select-events-block').find('.item:not(.event-full)').on('click tab', function (event) {
-        event.preventDefault();
-        $(this).toggleClass('selected');
-        $(this).find('.button-deselect').toggleClass('show');
 
+    var select_i = 0;
+    $('.subscription-select-events-block').find('.item:not(.event-full)').each(function (index, el) {
+        $(this).on('click', function (event) {
+            event.preventDefault();
+            if ($(this).hasClass('selected')) {
+                $(this).removeClass('selected');
+                $(this).find('.button-deselect').removeClass('show');
+                --select_i;
+            } else {
+                $(this).toggleClass('selected');
+                $(this).find('.button-deselect').addClass('show');
+                ++select_i;
+            }
+            console.log(select_i);
+            if (select_i > 0) {
+                $('.sticky-subscription-select').addClass('selected');
+                $('#sticky-subscription-select-tickets').text(select_i);
+            } else {
+                $('.sticky-subscription-select').removeClass('selected');
+            }
+        });
     });
 
     /// Lightbox 
