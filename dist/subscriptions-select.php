@@ -1,5 +1,5 @@
 <?php include "inc/head.inc"; ?>
-<div class="page-subscription-select">
+<div class="page-subscriptions-select">
 	<div class="nav-bar dark">
 		<?php include "inc/nav.inc"; ?>
 	</div>
@@ -56,6 +56,32 @@
 						</div>
 					</div>
 				</div>
+				<div class="column item">
+					<button class="button button-deselect button-primary"><i class="fa fa-times"></i></button>
+					<div class="status-tab">
+						<div class="featured-tab tab hide">Destacat</div>
+						<div class="full-tab tab hide">Aforament complet</div>
+					</div>
+					<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
+						<div class="overlay"></div>
+						<div class="teaser-heading relative grid-x grid-padding-x">
+							<div class="cell">
+								<h2>Curabitur aliquet quam id dui posuere blandit</h2>
+							</div>
+						</div>
+						<div class="teaser-info relative grid-x grid-padding-x">
+							<div class="teaser-date small-5 medium-4 cell">
+								<div class="teaser-date-day multiple"><small>Múltiples</small></div>
+								<div class="teaser-date-day-month">Dates</div>
+							</div>
+							<div class="small-7 medium-8 cell">
+								<h4>Nom de la companyia</h4>
+								<p><a href="#"><strong>Més info +</strong></a></p>
+								<a href="#" class="button button-primary">Selecciona</a>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div class="column tabbed event-full item">
 					<button class="button button-deselect button-primary"><i class="fa fa-times"></i></button>
 					<div class="status-tab">
@@ -86,12 +112,11 @@
 	<section class="subscription-select-total section-dark">
 		<div class="grid-container">
 			<div class="text-center row-padding">
-				<h2>Has seleccionat 2 espectacles</h2>
-				<p>S'aplica 20€ per entrada</p>
-				<hr>
-				<h3><strong>Import total: 40€</strong></h3>
-				<br>
-				<a href="#" class="button button-primary">Confirmar selecció</a>
+				<div class="sticky-subscription-select">
+					<h2>Has seleccionat <span id="sticky-subscription-select-tickets">2</span> espectacles</h2>
+					<p>S'aplica 20€ per entrada. <strong>Import total: 40€</strong></p>
+					<a href="#" class="button button-dark-bg">Confirmar selecció</a>
+				</div>
 			</div>
 		</div>
 	</section>

@@ -403,15 +403,24 @@
 
 
         .teaser {
-            padding: rem-calc(40);
+            padding: rem-calc(10);
             min-height: auto;
             max-height: 100%;
             padding-bottom: 100px;
 
+            @include breakpoint(medium) {
+                padding: rem-calc(20);
+            }
+
+
             @include breakpoint(large) {
                 min-height: 320px;
                 max-height: 320px;
-                padding-bottom: rem-calc(40);
+            }
+
+
+            @include breakpoint(xlarge) {
+                padding: rem-calc(40);
             }
 
 

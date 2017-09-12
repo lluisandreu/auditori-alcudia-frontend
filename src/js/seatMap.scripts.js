@@ -22,6 +22,9 @@ jQuery(document).ready(function ($) {
                     $('html, body').animate({
                         scrollTop: target.offset().top
                     }, 1000);
+                    window.setTimeout(function () {
+                        $('.seat-map-tickets-toggle').removeClass('active');
+                    }, 800);
                 });;
             });
             if ($(this).data('num') != undefined) {
