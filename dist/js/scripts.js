@@ -98,7 +98,12 @@ jQuery(document).ready(function ($) {
             console.log(select_i);
             if (select_i > 0) {
                 $('.sticky-subscription-select').addClass('selected');
-                $('#sticky-subscription-select-tickets').text(select_i);
+                if (select_i == 1) {
+                    $('#sticky-subscription-select-tickets').text(select_i + " espectacle");
+                } else {
+                    $('#sticky-subscription-select-tickets').text(select_i + " espectacles");
+                }
+
             } else {
                 $('.sticky-subscription-select').removeClass('selected');
             }

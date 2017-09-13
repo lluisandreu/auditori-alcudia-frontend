@@ -7935,6 +7935,42 @@ input[type=checkbox] {
     z-index: 999;
     color: #545456;
     box-shadow: 1px 4px 17px 0px #0a0a0a; }
+  @media screen and (max-width: 39.9375em) {
+    .page-subscriptions-select .sticky-subscription-select h2 {
+      font-size: 1.28571rem; } }
+  .page-subscriptions-select .sticky-subscription-select input[type=radio] + label {
+    margin: 0; }
+  .page-subscriptions-select .sticky-subscription-select input[type=radio] {
+    display: none; }
+    .page-subscriptions-select .sticky-subscription-select input[type=radio] + label {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0 1rem 0;
+      font-family: inherit;
+      padding: 0.57143rem 1.07143rem;
+      -webkit-appearance: none;
+      border: 1px solid transparent;
+      border-radius: 0;
+      transition: background-color 0.25s ease-out, color 0.25s ease-out;
+      font-size: 15px;
+      line-height: 1;
+      text-align: center;
+      cursor: pointer;
+      background-color: #414042;
+      color: #fefefe;
+      transition: none; }
+      [data-whatinput='mouse'] .page-subscriptions-select .sticky-subscription-select input[type=radio] + label {
+        outline: 0; }
+      .page-subscriptions-select .sticky-subscription-select input[type=radio] + label:hover, .page-subscriptions-select .sticky-subscription-select input[type=radio] + label:focus {
+        background-color: #414042;
+        color: #fefefe; }
+    .page-subscriptions-select .sticky-subscription-select input[type=radio]:checked + label {
+      background-color: #e2cd08;
+      color: #545456;
+      border: 1px solid #414042; }
+      .page-subscriptions-select .sticky-subscription-select input[type=radio]:checked + label:hover, .page-subscriptions-select .sticky-subscription-select input[type=radio]:checked + label:focus {
+        background-color: #414042;
+        color: #545456; }
 
 .menu .button {
   white-space: normal; }

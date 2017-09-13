@@ -697,5 +697,32 @@
             color: $body-font-color;
             box-shadow: 1px 4px 17px 0px $black;
         }
+
+        @include breakpoint(small only) {
+            h2 {
+                font-size: rem-calc(18);
+            }
+        }
+
+
+        input[type=radio] + label {
+            margin: 0;
+        }
+
+        input[type=radio] {
+            display: none;
+
+            & + label {
+                @include button(false, $medium-gray, $dark-gray, $white);
+
+                transition: none;
+            }
+
+            &:checked + label {
+                @include button-style($anchor-color, $dark-gray, $body-font-color);
+
+                border: 1px solid $medium-gray;
+            }
+        }
     }
 }
