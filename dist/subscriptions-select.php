@@ -113,9 +113,14 @@
 		<div class="grid-container">
 			<div class="text-center row-padding">
 				<div class="sticky-subscription-select">
-					<h2>Has seleccionat <span id="sticky-subscription-select-tickets">2</span> espectacles</h2>
+					<h2>Has seleccionat <span id="sticky-subscription-select-tickets"></span></h2>
 					<p>S'aplica 20€ per entrada. <strong>Import total: 40€</strong></p>
-					<a href="#" class="button button-dark-bg">Confirmar selecció</a>
+					<span class="show-for-small-only">Persones: </span>
+					<input type="radio" id="subscription-select-tickets-1" name="subscription-select-tickets" checked><label for="subscription-select-tickets-1">1 <span class="show-for-medium">persona</span></label>
+					<input type="radio" id="subscription-select-tickets-2" name="subscription-select-tickets"><label for="subscription-select-tickets-2">2 <span class="show-for-medium">persones</span></label>
+					<input type="radio" id="subscription-select-tickets-3" name="subscription-select-tickets"><label for="subscription-select-tickets-3">3 <span class="show-for-medium">persones</span></label>
+					<input type="radio" id="subscription-select-tickets-4" name="subscription-select-tickets"><label for="subscription-select-tickets-4">4 <span class="show-for-medium">persones</span></label>
+					<a href="#" class="button button-blue"><span class="show-for-medium">Confirmar selecció</span> <i class="fa fa-chevron-right"></i></a>
 				</div>
 			</div>
 		</div>
