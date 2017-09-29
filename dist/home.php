@@ -136,6 +136,41 @@
 								<a href="#" class="gray-bold">Varis</a>
 							</div>
 							<div class="white-separator"></div>
+							<!-- <div class="full-body">
+								<p><span class="full-body-date"><strong>03/08.</strong></span>
+								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
+							</div> -->
+							<div class="full-price">
+								Preu: <strong>30€</strong>
+							</div>
+							<a href="#" class="button button-dark float-right"><i class="fa fa-plus"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="column item flip-container">
+					<div class="flipper">
+						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
+							<div class="overlay"></div>
+							<div class="teaser-date">
+								<div class="teaser-date-day">DIM</div>
+								<div class="teaser-date-day-month">28 Jul</div>
+							</div>
+							<div class="teaser-heading">
+								<h2>Vida i miracles de...</h2>
+								<div class="teaser-category field-category">
+									<a href="#" class="white-bold">Varis</a>
+								</div>
+							</div>
+							<a href="#" class="toggle-full hide-for-large"><i class="fa fa-chevron-down"></i></a>
+						</div>
+						<div class="full clearfix back">
+							<div class="full-heading">
+								<h2>Vida i miracles de n'Aineta dels matalassos</h2>
+							</div>
+							<div class="full-category field-category">
+								<a href="#" class="gray-bold">Varis</a>
+							</div>
+							<div class="white-separator"></div>
 							<div class="full-body">
 								<p><span class="full-body-date"><strong>03/08.</strong></span>
 								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
@@ -230,6 +265,42 @@
 							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 						</div>
 					</div>
+					<div class="home-featured-block-item">
+						<div class="teaser-date">
+							<div class="teaser-date-day">DIM</div>
+							<div class="teaser-date-day-month">28 Jul</div>
+						</div>
+						<div class="teaser-featured-image">
+							<a href="#">
+								<img src="images/placeholder/featured_placeholder.jpg" alt="">
+							</a>
+						</div>
+						<div class="teaser-heading">
+							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
+							<div class="field-category"><a href="#" class="gray-bold">Teatre</a></div>
+						</div>
+						<div class="teaser-body show-for-large">
+							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+						</div>
+					</div>
+					<div class="home-featured-block-item">
+						<div class="teaser-date">
+							<div class="teaser-date-day">DIM</div>
+							<div class="teaser-date-day-month">28 Jul</div>
+						</div>
+						<div class="teaser-featured-image">
+							<a href="#">
+								<img src="images/placeholder/featured_placeholder.jpg" alt="">
+							</a>
+						</div>
+						<div class="teaser-heading">
+							<h2><a href="#">Vida i miracles de n'Aineta dels matalassos</a></h2>
+							<div class="field-category"><a href="#" class="gray-bold">Teatre</a></div>
+						</div>
+						<div class="teaser-body show-for-large">
+							<p>Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Proin eget tortor risus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -245,7 +316,7 @@
 		<div class="home-news-block row section-padding align-center">
 			<div class="medium-10 columns">
 				<div class="row collapse">
-					<div class="home-news-block-item small-12 medium-4 column row collapse flex">
+					<div class="home-news-block-item small-12 medium-4 column row collapse">
 						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
 							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
 						</div>
@@ -261,13 +332,33 @@
 							</div>
 						</div>
 					</div>
-					<div class="home-news-block-item small-12 medium-4 column row collapse flex">
+					<div class="home-news-block-item small-12 medium-4 column row collapse">
 						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
 							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
 						</div>
 						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
 							<div class="cell">
 								<h2><a href="#">Vivamus suscipit tortor eget</a></h2>
+								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+						<div class="teaser-link small-1 show-for-small-only columns grid-x grid-padding-x align-middle">
+							<div class="cell">
+								<a href="#"><i class="fa fa-chevron-right"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="home-news-block-item small-12 medium-4 column row collapse">
+						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
+							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
+						</div>
+						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
+							<div class="cell">
+								<h2><a href="#">Vivamus suscipit tortor eget</a></h2>
+								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
