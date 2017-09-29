@@ -267,6 +267,11 @@
         background: $dark-gray;
         color: $white;
         min-height: 120px;
+        display: flex !important;
+
+        @include breakpoint(medium) {
+            display: block !important;
+        }
 
         h2 {
             font-weight: 600;
@@ -287,13 +292,16 @@
         }
 
         .teaser-image {
-            background-size: cover;
+            background-size: cover; 
             background-position: center center;
             background-repeat: no-repeat;
+             @include breakpoint(medium) {
+                background-image: none !important;
+            }
         }
 
         .teaser-body {
-            padding-left: rem-calc(12);
+            padding: rem-calc(20) 0 rem-calc(20) rem-calc(12);
         }
 
         .teaser-link {
