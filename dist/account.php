@@ -44,10 +44,26 @@
 										<input type="text" name="town" value="" placeholder="Població">
 									</div>
 									<div class="column small-12 medium-4">
+										<label class="show-for-sr">País</label>
+										<select name="country">
+											<option value="">País</option>
+											<option>Espanya</option>
+										</select>
+									</div>
+									<div class="column small-12 medium-4">
+										<label class="show-for-sr">Provincia</label>
+										<select name="country">
+											<option value="">Provincia</option>
+											<option>Illes Balears</option>
+										</select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="column small-12 medium-6">
 										<label class="show-for-sr">Clau d'accés</label>
 										<input type="password" name="password" value="" placeholder="Clau d'accés">
 									</div>
-									<div class="column small-12 medium-4">
+									<div class="column small-12 medium-6">
 										<label class="show-for-sr">Clau d'accés</label>
 										<input type="password" name="validate-password" value="" placeholder="Confirma la clau d'accés">
 									</div>

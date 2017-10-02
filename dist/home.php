@@ -102,8 +102,8 @@
 							</div>
 							<div class="white-separator"></div>
 							<div class="full-body">
-								<p><span class="full-body-date"><strong>03/08.</strong></span>
-								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
+								<!-- <p><span class="full-body-date"><strong>03/08.</strong></span>
+								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p> -->
 							</div>
 							<div class="full-price">
 								Preu: <strong>30€</strong>
