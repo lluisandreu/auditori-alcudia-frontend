@@ -192,6 +192,10 @@
 
             @include breakpoint(large) {
                 min-height: 210px;
+                
+                img {
+                    max-height: 240px;
+                }
             }
         }
 
@@ -797,8 +801,8 @@
         border-bottom: 2px solid $primary-color;
     }
 
-    input[type=text], input[type=password], input[type=email] {
-        background: transparent;
+    input[type=text], input[type=password], input[type=email], select {
+        background-color: transparent;
         border: 2px solid $white;
         color: $white;
 
