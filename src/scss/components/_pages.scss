@@ -52,6 +52,10 @@
                     }
                 }
             }
+            .hero-slideshow-item {
+                max-height: 650px;
+                background-color: $black;
+            }
 
             .hero-slideshow-item-overlay {
                 background-color: #333;
@@ -208,6 +212,14 @@
                     margin-bottom: rem-calc(15);
                 }
 
+                .field-sponsors {
+                    img {
+                        max-width: rem-calc(80);
+                        max-height: rem-calc(50);
+                        margin-right: rem-calc(10);
+                    }
+                }
+
                 .field-tech-details.callout {
                     background: $white;
                     border: none;
@@ -233,6 +245,9 @@
             }
 
             .event-extra {
+                a {
+                    color: $blue;
+                }
                 @include breakpoint(small only) {
                     padding: 0;
                 }
@@ -508,6 +523,8 @@
         .blog-header-heading {
             padding-top: rem-calc(200);
             padding-bottom: rem-calc(20);
+            background: transparentize($black, 0.32);
+            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.32) 100%);
 
             @include breakpoint(medium) {
                 padding-top: rem-calc(350);

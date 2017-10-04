@@ -317,8 +317,9 @@
 			<div class="medium-10 columns">
 				<div class="row collapse">
 					<div class="home-news-block-item small-12 medium-4 column row collapse">
-						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
-							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
+						<div class="small-4 medium-12 columns">
+							<a href="" class="teaser-image" style="background-image: url(images/placeholder/news_placeholder.jpg);">
+							</a>
 						</div>
 						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
 							<div class="cell">
@@ -333,14 +334,13 @@
 						</div>
 					</div>
 					<div class="home-news-block-item small-12 medium-4 column row collapse">
-						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
-							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
+						<div class="small-4 medium-12 columns">
+							<a href="" class="teaser-image" style="background-image: url(images/placeholder/news_placeholder.jpg);">
+							</a>
 						</div>
 						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
 							<div class="cell">
 								<h2><a href="#">Vivamus suscipit tortor eget</a></h2>
-								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
@@ -351,14 +351,13 @@
 						</div>
 					</div>
 					<div class="home-news-block-item small-12 medium-4 column row collapse">
-						<div class="teaser-image small-4 medium-12 columns" style="background-image: url(images/placeholder/news_placeholder.jpg);">
-							<a href="#" class="hide-for-small-only"><img src="images/placeholder/news_placeholder.jpg" alt=""></a>
+						<div class="small-4 medium-12 columns">
+							<a href="" class="teaser-image" style="background-image: url(images/placeholder/news_placeholder.jpg);">
+							</a>
 						</div>
 						<div class="teaser-body small-7 medium-12 columns grid-x grid-padding-x align-middle">
 							<div class="cell">
 								<h2><a href="#">Vivamus suscipit tortor eget</a></h2>
-								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 								<p>Sed porttitor lectus nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</div>
 						</div>
