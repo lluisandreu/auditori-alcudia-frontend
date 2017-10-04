@@ -138,7 +138,7 @@
 									<h4 class="underline-primary"><strong>Repartiment</strong></h4>
 								</div>
 								<h4>Director</h4>
-								<p>Praesent sapien massa.</p>
+								<p>Praesent sapien massa. <a href="">testing link</a></p>
 								<h4>Actors</h4>
 								<p>Praesent sapien massa.</p>
 								<h4>Tenors</h4>
@@ -158,49 +158,24 @@
 				<div class="event-trailer-carousel cell medium-8 owl-carousel owl-theme">
 					<div class="item">
 						<img src="images/placeholder/carousel_placeholder.jpg" alt="">
-						<div class="text-center event-trailer-link">
-							<a data-open="trailer-1"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
-						</div>
-						<!-- We need to inject a number to the ID -->
-						<div class="reveal trailer-reveal" id="trailer-1" data-reveal>
-							<div class="responsive-embed widescreen">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/Xcpc8VDsv3c" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
-							</div>
-							<button class="close-button" data-close aria-label="Tanca" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
 					</div>
 					<div class="item">
 						<img src="images/placeholder/carousel_placeholder.jpg" alt="">
-						<div class="text-center event-trailer-link">
-							<a data-open="trailer-2"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
-						</div>
-						<!-- We need to inject a number to the ID -->
-						<div class="reveal trailer-reveal" id="trailer-2" data-reveal>
-							<div class="responsive-embed widescreen">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/f2O6mQkFiiw" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
-							</div>
-							<button class="close-button" data-close aria-label="Tanca" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
 					</div>
 					<div class="item">
 						<img src="images/placeholder/carousel_placeholder_vertical.jpg" alt="">
-						<div class="text-center event-trailer-link">
-							<a data-open="trailer-2"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
-						</div>
-						<!-- We need to inject a number to the ID -->
-						<div class="reveal trailer-reveal" id="trailer-2" data-reveal>
-							<div class="responsive-embed widescreen">
-								<iframe width="560" height="315" src="https://www.youtube.com/embed/f2O6mQkFiiw" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
-							</div>
-							<button class="close-button" data-close aria-label="Tanca" type="button">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
 					</div>
+				</div>
+			</div>
+			<div class="relative text-center event-trailer-link">
+				<a data-open="trailer-1"><i class="fa fa-play-circle-o"></i> Veure el trailer</a>
+				<div class="reveal trailer-reveal" id="trailer-1" data-reveal>
+					<div class="responsive-embed widescreen">
+						<iframe width="560" height="315" src="//www.youtube.com/embed/f2O6mQkFiiw" frameborder="0" allowfullscreen allowscriptaccess="always"></iframe>
+					</div>
+					<button class="close-button" data-close aria-label="Tanca" type="button">
+						<span aria-hidden="true">&times;</span>
+					</button>
 				</div>
 			</div>
 		</div>

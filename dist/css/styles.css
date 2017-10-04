@@ -6582,10 +6582,9 @@ input[type=checkbox] {
   .home-news-block .home-news-block-item .teaser-image {
     background-size: cover;
     background-position: center center;
-    background-repeat: no-repeat; }
-    @media print, screen and (min-width: 40em) {
-      .home-news-block .home-news-block-item .teaser-image {
-        background-image: none !important; } }
+    background-repeat: no-repeat;
+    height: 170px;
+    display: block; }
   .home-news-block .home-news-block-item .teaser-body {
     padding: 1.42857rem 0 1.42857rem 0.85714rem; }
   .home-news-block .home-news-block-item .teaser-link {
@@ -7540,6 +7539,9 @@ input[type=checkbox] {
       color: #fefefe; }
       .page-home .main-header .main-header-event .field-category a:hover {
         color: #f7e326; }
+  .page-home .main-header .main-header-event .hero-slideshow-item {
+    max-height: 650px;
+    background-color: #0a0a0a; }
   .page-home .main-header .main-header-event .hero-slideshow-item-overlay {
     background-color: #333; }
   @media print, screen and (min-width: 40em) {
@@ -7639,6 +7641,10 @@ input[type=checkbox] {
       border-width: 2px; }
     .page-event .event-content .event-content-main .event-info .field {
       margin-bottom: 1.07143rem; }
+    .page-event .event-content .event-content-main .event-info .field-sponsors img {
+      max-width: 5.71429rem;
+      max-height: 3.57143rem;
+      margin-right: 0.71429rem; }
     .page-event .event-content .event-content-main .event-info .field-tech-details.callout {
       background: #fefefe;
       border: none; }
@@ -7652,6 +7658,8 @@ input[type=checkbox] {
         font-weight: 600; }
         .page-event .event-content .event-content-main .event-info .field-more-link a:hover {
           color: #fefefe; }
+  .page-event .event-content .event-content-main .event-extra a {
+    color: #1795c1; }
   @media screen and (max-width: 39.9375em) {
     .page-event .event-content .event-content-main .event-extra {
       padding: 0; } }
@@ -7823,7 +7831,9 @@ input[type=checkbox] {
   background-position: center center; }
   .page-blog .blog-header-inner .blog-header-heading {
     padding-top: 14.28571rem;
-    padding-bottom: 1.42857rem; }
+    padding-bottom: 1.42857rem;
+    background: rgba(10, 10, 10, 0.68);
+    background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.32) 100%); }
     @media print, screen and (min-width: 40em) {
       .page-blog .blog-header-inner .blog-header-heading {
         padding-top: 25rem; } }

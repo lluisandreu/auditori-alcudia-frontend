@@ -293,15 +293,15 @@
         img {
             display: block;
             width: 100%;
+
         }
 
         .teaser-image {
             background-size: cover; 
             background-position: center center;
             background-repeat: no-repeat;
-             @include breakpoint(medium) {
-                background-image: none !important;
-            }
+            height: 170px;
+            display: block;
         }
 
         .teaser-body {
