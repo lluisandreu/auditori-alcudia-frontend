@@ -247,7 +247,12 @@
             .event-extra {
                 a {
                     color: $blue;
+
+                    &:hover {
+                        color: $anchor-color-hover;
+                    }
                 }
+
                 @include breakpoint(small only) {
                     padding: 0;
                 }
@@ -488,9 +493,19 @@
 
     .blog-list-image {
         margin-bottom: rem-calc(10);
+        text-align: center;
+    
+        img {
+            max-height: 220px;
+        }
 
         @include breakpoint(medium) {
             margin-bottom: 0;
+            text-align: left;
+            img {
+                 max-height: auto;
+            }
+           
         }
     }
 
