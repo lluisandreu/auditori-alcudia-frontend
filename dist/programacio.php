@@ -94,8 +94,8 @@
 							</div>
 							<div class="teaser-info relative grid-x grid-padding-x">
 								<div class="teaser-date small-5 column">
-									<div class="teaser-date-day">DIM</div>
-									<div class="teaser-date-day-month">28 Jul</div>
+									<div class="teaser-date-day multiple">Múltiples</div>
+									<div class="teaser-date-day-month">Dates</div>
 								</div>
 								<div class="small-7 column">
 									<p>Nom de la companyia</p>

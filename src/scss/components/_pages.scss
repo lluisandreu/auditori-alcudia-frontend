@@ -15,6 +15,13 @@
             padding-top: rem-calc(100);
             padding-bottom: rem-calc(40);
 
+            max-height: 650px;
+            min-height: 500px;
+            background-color: $black;
+            @include breakpoint(medium) {
+                min-height: 650px;
+            }
+
             h1 {
                 color: $white;
                 font-weight: 400;
@@ -53,8 +60,7 @@
                 }
             }
             .hero-slideshow-item {
-                max-height: 650px;
-                background-color: $black;
+
             }
 
             .hero-slideshow-item-overlay {

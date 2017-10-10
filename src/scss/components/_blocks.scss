@@ -643,10 +643,16 @@
 }
 
 .event-trailer-block {
+    .owl-item {
+        background: #f9f9f9; 
+    }
     .item img {
-        max-height: 500px;
+        max-height: 200px;
         width: auto;
         margin: auto;
+        @include breakpoint(large) {
+            max-height: 350px;
+        }
     }
 
     .event-trailer-link {
@@ -1124,11 +1130,6 @@
 
             .teaser-date {
                 max-height: 90px;
-
-                .multiple {
-                    font-size: rem-calc(15);
-                    font-weight: 800;
-                }
             }
 
             .button {

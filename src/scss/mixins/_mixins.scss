@@ -83,6 +83,8 @@
     }
 
 
+
+
     .teaser-date-day {
         font-size: rem-calc(30);
         font-weight: 100;
@@ -91,6 +93,12 @@
 
         @include breakpoint(medium) {
             font-size: rem-calc(35);
+        }
+
+        &.multiple {
+            margin-top: rem-calc(4);
+            font-size: rem-calc(17);
+            text-transform: capitalize;
         }
     }
 
