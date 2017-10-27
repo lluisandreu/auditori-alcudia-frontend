@@ -644,10 +644,10 @@
 
 .event-trailer-block {
     .owl-item {
-        background: #f9f9f9; 
+        background: #f9f9f9;
     }
     .item img {
-        max-height: 200px;
+        max-height: 250px; 
         width: auto;
         margin: auto;
         @include breakpoint(large) {

@@ -6802,7 +6802,7 @@ input[type=checkbox] {
   background: #f9f9f9; }
 
 .event-trailer-block .item img {
-  max-height: 200px;
+  max-height: 250px;
   width: auto;
   margin: auto; }
   @media print, screen and (min-width: 64em) {
@@ -7526,6 +7526,10 @@ input[type=checkbox] {
   .page-home .main-header {
     min-height: 640px; } }
 
+@media print, screen and (min-width: 64em) {
+  .page-home .main-header {
+    min-height: 800px; } }
+
 .page-home .main-header .main-header-event {
   background-repeat: no-repeat;
   background-size: cover;
@@ -7536,9 +7540,6 @@ input[type=checkbox] {
   max-height: 650px;
   min-height: 500px;
   background-color: #0a0a0a; }
-  @media print, screen and (min-width: 40em) {
-    .page-home .main-header .main-header-event {
-      min-height: 650px; } }
   .page-home .main-header .main-header-event h1 {
     color: #fefefe;
     font-weight: 400;
@@ -7568,6 +7569,10 @@ input[type=checkbox] {
       min-height: 650px;
       padding-top: 19.28571rem;
       padding-bottom: 0; } }
+  @media screen and (min-width: 75em) {
+    .page-home .main-header .main-header-event {
+      min-height: 850px;
+      max-height: 850px; } }
 
 .page-home .home-vouchers-section .home-voucher-heading {
   width: 100%; }
