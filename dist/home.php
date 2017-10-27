@@ -235,8 +235,7 @@
 							<div class="teaser-date-day-month">28 Jul</div>
 						</div>
 						<div class="teaser-featured-image">
-							<a href="#">
-								<img src="images/placeholder/featured_placeholder.jpg" alt="">
+							<a href="#" style="background-image: url(images/placeholder/featured_placeholder.jpg)">
 							</a>
 						</div>
 						<div class="teaser-heading">

@@ -1,5 +1,5 @@
 <?php include "inc/head.inc"; ?>
-<div class="page-programacio">
+<div class="page-events-historic">
 	<div class="nav-bar dark">
 		<?php include "inc/nav.inc"; ?>
 	</div>
@@ -119,7 +119,7 @@
 							<div class="full-price">
 								Preu: <strong>30€</strong>
 							</div>
-							<a href="#" class="button button-dark-bg expanded">Entrades</a>
+							<a href="#" class="button button-dark-bg expanded">Més informació</a>
 						</div>
 					</div>
 				</div>
@@ -138,8 +138,8 @@
 							</div>
 							<div class="teaser-info relative grid-x grid-padding-x">
 								<div class="teaser-date small-5 column">
-									<div class="teaser-date-day">DIM</div>
-									<div class="teaser-date-day-month">28 Jul</div>
+									<div class="teaser-date-day">OCT</div>
+									<div class="teaser-date-day-month">2017</div>
 								</div>
 								<div class="small-7 column">
 									<p>Nom de la companyia</p>
@@ -163,139 +163,7 @@
 							<div class="full-price">
 								Preu: <strong>30€</strong>
 							</div>
-							<a href="#" class="button button-dark-bg expanded">Entrades</a>
-						</div>
-					</div>
-				</div>
-				<div class="column item flip-container">
-					<div class="flipper">
-						<div class="status-tab">
-							<div class="featured-tab tab hide">Destacat</div>
-							<div class="full-tab tab hide">Aforament complet</div>
-						</div>
-						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
-							<div class="overlay"></div>
-							<div class="teaser-heading relative grid-x grid-padding-x">
-								<div class="cell">
-									<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-								</div>
-							</div>
-							<div class="teaser-info relative grid-x grid-padding-x">
-								<div class="teaser-date small-5 column">
-									<div class="teaser-date-day">DIM</div>
-									<div class="teaser-date-day-month">28 Jul</div>
-								</div>
-								<div class="small-7 column">
-									<p>Nom de la companyia</p>
-									<div class="teaser-price">30€</div>
-								</div>
-							</div>
-							<a href="#" class="toggle-full hide-for-large"><i class="fa fa-chevron-down"></i></a>
-						</div>
-						<div class="full clearfix back">
-							<div class="full-heading">
-								<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-							</div>
-							<div class="full-category field-category">
-								<a href="#" class="gray-bold">Varis</a>
-							</div>
-							<div class="white-separator"></div>
-							<div class="full-body">
-								<p><span class="full-body-date"><strong>03/08.</strong></span>
-								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
-							</div>
-							<div class="full-price">
-								Preu: <strong>30€</strong>
-							</div>
-							<a href="#" class="button button-dark-bg expanded">Entrades</a>
-						</div>
-					</div>
-				</div>
-				<div class="column item flip-container">
-					<div class="flipper">
-						<div class="status-tab">
-							<div class="featured-tab tab hide">Destacat</div>
-							<div class="full-tab tab hide">Aforament complet</div>
-						</div>
-						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
-							<div class="overlay"></div>
-							<div class="teaser-heading relative grid-x grid-padding-x">
-								<div class="cell">
-									<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-								</div>
-							</div>
-							<div class="teaser-info relative grid-x grid-padding-x">
-								<div class="teaser-date small-5 column">
-									<div class="teaser-date-day">DIM</div>
-									<div class="teaser-date-day-month">28 Jul</div>
-								</div>
-								<div class="small-7 column">
-									<p>Nom de la companyia</p>
-									<div class="teaser-price">30€</div>
-								</div>
-							</div>
-							<a href="#" class="toggle-full hide-for-large"><i class="fa fa-chevron-down"></i></a>
-						</div>
-						<div class="full clearfix back">
-							<div class="full-heading">
-								<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-							</div>
-							<div class="full-category field-category">
-								<a href="#" class="gray-bold">Varis</a>
-							</div>
-							<div class="white-separator"></div>
-							<div class="full-body">
-								<p><span class="full-body-date"><strong>03/08.</strong></span>
-								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
-							</div>
-							<div class="full-price">
-								Preu: <strong>30€</strong>
-							</div>
-							<a href="#" class="button button-dark-bg expanded">Entrades</a>
-						</div>
-					</div>
-				</div>
-				<div class="column item tabbed event-full flip-container">
-					<div class="flipper">
-						<div class="status-tab">
-							<div class="featured-tab tab hide">Destacat</div>
-							<div class="full-tab tab">Aforament complet</div>
-						</div>
-						<div class="teaser clearfix front" style="background-image: url('images/placeholder/featured_placeholder.jpg')">
-							<div class="overlay"></div>
-							<div class="teaser-heading relative grid-x grid-padding-x">
-								<div class="cell">
-									<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-								</div>
-							</div>
-							<div class="teaser-info relative grid-x grid-padding-x">
-								<div class="teaser-date small-5 column">
-									<div class="teaser-date-day">DIM</div>
-									<div class="teaser-date-day-month">28 Jul</div>
-								</div>
-								<div class="small-7 column">
-									<p>Nom de la companyia</p>
-									<div class="teaser-price">30€</div>
-								</div>
-							</div>
-							<a href="#" class="toggle-full hide-for-large"><i class="fa fa-chevron-down"></i></a>
-						</div>
-						<div class="full clearfix back">
-							<div class="full-heading">
-								<h2>Curabitur aliquet quam id dui posuere blandit</h2>
-							</div>
-							<div class="full-category field-category">
-								<a href="#" class="gray-bold">Varis</a>
-							</div>
-							<div class="white-separator"></div>
-							<div class="full-body">
-								<p><span class="full-body-date"><strong>03/08.</strong></span>
-								Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus...</p>
-							</div>
-							<div class="full-price">
-								Preu: <strong>30€</strong>
-							</div>
-							<a href="#" class="button button-dark-bg expanded">Entrades</a>
+							<a href="#" class="button button-dark-bg expanded">Més informació</a>
 						</div>
 					</div>
 				</div>

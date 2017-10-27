@@ -79,19 +79,22 @@
             }
 
             .toggle-full {
+                color: $primary-color;
                 font-size: rem-calc(32);
                 position: absolute;
                 bottom: 20px;
                 right: 20px;
+                z-index: 10;
             }
         }
 
-        .full {
+        .full { 
             background: $primary-color;
             color: $medium-gray;
             padding: rem-calc(20);
             display: none;
             height: auto;
+            width: 100%; 
 
             @include breakpoint(large) {
                 min-height: 320px;
@@ -185,17 +188,13 @@
             margin-top: rem-calc(-90);
             margin-bottom: rem-calc(10);
 
-            img {
+            a {
+                display: block;
                 width: 100%;
                 filter: brightness(50%);
-            }
-
-            @include breakpoint(large) {
-                min-height: 210px;
-                
-                img {
-                    max-height: 240px;
-                }
+                height: 240px;
+                background-size: cover;
+                background-repeat: no-repeat;
             }
         }
 
@@ -644,10 +643,16 @@
 }
 
 .event-trailer-block {
+    .owl-item {
+        background: #f9f9f9;
+    }
     .item img {
-        max-height: 500px;
+        max-height: 250px; 
         width: auto;
         margin: auto;
+        @include breakpoint(large) {
+            max-height: 350px;
+        }
     }
 
     .event-trailer-link {
@@ -1125,11 +1130,6 @@
 
             .teaser-date {
                 max-height: 90px;
-
-                .multiple {
-                    font-size: rem-calc(15);
-                    font-weight: 800;
-                }
             }
 
             .button {

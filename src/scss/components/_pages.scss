@@ -7,6 +7,11 @@
         }
 
 
+        @include breakpoint(large) {
+            min-height: 800px;
+        }
+
+
         .main-header-event {
             background-repeat: no-repeat;
             background-size: cover;
@@ -14,6 +19,9 @@
             color: $white;
             padding-top: rem-calc(100);
             padding-bottom: rem-calc(40);
+            max-height: 650px;
+            min-height: 500px;
+            background-color: $black;
 
             h1 {
                 color: $white;
@@ -52,10 +60,8 @@
                     }
                 }
             }
-            .hero-slideshow-item {
-                max-height: 650px;
-                background-color: $black;
-            }
+
+            .hero-slideshow-item {}
 
             .hero-slideshow-item-overlay {
                 background-color: #333;
@@ -65,6 +71,12 @@
                 min-height: 650px;
                 padding-top: rem-calc(270);
                 padding-bottom: 0;
+            }
+
+
+            @include breakpoint(xlarge) {
+                min-height: 850px;
+                max-height: 850px;
             }
         }
     }
@@ -247,7 +259,12 @@
             .event-extra {
                 a {
                     color: $blue;
+
+                    &:hover {
+                        color: $anchor-color-hover;
+                    }
                 }
+
                 @include breakpoint(small only) {
                     padding: 0;
                 }
@@ -488,9 +505,19 @@
 
     .blog-list-image {
         margin-bottom: rem-calc(10);
+        text-align: center;
+
+        img {
+            max-height: 220px;
+        }
 
         @include breakpoint(medium) {
             margin-bottom: 0;
+            text-align: left;
+
+            img {
+                max-height: auto;
+            }
         }
     }
 
@@ -524,7 +551,7 @@
             padding-top: rem-calc(200);
             padding-bottom: rem-calc(20);
             background: transparentize($black, 0.32);
-            background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.32) 100%);
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.32) 100%);
 
             @include breakpoint(medium) {
                 padding-top: rem-calc(350);
