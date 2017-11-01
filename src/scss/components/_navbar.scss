@@ -126,7 +126,6 @@
             .menu {
                 li {
                     position: relative;
-
                     &:after {
                         content: "\f105";
                         position: absolute;
@@ -134,7 +133,7 @@
                         font-style: normal;
                         font-weight: 400;
                         right: 10px;
-                        top: 3px;
+                        top: 1px;
                         color: $black;
                         font-size: 20px;
                     }
@@ -143,6 +142,8 @@
                 a {
                     background: $primary-color;
                     color: $black !important;
+                    padding-top: rem-calc(8);
+                    padding-bottom: rem-calc(8);
                 }
             }
         }

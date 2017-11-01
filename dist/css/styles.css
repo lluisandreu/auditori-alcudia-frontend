@@ -6201,12 +6201,14 @@ input[type=checkbox] {
         font-style: normal;
         font-weight: 400;
         right: 10px;
-        top: 3px;
+        top: 1px;
         color: #0a0a0a;
         font-size: 20px; }
     .nav-bar .programacio-menu .menu a {
       background: #f7e326;
-      color: #0a0a0a !important; } }
+      color: #0a0a0a !important;
+      padding-top: 0.57143rem;
+      padding-bottom: 0.57143rem; } }
   @media print, screen and (min-width: 40em) {
     .nav-bar .menu li {
       font-size: 0.92857rem; }
