@@ -117,8 +117,8 @@
 					</div>
 					<div class="field-tech-details callout field">
 						<div class="grid-x">
-							<div class="field-price small-5 cell">Preu venta anticipada: <strong>30€</strong></div>
-							<div class="field-price small-7 cell">Preu venta a taquilla: <strong>40€</strong></div>
+							<div class="field-price medium-5 cell">Preu venta anticipada: <strong>30€</strong></div>
+							<div class="field-price medium-7 cell">Preu venta a taquilla: <strong>40€</strong></div>
 						</div>
 						<hr>
 						<div class="grid-x">

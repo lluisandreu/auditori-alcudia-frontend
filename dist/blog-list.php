@@ -10,12 +10,14 @@
 		<div class="blog-list-content row">
 			<div class="column">
 				<div class="blog-list-item row">
-					<div class="blog-list-image small-12 medium-5 columns">
-						<a href="#">
-							<img src="http://via.placeholder.com/600x350" alt="">
-						</a>
+					<div class="blog-list-image small-12 medium-4 columns">
+						<div class="cropper">
+							<a href="#">
+								<img src="http://via.placeholder.com/600x350" alt="">
+							</a>
+						</div>
 					</div>
-					<div class="blog-list-teaser small-12 medium-7 columns text-center medium-text-left">
+					<div class="blog-list-teaser small-12 medium-8 columns text-center medium-text-left">
 						<h2><a href="#">Lorem ipsum doloer sit amet</a></h2>
 						<div class="blog-list-date">
 							30/05/2017

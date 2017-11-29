@@ -7,11 +7,6 @@
         }
 
 
-        @include breakpoint(large) {
-            min-height: 800px;
-        }
-
-
         .main-header-event {
             background-repeat: no-repeat;
             background-size: cover;
@@ -507,17 +502,27 @@
         margin-bottom: rem-calc(10);
         text-align: center;
 
+        .cropper {
+            width: 250px;
+            height: 250px;
+            overflow: hidden;
+            margin-right: -80px;
+            margin: auto;
+
+            @include breakpoint(medium) {
+                margin: 0;
+            }
+        }
+
         img {
-            max-height: 220px;
+            height: 250px;
+            width: 250px;
+            object-fit: cover;
         }
 
         @include breakpoint(medium) {
             margin-bottom: 0;
             text-align: left;
-
-            img {
-                max-height: auto;
-            }
         }
     }
 
