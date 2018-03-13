@@ -184,6 +184,10 @@ input[type=checkbox] {
     margin: 0;
 }
 
+.margin-auto {
+    margin: auto;
+}
+
 .no-padding {
     padding: 0 !important;
 }
@@ -340,12 +344,12 @@ input[type=checkbox] {
 .white-bold {
     @extend .black-bold;
 
-    color: $white; 
+    color: $white;
 }
 
 .primary-color {
-    color: $primary-color; 
-} 
+    color: $primary-color;
+}
 
 .yellow-left-line {
     @include left-line($primary-color, 90%);

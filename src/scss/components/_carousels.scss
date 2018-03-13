@@ -68,3 +68,19 @@
         }
     }
 }
+
+.organisation-logos-carousel {
+    .owl-dots {
+        .owl-dot span {
+            background: $dark-gray;
+        }
+
+        .owl-dot:hover span {
+            background: $primary-color;
+        }
+
+        .owl-dot.active span {
+            background: $primary-color;
+        }
+    }
+}

@@ -88,13 +88,13 @@
             }
         }
 
-        .full { 
+        .full {
             background: $primary-color;
             color: $medium-gray;
             padding: rem-calc(20);
             display: none;
             height: auto;
-            width: 100%; 
+            width: 100%;
 
             @include breakpoint(large) {
                 min-height: 320px;
@@ -276,6 +276,7 @@
             display: block !important;
         }
 
+
         h2 {
             font-weight: 600;
             font-size: rem-calc(20);
@@ -292,14 +293,13 @@
         img {
             display: block;
             width: 100%;
-
         }
 
         .teaser-image {
-            background-size: cover; 
+            background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            height: 170px;
+            height: 320px;
             display: block;
         }
 
@@ -646,10 +646,12 @@
     .owl-item {
         background: #f9f9f9;
     }
+
     .item img {
-        max-height: 250px; 
+        max-height: 250px;
         width: auto;
         margin: auto;
+
         @include breakpoint(large) {
             max-height: 350px;
         }
@@ -731,6 +733,11 @@
         background: $primary-color;
         padding: rem-calc(20);
         color: $body-font-color;
+    }
+
+    .seat-map-tickets {
+        overflow: auto;
+        max-height: 320px;
     }
 
     .seat-map-ticket {
@@ -1217,3 +1224,5 @@
         }
     }
 }
+
+.organisation-logos-block {}

@@ -136,27 +136,21 @@
 						</div>
 					</div>
 				</div>
-				<div class="grid-container cart-total">
-					<div class="grid-x grid-padding-x large-right">
-						<div class="cell small-12"><hr></div>
-						<div class="cell small-12 large-10 text-center large-text-right">
-							<div class="total">
-								<h2 class="no-margin">Total: <strong><span>75,50</span>€</strong></h2>
-							</div>
-							<div><small>Imposts inclosos</small></div>
+				
+			</div>
+			<div class="grid-container cart-total">
+				<div class="grid-x grid-padding-x large-right">
+					<div class="cell small-12"><hr></div>
+					<div class="cell small-12 large-10 text-center large-text-right">
+						<div class="total">
+							<h2 class="no-margin">Total: <strong><span>75,50</span>€</strong></h2>
 						</div>
-						<div class="cell small-12 large-2 text-center large-right">
-							<a href="#" class="button button-primary small-expanded">Confirmar compra</a>
-						</div>
+						<div><small>Imposts inclosos</small></div>
+					</div>
+					<div class="cell small-12 large-2 text-center large-right">
+						<a href="#" class="button button-primary small-expanded">Confirmar compra</a>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="event-more section-padding section-primary section-padding">
-		<div class="row">
-			<div class="column text-center aling-center">
-				<a href="#" class="button button-dark">Veure tots els espectacles</a>
 			</div>
 		</div>
 	</section>

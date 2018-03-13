@@ -1,6 +1,6 @@
 <?php include "inc/head.inc"; ?>
 <div class="page-home">
-	<div class="nav-bar fixed white">
+	<div class="nav-bar dark">
 		<?php include "inc/nav.inc"; ?>
 	</div>
 	<header class="main-header">
@@ -8,9 +8,8 @@
 			<div class="hero-slideshow owl-carousel owl-theme">
 				<div class="hero-slideshow-item main-header-event relative" style="background-image: url('images/hero/hero_home.jpg');">
 					<div class="row">
-						<div class="column medium-offset-1 large-8 align-left">
+						<div class="column medium-offset-1 large-8 align-left overlay">
 							<h1>Vida i miracles de n'Aineta dels matalassos</h1>
-							<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt</p>
 							<div class="field-category">
 								<a href="#">Música ></a>
 							</div>
@@ -20,12 +19,8 @@
 				</div>
 				<div class="hero-slideshow-item main-header-event relative" style="background-image: url('images/hero/test_event.jpg');">
 					<div class="row">
-						<div class="column medium-offset-1 large-8 align-left">
+						<div class="column medium-offset-1 large-8 align-left overlay">
 							<h1>Òpera al palau de la música</h1>
-							<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Nulla porttitor accumsan tincidunt</p>
-							<div class="field-category">
-								<a href="#">Música ></a>
-							</div>
 							<a href="#" class="button button-white">Més informació</a>
 						</div>
 					</div>
@@ -33,6 +28,23 @@
 			</div>
 		</div>
 	</header>
+	<section class="home-email-section section-padding section-primary">
+		<div class="home-email-section-inner">
+			<div class="home-email-block row align-middle align-center">
+				<div class="home-email-block-content medium-6 large-4 columns">
+					<form id="home-email-form" method="post" action="">
+						<div class="input-group">
+							<input type="email" class="input-group-field" placeholder="Correu electrònic" name="">
+							<div class="input-group-button">
+								<button type="submit" class="button"><i class="fa fa-chevron-right"></i></button>
+							</div>
+						</div>
+						<p class="description">Vols rebre totes les novetats de l’Auditori d’Alcúdia?</p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 	<section class="home-next-events-section section-padding section-light">
 		<div class="home-next-events-section-title section-title row">
 			<div class="column text-center">
@@ -370,19 +382,34 @@
 			</div>
 		</div>
 	</section>
-	<section class="home-email-section section-padding section-primary">
-		<div class="home-email-section-inner">
-			<div class="home-email-block row align-middle align-center">
-				<div class="home-email-block-content medium-6 large-4 columns">
-					<form id="home-email-form" method="post" action="">
-						<div class="input-group">
-							<input type="email" class="input-group-field" placeholder="Correu electrònic" name="">
-							<div class="input-group-button">
-								<button type="submit" class="button"><i class="fa fa-chevron-right"></i></button>
-							</div>
+	<section class="organisation-logos-block row section-padding align-center">
+		<div class="medium-10 columns">
+			<div class="row collapse">
+				<div class="organisation-logos-block-item small-12 medium-6 column row collapse">
+					<h2 class="text-center">Col·laboradors</h2>
+					<div class="medium-6 columns margin-auto">
+						<div class="organisation-logos-carousel owl-theme owl-carousel">
+							<a class="owl-item" href="#">
+								<img src="images/colaboradores/FEMMA.png" alt="">
+							</a>
+							<a class="owl-item" href="#">
+								<img src="images/colaboradores/FEMMA.png" alt="">
+							</a>
 						</div>
-						<p class="description">Vols rebre totes les novetats de l’Auditori d’Alcúdia?</p>
-					</form>
+					</div>
+				</div>
+				<div class="organisation-logos-block-item small-12 medium-6 column row collapse">
+					<h2 class="text-center">Patrocinadors</h2>
+					<div class="medium-6 columns margin-auto">
+						<div class="organisation-logos-carousel owl-theme owl-carousel">
+							<a class="owl-item" href="#">
+								<img src="images/colaboradores/FEMMA.png" alt="">
+							</a>
+							<a class="owl-item" href="#">
+								<img src="images/colaboradores/FEMMA.png" alt="">
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

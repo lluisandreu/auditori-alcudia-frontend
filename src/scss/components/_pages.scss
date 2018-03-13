@@ -23,6 +23,11 @@
             min-height: 500px;
             background-color: $black;
 
+            .overlay {
+                padding: rem-calc(20);
+                background: transparentize($black, 0.4);
+            }
+
             h1 {
                 color: $white;
                 font-weight: 400;

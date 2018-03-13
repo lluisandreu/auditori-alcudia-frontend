@@ -1,0 +1,31 @@
+.custom-reveal {
+    padding: 0;
+
+    .close-button {
+        line-height: 25px;
+    }
+
+    &.dark-reveal {
+        background: $dark-gray;
+        color: $white;
+    }
+
+    .reveal-header {
+        padding: 10px;
+        background-color: $primary-color;
+
+        h3 {
+            margin: 0 !important;
+            color: $body-font-color;
+            font-weight: bolder;
+        }
+    }
+
+    .reveal-body {
+        .button-group {
+            margin-top: rem-calc(30);
+        }
+
+        padding: rem-calc(40) rem-calc(60);
+    }
+}

@@ -56,6 +56,20 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    if ($('.organisation-logos-carousel').length) {
+        var eventTrailer = $('.organisation-logos-carousel');
+        eventTrailer.owlCarousel({
+            loop: true,
+            items: 1,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: true,
+            center: true,
+            autoHeight: true
+        });
+    }
+
     // Small menu toggle
     $('.toggle-full').on('click', function (event) {
         event.preventDefault();

@@ -108,6 +108,51 @@
 									<div class="seat-map-ticket-price"><span>30</span>€</div>
 									<button class="button small seat-map-ticket-remove"><i class="fa fa-times"></i></button>
 								</div>
+								<div class="seat-map-ticket item">
+									<div class="grid-x values">
+										<div class="cell small-4 seat-map-ticket-area">PLA</div>
+										<div class="cell small-4 seat-map-ticket-file">AA</div>
+										<div class="cell small-4 seat-map-ticket-num">04</div>
+									</div>
+									<div class="grid-x labels">
+										<div class="cell small-4 seat-map-ticket-area-label">Selecció</div>
+										<div class="cell small-4 seat-map-ticket-file-label">Fila</div>
+										<div class="cell small-4 seat-map-ticket-num-label">N°</div>
+									</div>
+									<hr>
+									<div class="seat-map-ticket-price"><span>30</span>€</div>
+									<button class="button small seat-map-ticket-remove"><i class="fa fa-times"></i></button>
+								</div>
+								<div class="seat-map-ticket item">
+									<div class="grid-x values">
+										<div class="cell small-4 seat-map-ticket-area">PLA</div>
+										<div class="cell small-4 seat-map-ticket-file">AA</div>
+										<div class="cell small-4 seat-map-ticket-num">04</div>
+									</div>
+									<div class="grid-x labels">
+										<div class="cell small-4 seat-map-ticket-area-label">Selecció</div>
+										<div class="cell small-4 seat-map-ticket-file-label">Fila</div>
+										<div class="cell small-4 seat-map-ticket-num-label">N°</div>
+									</div>
+									<hr>
+									<div class="seat-map-ticket-price"><span>30</span>€</div>
+									<button class="button small seat-map-ticket-remove"><i class="fa fa-times"></i></button>
+								</div>
+								<div class="seat-map-ticket item">
+									<div class="grid-x values">
+										<div class="cell small-4 seat-map-ticket-area">PLA</div>
+										<div class="cell small-4 seat-map-ticket-file">AA</div>
+										<div class="cell small-4 seat-map-ticket-num">04</div>
+									</div>
+									<div class="grid-x labels">
+										<div class="cell small-4 seat-map-ticket-area-label">Selecció</div>
+										<div class="cell small-4 seat-map-ticket-file-label">Fila</div>
+										<div class="cell small-4 seat-map-ticket-num-label">N°</div>
+									</div>
+									<hr>
+									<div class="seat-map-ticket-price"><span>30</span>€</div>
+									<button class="button small seat-map-ticket-remove"><i class="fa fa-times"></i></button>
+								</div>
 							</div>
 							<div class="seat-map-ticket-total">
 								<hr>
