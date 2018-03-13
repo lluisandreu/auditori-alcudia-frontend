@@ -5432,6 +5432,9 @@ input[type=checkbox] {
 .margin-auto {
   margin: auto; }
 
+.margin-top-auto {
+  margin: 1.42857rem auto 0 auto; }
+
 .no-padding {
   padding: 0 !important; }
 
@@ -6605,6 +6608,13 @@ input[type=checkbox] {
     color: #545456; }
   .cart-section-tickets-block .item .item-information .item-tariff, .historial-section-block .item .item-information .item-tariff, .subscriptions-tickets-block .item .item-information .item-tariff, .cart-section-tickets-block .item .item-information .item-price, .historial-section-block .item .item-information .item-price, .subscriptions-tickets-block .item .item-information .item-price {
     background: #f1f2f2; }
+  .cart-section-tickets-block .item .item-information .remove-item, .historial-section-block .item .item-information .remove-item, .subscriptions-tickets-block .item .item-information .remove-item {
+    padding: 1.07143rem 0;
+    background: #f7e326;
+    color: #545456; }
+    .cart-section-tickets-block .item .item-information .remove-item .fa, .historial-section-block .item .item-information .remove-item .fa, .subscriptions-tickets-block .item .item-information .remove-item .fa {
+      font-size: 1.42857rem;
+      color: #828385; }
   .cart-section-tickets-block .item .item-information .item-section .fa-wheelchair, .historial-section-block .item .item-information .item-section .fa-wheelchair, .subscriptions-tickets-block .item .item-information .item-section .fa-wheelchair {
     display: none; }
   .cart-section-tickets-block .item .item-information .item-section.section-wheelchair .fa-wheelchair, .historial-section-block .item .item-information .item-section.section-wheelchair .fa-wheelchair, .subscriptions-tickets-block .item .item-information .item-section.section-wheelchair .fa-wheelchair {
@@ -7127,6 +7137,17 @@ input[type=checkbox] {
     color: #1795c1; }
   .share-section .share-section-content ul.menu a .fa {
     font-size: 2rem; }
+
+.cart-total-section {
+  padding: 0.71429rem 0; }
+  .cart-total-section.sticky {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 1px 4px 17px 0px #0a0a0a; }
 
 @media print, screen and (min-width: 40em) {
   .page-home .main-header {

@@ -17,9 +17,6 @@
 			<div class="cart-section-tickets-block">
 				<div class="tickets-list">
 					<div class="cart-section-ticket item grid-container">
-						<div class="item-remove-button">
-							<a href="#">Eliminar <i class="fa fa-times"></i></a>
-						</div>
 						<div class="item-heading grid-x grid-padding-x">
 							<div class="cell small-12 medium-6 text-left">
 								<h3>Suspense maximus</h3>
@@ -45,13 +42,16 @@
 								<span class="item-cell-name">N°</span>
 								15
 							</div>
-							<div class="item-tariff cell small-6 medium-3">
+							<div class="item-tariff cell small-5 medium-3">
 								<span class="item-cell-name">Tarifa</span>
 								Dto. menors de 25 anys
 							</div>
-							<div class="item-price cell small-6 medium-3">
+							<div class="item-price cell small-5 medium-3">
 								<span class="item-cell-name">Preu</span>
 								23,75€
+							</div>
+							<div class="remove-item cell small-2 medium-auto">
+								<a href="#"><i class="fa fa-trash"></i></a>
 							</div>
 						</div>
 						<div class="item-footer grid-x grid-padding-x">
@@ -76,9 +76,6 @@
 						</div>
 					</div>
 					<div class="cart-section-ticket item grid-container">
-						<div class="item-remove-button">
-							<a href="#">Eliminar <i class="fa fa-times"></i></a>
-						</div>
 						<div class="item-heading grid-x grid-padding-x">
 							<div class="cell small-12 medium-6 text-left">
 								<h3>Suspense maximus</h3>
@@ -105,13 +102,16 @@
 								<span class="item-cell-name">N°</span>
 								15
 							</div>
-							<div class="item-tariff cell small-6 medium-3">
+							<div class="item-tariff cell small-5 medium-3">
 								<span class="item-cell-name">Tarifa</span>
 								Dto. menors de 25 anys
 							</div>
-							<div class="item-price cell small-6 medium-3">
+							<div class="item-price cell small-5 medium-3">
 								<span class="item-cell-name">Preu</span>
 								23,75€
+							</div>
+							<div class="remove-item cell small-2 medium-auto">
+								<a href="#"><i class="fa fa-trash"></i></a>
 							</div>
 						</div>
 						<div class="item-footer grid-x grid-padding-x">
@@ -136,19 +136,17 @@
 						</div>
 					</div>
 				</div>
-				
 			</div>
-			<div class="grid-container cart-total">
-				<div class="grid-x grid-padding-x large-right">
-					<div class="cell small-12"><hr></div>
-					<div class="cell small-12 large-10 text-center large-text-right">
-						<div class="total">
-							<h2 class="no-margin">Total: <strong><span>75,50</span>€</strong></h2>
-						</div>
-						<div><small>Imposts inclosos</small></div>
-					</div>
-					<div class="cell small-12 large-2 text-center large-right">
-						<a href="#" class="button button-primary small-expanded">Confirmar compra</a>
+		</div>
+	</section>
+	<section class="cart-total-section section-primary sticky">
+		<div class="grid-container">
+			<div class="text-center">
+				<div class="sticky-cart-total">
+					<h2 class="no-margin text-center">Total: <strong><span>75,50</span>€</strong></h2>
+					<div class="text-center"><small>Imposts inclosos</small></div>
+					<div class="cell small-11 large-2 text-center align-center margin-top-auto">
+						<a href="#" class="button button-blue small-expanded">Confirmar compra</a>
 					</div>
 				</div>
 			</div>

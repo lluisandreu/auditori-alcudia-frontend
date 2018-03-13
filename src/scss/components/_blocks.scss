@@ -967,6 +967,17 @@
                 background: $very-light-gray;
             }
 
+            .remove-item {
+                padding: rem-calc(15) 0;
+                background: $primary-color;
+                color: $body-font-color;
+
+                .fa {
+                    font-size: rem-calc(20);
+                    color: $light-gray;
+                }
+            }
+
             .item-section {
                 .fa-wheelchair {
                     display: none;
